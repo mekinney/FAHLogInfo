@@ -144,6 +144,7 @@ namespace FAHLogInfo
                 wu.wu.credit = credit;
                 wu.wu.end = flp.currentTime;
                 wu.wu.endLine = flp.lineNumber;
+                wu.wu.endLogFilename = flp.currentFilename;
                 wu.wu.cpuFromLog = flp.cpu_from_log;
 
                 if (wu.wu.frames > 1)
