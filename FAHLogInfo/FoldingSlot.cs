@@ -16,38 +16,38 @@ namespace FAHLogInfo
         public string cudaSlot { get; set; }
         public List<WorkUnitSlot> workUnitSlots = new List<WorkUnitSlot>();
 
-        public void NewWU(FahLogParser flp, int wuSlot, int project, int run, int clone, int gen, string fahcore)
+        public void NewWU(FahLogParser flp, int workUnitSlotNumber, int project, int run, int clone, int gen, string fahcore)
         {
 
-            WorkUnitSlot wus = workUnitSlots.Find(x => x.workUnitSlotNumber == wuSlot);
+            WorkUnitSlot workUnitSlot = workUnitSlots.Find(x => x.workUnitSlotNumber == workUnitSlotNumber);
             // If work unit slot exists, remove it and log an error.
             // Very rarely the client ends a wu, but don't give a failed or Final credit.
-            if (wus != null)
+            if (workUnitSlot != null)
             {
 
                 //                        Console.WriteLine("LN:{0}:NewWU(): Work Unit Slot exists. wu_slot = {1} f_slot = {2} **********************", LineNumber, wu_slot, f_slot_number);
 
-                if ((wus.wu.project == project) && (wus.wu.run == run) && (wus.wu.clone == clone) && (wus.wu.gen == gen))
+                if ((workUnitSlot.wu.project == project) && (workUnitSlot.wu.run == run) && (workUnitSlot.wu.clone == clone) && (workUnitSlot.wu.gen == gen))
                 {
                     //                            Console.WriteLine("LN:{0}:NewWU(): Work Unit Slot exists, but matches. Leaving. wu_slot = {1} {2} {3} {4} {5} f_slot = {6}", LineNumber, wu_slot, project, run, clone, gen, f_slot_number);
                     return;
                 }
 
-                Console.WriteLine("LN:{0}:NewWU(): Work Unit Slot exists and doesn't match existing - Removing.wu_slot = {1} {2} {3} {4} {5} f_slot = {6}", flp.lineNumber, wuSlot, project, run, clone, gen, foldingSlotNumber);
-                Console.WriteLine("LN:{0}:NewWU(): Work Unit Slot exists and doesn't match existing - Existing info    = {1} {2} {3} {4} {5} f_slot = {6}", flp.lineNumber, wuSlot, wus.wu.project, wus.wu.run, wus.wu.clone, wus.wu.gen, foldingSlotNumber);
+                Console.WriteLine("LN:{0}:NewWU(): Work Unit Slot exists and doesn't match existing - Removing.wu_slot = {1} {2} {3} {4} {5} f_slot = {6}", flp.lineNumber, workUnitSlotNumber, project, run, clone, gen, foldingSlotNumber);
+                Console.WriteLine("LN:{0}:NewWU(): Work Unit Slot exists and doesn't match existing - Existing info    = {1} {2} {3} {4} {5} f_slot = {6}", flp.lineNumber, workUnitSlotNumber, workUnitSlot.wu.project, workUnitSlot.wu.run, workUnitSlot.wu.clone, workUnitSlot.wu.gen, foldingSlotNumber);
 
-                workUnitSlots.Remove(wus);
+                workUnitSlots.Remove(workUnitSlot);
 
             }
             workUnitSlots.Add(new WorkUnitSlot()
             {
-                workUnitSlotNumber = wuSlot,
+                workUnitSlotNumber = workUnitSlotNumber,
                 wu = { project = project, run = run, clone = clone, gen = gen, start = flp.currentTime, core = fahcore,
                         startLine = flp.lineNumber, startLogFilename = flp.currentFilename }
             });
         }
 
-        public void UpdateProgress(FahLogParser flp, string time, int workUnitSlot, int step, int maxSteps)
+        public void UpdateProgress(FahLogParser flp, string time, int workUnitSlotNumber, int step, int maxSteps)
         {
 
             // Calculate seconds that have passed
@@ -55,11 +55,11 @@ namespace FAHLogInfo
             // Update Total Frames                        
             // Update TPF
 
-            WorkUnitSlot wus = workUnitSlots.Find(x => x.workUnitSlotNumber == workUnitSlot);
+            WorkUnitSlot workUnitSlot = workUnitSlots.Find(x => x.workUnitSlotNumber == workUnitSlotNumber);
             // If work unit slot exists, remove it and log an error.
-            if (wus == null)
+            if (workUnitSlot == null)
             {
-                Console.WriteLine("LN:{0}:UpdateProgress(): Work Unit Slot doesn't exist wu_slot = {1}", flp.lineNumber, workUnitSlot);
+                Console.WriteLine("LN:{0}:UpdateProgress(): Work Unit Slot doesn't exist wu_slot = {1}", flp.lineNumber, workUnitSlotNumber);
                 return;
             }
 
@@ -77,97 +77,97 @@ namespace FAHLogInfo
             }
             flp.currentTime = dt;
 
-            if (wus.wu.lastStep == step)
+            if (workUnitSlot.wu.lastStep == step)
             {  // Restarting WU.
-                wus.wu.frameTime = dt;
+                workUnitSlot.wu.frameTime = dt;
                 return;
             }
 
-            wus.wu.lastStep = step;
+            workUnitSlot.wu.lastStep = step;
 
-            if (wus.wu.frames == 0)
+            if (workUnitSlot.wu.frames == 0)
             {
                 // Restarting or first update 
-                wus.wu.totalComputeTime = TimeSpan.Zero;
-                wus.wu.frames = 1;
-                wus.wu.frameTime = dt;
+                workUnitSlot.wu.totalComputeTime = TimeSpan.Zero;
+                workUnitSlot.wu.frames = 1;
+                workUnitSlot.wu.frameTime = dt;
                 return;
 
             }
 
-            if ((wus.wu.frameTime == null) || (wus.wu.frameTime == DateTime.MinValue))
+            if ((workUnitSlot.wu.frameTime == null) || (workUnitSlot.wu.frameTime == DateTime.MinValue))
             {
                 Console.WriteLine("- SHOULD NEVER HAPPEN!!!!!");
                 // Starting the WU so update the frame time
-                wus.wu.totalComputeTime = TimeSpan.Zero;
-                wus.wu.frames = 1;
-                wus.wu.frameTime = dt;
+                workUnitSlot.wu.totalComputeTime = TimeSpan.Zero;
+                workUnitSlot.wu.frames = 1;
+                workUnitSlot.wu.frameTime = dt;
                 return;
 
             }
 
-            TimeSpan tpf = dt - wus.wu.frameTime;
-            wus.wu.totalComputeTime += tpf;
-            wus.wu.frames++;
-            double d = wus.wu.totalComputeTime.TotalSeconds;
-            wus.wu.frameTime = dt;
+            TimeSpan tpf = dt - workUnitSlot.wu.frameTime;
+            workUnitSlot.wu.totalComputeTime += tpf;
+            workUnitSlot.wu.frames++;
+            double d = workUnitSlot.wu.totalComputeTime.TotalSeconds;
+            workUnitSlot.wu.frameTime = dt;
 
         }
 
-        public void UpdateUnitID(FahLogParser flp, int workUnitSlot, string unitID)
+        public void UpdateUnitID(FahLogParser flp, int workUnitSlotNumber, string unitID)
         {
-            WorkUnitSlot wus = workUnitSlots.Find(x => x.workUnitSlotNumber == workUnitSlot);
+            WorkUnitSlot workUnitSlot = workUnitSlots.Find(x => x.workUnitSlotNumber == workUnitSlotNumber);
             // Work Unit Slot should always exist.
-            if (wus != null)
+            if (workUnitSlot != null)
             {
-                if (wus.wu.UnitID != null)
+                if (workUnitSlot.wu.UnitID != null)
                 {
-                    if (!wus.wu.UnitID.Equals(unitID))
+                    if (!workUnitSlot.wu.UnitID.Equals(unitID))
                     {
-                        Console.WriteLine("LN:{0}:UpdateUnitID(): Unit ID's don't match. wu_slot = {1}, New UnitID = {2} Old UnitID = {3}", flp.lineNumber, workUnitSlot, unitID, wus.wu.UnitID);
+                        Console.WriteLine("LN:{0}:UpdateUnitID(): Unit ID's don't match. wu_slot = {1}, New UnitID = {2} Old UnitID = {3}", flp.lineNumber, workUnitSlotNumber, unitID, workUnitSlot.wu.UnitID);
                     }
                 }
-                wus.wu.UnitID = unitID;
+                workUnitSlot.wu.UnitID = unitID;
             }
             else
             {
-                Console.WriteLine("LN:{0}:UpdateUnitID(): Work Unit Slot doesn't exist. wu_slot = {1} UnitID = {2}", flp.lineNumber, workUnitSlot, unitID);
+                Console.WriteLine("LN:{0}:UpdateUnitID(): Work Unit Slot doesn't exist. wu_slot = {1} UnitID = {2}", flp.lineNumber, workUnitSlotNumber, unitID);
             }
         }
 
-        public WorkUnitInfo EndWU(FahLogParser flp, int workUnitSlot, int credit)
+        public WorkUnitInfo EndWU(FahLogParser flp, int workUnitSlotNumber, int credit)
         {
-            WorkUnitSlot wu = workUnitSlots.Find(x => x.workUnitSlotNumber == workUnitSlot);
+            WorkUnitSlot workUnitSlot = workUnitSlots.Find(x => x.workUnitSlotNumber == workUnitSlotNumber);
 
-            if (wu != null)
+            if (workUnitSlot != null)
             {
-                wu.wu.credit = credit;
-                wu.wu.end = flp.currentTime;
-                wu.wu.endLine = flp.lineNumber;
-                wu.wu.endLogFilename = flp.currentFilename;
-                wu.wu.cpuFromLog = flp.cpu_from_log;
+                workUnitSlot.wu.credit = credit;
+                workUnitSlot.wu.end = flp.currentTime;
+                workUnitSlot.wu.endLine = flp.lineNumber;
+                workUnitSlot.wu.endLogFilename = flp.currentFilename;
+                workUnitSlot.wu.cpuFromLog = flp.cpu_from_log;
 
-                if (wu.wu.frames > 1)
-                    wu.wu.tpf = TimeSpan.FromTicks(wu.wu.totalComputeTime.Ticks / (wu.wu.frames - 1));
+                if (workUnitSlot.wu.frames > 1)
+                    workUnitSlot.wu.tpf = TimeSpan.FromTicks(workUnitSlot.wu.totalComputeTime.Ticks / (workUnitSlot.wu.frames - 1));
 
                 // Calculate PPD for each WU
 
                 TimeSpan oneDay = new TimeSpan(1, 0, 0, 0, 0);
                 TimeSpan delta = new TimeSpan();
-                delta = (wu.wu.end - wu.wu.start);
+                delta = (workUnitSlot.wu.end - workUnitSlot.wu.start);
                 double ratio = delta.TotalSeconds / oneDay.TotalSeconds;
 
-                wu.wu.elapsedTimePpd = (long)(wu.wu.credit / ratio);
+                workUnitSlot.wu.elapsedTimePpd = (long)(workUnitSlot.wu.credit / ratio);
 
-                ratio = wu.wu.totalComputeTime.TotalSeconds / oneDay.TotalSeconds;
-                wu.wu.computeTimePpd = (long)(wu.wu.credit / ratio);
+                ratio = workUnitSlot.wu.totalComputeTime.TotalSeconds / oneDay.TotalSeconds;
+                workUnitSlot.wu.computeTimePpd = (long)(workUnitSlot.wu.credit / ratio);
 
-                workUnitSlots.Remove(wu);
-                return wu.wu;
+                workUnitSlots.Remove(workUnitSlot);
+                return workUnitSlot.wu;
             }
             else
             {
-                Console.WriteLine("LN:{0}:EndWU(): Can not find WU. wu_slot = {1} credit = {2}", flp.lineNumber, workUnitSlot, credit);
+                Console.WriteLine("LN:{0}:EndWU(): Can not find WU. wu_slot = {1} credit = {2}", flp.lineNumber, workUnitSlotNumber, credit);
                 return null;
             }
         }
