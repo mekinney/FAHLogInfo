@@ -8,7 +8,7 @@ namespace FAHLogInfo
 {
     public class WorkUnitSlot
     {
-        public int workUnitSlotNumber { get; set; }
+        public int WorkUnitSlotNumber { get; set; }
 
         public WorkUnitInfo wu = new WorkUnitInfo();
 

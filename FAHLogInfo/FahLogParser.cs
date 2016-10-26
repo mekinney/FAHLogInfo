@@ -12,15 +12,14 @@ namespace FAHLogInfo
     public class FahLogParser
     {
 
-        public List<FoldingSlot> foldingSlots = new List<FoldingSlot>();
-        public List<WorkUnitInfo> workUnits = new List<WorkUnitInfo>();
-        public DateTime currentTime = new DateTime();
+        public List<FoldingSlot> FoldingSlots = new List<FoldingSlot>();
+        public List<WorkUnitInfo> WorkUnits = new List<WorkUnitInfo>();
+        public DateTime CurrentTime = new DateTime();
         public List<LineParser> LineParsers = new List<LineParser>();
         public List<string> UnmatchedLines = new List<string>();
-        public int lineNumber = 0;
-        public string machine_name_processed_log = System.Environment.MachineName;
-        public string cpu_from_log;
-        public string currentFilename;
+        public int LineNumber = 0;
+        public string CpuName;
+        public string CurentFilename;
 
 
         public FahLogParser()
@@ -60,7 +59,7 @@ namespace FAHLogInfo
                 {
                     DateTime dt;
                     dt = DateTime.ParseExact(m.Groups["date"].Value, "yyyy-MM-ddTHH:mm:ss", null);
-                    flp.currentTime = dt;
+                    flp.CurrentTime = dt;
                 }
                 return m.Success;
             }
@@ -71,12 +70,10 @@ namespace FAHLogInfo
         {
             // 16:24:38:Enabled folding slot 01: READY gpu:0:GM206 [GeForce GTX 950]
             // 23:46:28:Enabled folding slot 01: PAUSED gpu:1:GP104 [GeForce GTX 1070] (by user)
-            //                const string new_slot = @"Enabled folding slot (?<f_slot>\d{2}): [READY|PAUSED] gpu:\n:GM\d{3} (?<desc>.+)";
             const string new_slot = @"Enabled folding slot (?<f_slot>\d{2}): (READY|PAUSED) gpu:(?<cuda_slot>\d):(?<gpu_id>\S{5}) \[(?<desc>.+)\]+";
 
             override public bool ParseLine(FahLogParser flp, string Line)
             {
-
                 Match m = Regex.Match(Line, time_regx + new_slot);
                 if (m.Success)
                 {
@@ -91,7 +88,7 @@ namespace FAHLogInfo
         {
             // New Project - Creates new WU for FS
             // 22:52:29:WU01:FS01:0x21:Project: 11407(Run 3, Clone 9, Gen 217)
-            // Unfortuneatly this line occurs before the UnitID line, so can't possitively identify the unit prior.
+            // Unfortunately this line occurs before the UnitID line, so can't possitively identify the unit prior.
             const string new_wu = @"Project: (?<project>\d+) \(Run (?<run>\d+), Clone (?<clone>\d+), Gen (?<gen>\d+)\)";
 
             override public bool ParseLine(FahLogParser flp, string Line)
@@ -167,7 +164,7 @@ namespace FAHLogInfo
                 Match m = Regex.Match(Line, time_regx + "WARNING:" + fsws_regx + dumping);
                 if (m.Success)
                 {
-                    Console.WriteLine("LN:{0}:BADWU(): Server did not like results - wu_slot {1} - f_slot {2}.", flp.lineNumber, m.Groups["wu_slot"].Value, m.Groups["f_slot"].Value);
+                    Console.WriteLine("LN:{0}:BADWU(): Server did not like results - wu_slot {1} - f_slot {2}.", flp.LineNumber, m.Groups["wu_slot"].Value, m.Groups["f_slot"].Value);
                     flp.EndProject(int.Parse(m.Groups["wu_slot"].Value), int.Parse(m.Groups["f_slot"].Value), "-1");  //TODO: cheesy for now
                 }
                 return m.Success;
@@ -183,8 +180,8 @@ namespace FAHLogInfo
                 Match m = Regex.Match(Line, time_regx + cpu_desc_regex);
                 if (m.Success)
                 {
-                    Console.WriteLine("LN:{0}:cpu_desc = {1}", flp.lineNumber, m.Groups["cpu_desc"].Value);
-                    flp.cpu_from_log = m.Groups["cpu_desc"].Value;
+                    Console.WriteLine("LN:{0}:cpu_desc = {1}", flp.LineNumber, m.Groups["cpu_desc"].Value);
+                    flp.CpuName = m.Groups["cpu_desc"].Value;
                 }
                 return m.Success;
             }
@@ -193,22 +190,21 @@ namespace FAHLogInfo
 
         public void NewSlot(int foldingSlot, string desc, string cudaSlot)
         {
-            Console.WriteLine("LN:{2}:NewSlot(): f_slot = {0} cuda_slot {3} desc ={1}", foldingSlot, desc, lineNumber, cudaSlot);
+            Console.WriteLine("LN:{2}:NewSlot(): f_slot = {0} cuda_slot {3} desc ={1}", foldingSlot, desc, LineNumber, cudaSlot);
 
-            FoldingSlot fs = foldingSlots.Find(x => x.foldingSlotNumber == foldingSlot);
+            FoldingSlot fs = FoldingSlots.Find(x => x.FoldingSlotNumber == foldingSlot);
 
             // If work unit slot exists, remove it and log an error.
             if (fs != null)
             {
-                if (fs.gpuDescription.Equals(desc))  // if the descriptions are equal, then don't remove the slot, assuming we're continuing.
+                if (fs.GpuDescription.Equals(desc))  // if the descriptions are equal, then don't remove the slot, assuming we're continuing.
                     return;
 
-                Console.WriteLine("LN:{0}:NewSlot(): Folding Slot exists-Removing f_slot = {1} new_desc = {2} old_desc = {3}", lineNumber, foldingSlot, desc, fs.gpuDescription);
-                foldingSlots.Remove(foldingSlots.Find(x => x.foldingSlotNumber == foldingSlot));
-
+                Console.WriteLine("LN:{0}:NewSlot(): Folding Slot exists-Removing f_slot = {1} new_desc = {2} old_desc = {3}", LineNumber, foldingSlot, desc, fs.GpuDescription);
+                FoldingSlots.Remove(FoldingSlots.Find(x => x.FoldingSlotNumber == foldingSlot));
             }
 
-            foldingSlots.Add(new FoldingSlot() { foldingSlotNumber = foldingSlot, gpuDescription = desc, cudaSlot = cudaSlot });
+            FoldingSlots.Add(new FoldingSlot() { FoldingSlotNumber = foldingSlot, GpuDescription = desc, CudaSlot = cudaSlot });
 
         }
 
@@ -216,30 +212,28 @@ namespace FAHLogInfo
         {
             // If fully parsing file, the folding slot should already exist.
             // If it's not there, just make one.
-            if (foldingSlots.Exists(x => x.foldingSlotNumber == foldingSlot) == false)
+            if (FoldingSlots.Exists(x => x.FoldingSlotNumber == foldingSlot) == false)
             {
-                Console.WriteLine("LN:{1}:UpdateProject(): Folding Slot doesn't exist so, creating one f_slot = {0} ***************", foldingSlot, lineNumber);
-                foldingSlots.Add(new FoldingSlot() { foldingSlotNumber = foldingSlot, gpuDescription = string.Format("UpdateProject() Created with WU p:{0}.", project) });
+                Console.WriteLine("LN:{1}:UpdateProject(): Folding Slot doesn't exist so, creating one f_slot = {0} ***************", foldingSlot, LineNumber);
+                FoldingSlots.Add(new FoldingSlot() { FoldingSlotNumber = foldingSlot, GpuDescription = string.Format("UpdateProject() Created with WU p:{0}.", project) });
             }
 
             // Add the WU to folding slot.
-            foldingSlots.Find(x => x.foldingSlotNumber == foldingSlot).NewWU(this, workUnitSlot, project, run, clone, gen, fahcore);
-
+            FoldingSlots.Find(x => x.FoldingSlotNumber == foldingSlot).NewWU(this, workUnitSlot, project, run, clone, gen, fahcore);
         }
 
         public void UpdateProgress(string time, int workUnitSlot, int foldingSlot, int steps, int maxSteps)
         {
             // If fully parsing file, the folding slot should already exist.
             // If it's not there, just make one.
-            if (foldingSlots.Exists(x => x.foldingSlotNumber == foldingSlot) == false)
+            if (FoldingSlots.Exists(x => x.FoldingSlotNumber == foldingSlot) == false)
             {
-                foldingSlots.Add(new FoldingSlot() { foldingSlotNumber = foldingSlot, gpuDescription = "Unknown. Created by UpdateProgress" });
-                Console.WriteLine("LN:{1}:UpdateProgress(): Folding Slot should already exist but creating one f_slot = {0} ***************", foldingSlot, lineNumber);
+                FoldingSlots.Add(new FoldingSlot() { FoldingSlotNumber = foldingSlot, GpuDescription = "Unknown. Created by UpdateProgress" });
+                Console.WriteLine("LN:{1}:UpdateProgress(): Folding Slot should already exist but creating one f_slot = {0} ***************", foldingSlot, LineNumber);
             }
 
             // Add the WU to folding slot.
-            foldingSlots.Find(x => x.foldingSlotNumber == foldingSlot).UpdateProgress(this, time, workUnitSlot, steps, maxSteps);
-
+            FoldingSlots.Find(x => x.FoldingSlotNumber == foldingSlot).UpdateProgress(this, time, workUnitSlot, steps, maxSteps);
         }
 
 
@@ -247,21 +241,20 @@ namespace FAHLogInfo
         {
             // If fully parsing file, the folding slot should already exist.
             // If it's not there, just make one.
-            if (foldingSlots.Exists(x => x.foldingSlotNumber == foldingSlot) == false)
+            if (FoldingSlots.Exists(x => x.FoldingSlotNumber == foldingSlot) == false)
             {
-                Console.WriteLine("LN:{1}:UpdateUnitID(): Folding Slot should already exist but creating one f_slot = {0}", foldingSlot, lineNumber);
-                foldingSlots.Add(new FoldingSlot() { foldingSlotNumber = foldingSlot, gpuDescription = "UpdateUnitID() - Created Folding Slot" });
+                Console.WriteLine("LN:{1}:UpdateUnitID(): Folding Slot should already exist but creating one f_slot = {0}", foldingSlot, LineNumber);
+                FoldingSlots.Add(new FoldingSlot() { FoldingSlotNumber = foldingSlot, GpuDescription = "UpdateUnitID() - Created Folding Slot" });
             }
 
             // Add the WU to folding slot.
-            foldingSlots.Find(x => x.foldingSlotNumber == foldingSlot).UpdateUnitID(this, workUnitSlot, unitID);
-
+            FoldingSlots.Find(x => x.FoldingSlotNumber == foldingSlot).UpdateUnitID(this, workUnitSlot, unitID);
         }
 
         public void EndProject(int workUnitSlot, int foldingSlot, string credit)
         {
             // Add the WU to folding slot.
-            FoldingSlot fs = foldingSlots.Find(x => x.foldingSlotNumber == foldingSlot);
+            FoldingSlot fs = FoldingSlots.Find(x => x.FoldingSlotNumber == foldingSlot);
             if (fs != null)
             {
                 WorkUnitInfo wui = fs.EndWU(this, workUnitSlot, int.Parse(credit));
@@ -269,70 +262,68 @@ namespace FAHLogInfo
                 if (wui != null)
                 {
                     // Update the folding slot information
-                    wui.foldingSlot = foldingSlot;
-                    wui.gpuDescription = fs.gpuDescription;
-                    wui.cudaSlot = fs.cudaSlot;
+                    wui.FoldingSlot = foldingSlot;
+                    wui.GpuDescription = fs.GpuDescription;
+                    wui.CudaSlot = fs.CudaSlot;
 
-                    workUnits.Add(wui);  // Save the completed wu.
+                    WorkUnits.Add(wui);  // Save the completed wu.
                 }
             }
             else
             {
-                Console.WriteLine("LN:{0}:EndProject(): Can't find folding slot {1} - wu = {2} credit = {3}", lineNumber, workUnitSlot, foldingSlot, credit);
-                Console.WriteLine("LN:{0}:EndProject(): This can happen early in the log file if FAH is trying to send a WU that wasn't processed at all in the log file.", lineNumber);
+                Console.WriteLine("LN:{0}:EndProject(): Can't find folding slot {1} - wu = {2} credit = {3}", LineNumber, workUnitSlot, foldingSlot, credit);
+                Console.WriteLine("LN:{0}:EndProject(): This can happen early in the log file if FAH is trying to send a WU that wasn't processed at all in the log file.", LineNumber);
             }
-
         }
 
         public void EndParse()
         {
             // Closes and logs all WU's that are partially complete.
 
-            int fs_end = foldingSlots.Count();
+            int fs_end = FoldingSlots.Count();
 
             for (int j = 0; j < fs_end; j++)
             //                foreach (FoldingSlot fs in folding_slots)
             {
-                int wu_end = foldingSlots[j].workUnitSlots.Count();
-                var fs = foldingSlots[j];
+                int wu_end = FoldingSlots[j].WorkUnitSlots.Count();
+                var fs = FoldingSlots[j];
 
                 // Can't use foreach because we're removing work_unit_slots as we go along.
                 for (int i = 0; i < wu_end; i++)
                 {
-                    Console.WriteLine("LN:{0}EndParse(): f_slot {1} wu_slot{2}", lineNumber, fs.foldingSlotNumber, fs.workUnitSlots[0].workUnitSlotNumber);
-                    EndProject(fs.foldingSlotNumber, fs.workUnitSlots[0].workUnitSlotNumber, "0");
+                    Console.WriteLine("LN:{0}EndParse(): f_slot {1} wu_slot{2}", LineNumber, fs.FoldingSlotNumber, fs.WorkUnitSlots[0].WorkUnitSlotNumber);
+                    EndProject(fs.FoldingSlotNumber, fs.WorkUnitSlots[0].WorkUnitSlotNumber, "0");
                 }
             }
         }
 
         public bool ParseTextLine(string Line)
         {
-            lineNumber++;
+            LineNumber++;
             foreach (LineParser Parser in LineParsers)
             {
                 bool b = (Parser.ParseLine(this,Line));
-
+                // If it line is parsed, then return true.
                 if (b) return b;
             }
             // None of the parsers matched it, so it add to the unmatched list.
             UnmatchedLines.Add(Line);
             return false;
-
         }
 
-        public void ShowResults(bool GoodWus, bool BadWus, StreamWriter output_stream)
+        public void ShowResults(bool goodWus, bool badWus, StreamWriter outputStream)
         {
-            output_stream.WriteLine("WUStatus,{0}", workUnits[0].ToStringPropertyNames());
+            // Write out the header line with all the property names
+            outputStream.WriteLine("WUStatus,{0}", WorkUnits[0].ToStringPropertyNames());
 
-            foreach (WorkUnitInfo wu in workUnits)
+            foreach (WorkUnitInfo wu in WorkUnits)
             {
-                if (wu.credit < 0 && BadWus)
-                    output_stream.WriteLine("BADWU,{0} ", wu);
-                if (wu.credit > 0 && GoodWus)
-                    output_stream.WriteLine("GOODWU,{0} ", wu);
-                if (wu.credit == 0 && GoodWus)
-                    output_stream.WriteLine("PARTWU,{0} ", wu);
-
+                if (wu.Credit < 0 && badWus)
+                    outputStream.WriteLine("BADWU,{0} ", wu);
+                if (wu.Credit > 0 && goodWus)
+                    outputStream.WriteLine("GOODWU,{0} ", wu);
+                if (wu.Credit == 0 && goodWus)
+                    outputStream.WriteLine("PARTWU,{0} ", wu);
             }
         }
 
@@ -344,7 +335,5 @@ namespace FAHLogInfo
                 Console.WriteLine(s);
             }
         }
-
     }
-
 }

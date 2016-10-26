@@ -11,30 +11,30 @@ namespace FAHLogInfo
     
     public class WorkUnitInfo
     {
-        public int project { get; set; }
-        public int run { get; set; }
-        public int clone { get; set; }
-        public int gen { get; set; }
-        public string gpuDescription { get; set; }
-        public string cudaSlot { get; set; }
-        public int foldingSlot { get; set; }
-        public string core { get; set; }
-        public DateTime start { get; set; }
-        public DateTime end { get; set; }
-        public TimeSpan tpf { get; set; }
-        public DateTime frameTime { get; set; }
-        public TimeSpan totalComputeTime { get; set; }
-        public long elapsedTimePpd { get; set; }
-        public long computeTimePpd { get; set; }
-        public int frames { get; set; }
-        public int lastStep { get; set; }
-        public int credit { get; set; }
+        public int Project { get; set; }
+        public int Run { get; set; }
+        public int Clone { get; set; }
+        public int Gen { get; set; }
+        public string GpuDescription { get; set; }
+        public string CudaSlot { get; set; }
+        public int FoldingSlot { get; set; }
+        public string Core { get; set; }
+        public DateTime Start { get; set; }
+        public DateTime End { get; set; }
+        public TimeSpan TimePerFrame { get; set; }
+        public DateTime FrameTime { get; set; }
+        public TimeSpan TotalComputeTime { get; set; }
+        public long ElapsedTimePpd { get; set; }
+        public long ComputeTimePpd { get; set; }
+        public int Frames { get; set; }
+        public int LastStep { get; set; }
+        public int Credit { get; set; }
         public string UnitID { get; set; }
-        public int startLine { get; set; }
-        public string startLogFilename { get; set; }
-        public int endLine { get; set; }
-        public string endLogFilename { get; set; }
-        public string cpuFromLog { get; set; }
+        public int StartLine { get; set; }
+        public string StartLogFilename { get; set; }
+        public int EndLine { get; set; }
+        public string EndLogFilename { get; set; }
+        public string CpuName { get; set; }
 
         // Produces comma delimited string containing all properties in the class.
         // Derived from: https://chrisbenard.net/2009/07/23/using-reflection-to-dynamically-generate-tostring-output/
@@ -42,23 +42,23 @@ namespace FAHLogInfo
         public override string ToString()
         {
             var flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.FlattenHierarchy;
-            System.Reflection.PropertyInfo[] infos = this.GetType().GetProperties(flags);
+            System.Reflection.PropertyInfo[] propertyInfoList = this.GetType().GetProperties(flags);
 
             StringBuilder sb = new StringBuilder();
 
             string typeName = this.GetType().Name;
             sb.AppendFormat("{0}", typeName);
 
-            foreach (var info in infos)
+            foreach (var propertyInfo in propertyInfoList)
             {
-                object value = info.GetValue(this, null);
-                string ElementTypeName = info.GetType().Name;
+                object value = propertyInfo.GetValue(this, null);
+                string ElementTypeName = propertyInfo.GetType().Name;
 
                 // HACK: Excel doesn't like the format d.hh:mm:ss by default.
                 // HACK: If the name of the totalComputeTime field is changed, this breaks.
                 // TODO: Is there a way to change the formatter for DateTime types?
 
-                if (info.Name.Equals("totalComputeTime"))
+                if (propertyInfo.Name.Equals("totalComputeTime"))
                 {
                     var ts = (TimeSpan)value;
                     string s = string.Format("{0}:{1}:{2}", (int)Math.Floor(ts.TotalHours), ts.Minutes, ts.Seconds);
@@ -69,7 +69,6 @@ namespace FAHLogInfo
                     sb.AppendFormat(",{0}", value != null ? value : "null");
                 }
             }
-
             return sb.ToString();
         }
 
@@ -78,22 +77,20 @@ namespace FAHLogInfo
         public string ToStringPropertyNames()
         {
             var flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.FlattenHierarchy;
-            System.Reflection.PropertyInfo[] infos = this.GetType().GetProperties(flags);
+            System.Reflection.PropertyInfo[] propertyInfoList = this.GetType().GetProperties(flags);
 
             StringBuilder sb = new StringBuilder();
 
             string typeName = this.GetType().Name;
             sb.AppendFormat("{0}", typeName);
 
-            foreach (var info in infos)
+            foreach (var propertyInfo in propertyInfoList)
             {
-                object value = info.GetValue(this, null);
-                sb.AppendFormat(",{0}", info.Name);
+                object value = propertyInfo.GetValue(this, null);
+                sb.AppendFormat(",{0}", propertyInfo.Name);
             }
-
             return sb.ToString();
         }
-
     }
 
 
