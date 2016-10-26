@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WorkUnitInfo.cs" />
+    <Compile Include="WorkUnitSlot.cs" />
+    <Compile Include="FahLogParser.cs" />
+    <Compile Include="FoldingSlot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
