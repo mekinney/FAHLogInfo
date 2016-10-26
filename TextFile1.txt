@@ -1,0 +1,981 @@
+11:23:01:WU02:FS00:Connecting to 171.67.108.45:80
+11:23:01:WU02:FS00:Assigned to work server 171.64.65.104
+11:23:01:WU02:FS00:Requesting new work unit for slot 00: RUNNING gpu:1:GM107 [GeForce GTX 750 Ti] from 171.64.65.104
+11:23:01:WU02:FS00:Connecting to 171.64.65.104:8080
+11:23:02:WU02:FS00:Downloading 78.64MiB
+11:23:08:WU02:FS00:Download 24.72%
+11:23:08:WU01:FS00:0x18:Saving result file logfile_01.txt
+11:23:08:WU01:FS00:0x18:Saving result file checkpointState.xml
+11:23:09:WU01:FS00:0x18:Saving result file checkpt.crc
+11:23:09:WU01:FS00:0x18:Saving result file log.txt
+11:23:09:WU01:FS00:0x18:Saving result file positions.xtc
+11:23:11:WU01:FS00:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+11:23:11:WU01:FS00:FahCore returned: FINISHED_UNIT (100 = 0x64)
+11:23:11:WU01:FS00:Sending unit results: id:01 state:SEND error:NO_ERROR project:10471 run:0 clone:193 gen:261 core:0x18 unit:0x0000015a538b3dbb53beabfb33cb1d65
+11:23:11:WU01:FS00:Uploading 11.07MiB to 140.163.4.235
+11:23:11:WU01:FS00:Connecting to 140.163.4.235:8080
+11:23:14:WU02:FS00:Download 49.91%
+11:23:20:WU02:FS00:Download 64.61%
+11:23:26:WU02:FS00:Download 91.48%
+11:23:27:WU02:FS00:Download complete
+11:23:27:WU02:FS00:Received Unit: id:02 state:DOWNLOAD error:NO_ERROR project:9206 run:0 clone:280 gen:22 core:0x21 unit:0x0000003b664f2dd056fb26bdc040afa4
+11:23:27:WU02:FS00:Starting
+11:23:27:WU02:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 02 -suffix 01 -version 704 -lifeline 5148 -checkpoint 30 -gpu 1 -gpu-vendor nvidia
+11:23:27:WU02:FS00:Started FahCore on PID 1276
+11:23:27:WU02:FS00:Core PID:5800
+11:23:27:WU02:FS00:FahCore 0x21 started
+11:23:28:WU02:FS00:0x21:*********************** Log Started 2016-05-13T11:23:28Z ***********************
+11:23:28:WU02:FS00:0x21:Project: 9206 (Run 0, Clone 280, Gen 22)
+11:23:28:WU02:FS00:0x21:Unit: 0x0000003b664f2dd056fb26bdc040afa4
+11:23:28:WU02:FS00:0x21:CPU: 0x00000000000000000000000000000000
+11:23:28:WU02:FS00:0x21:Machine: 0
+11:23:28:WU02:FS00:0x21:Reading tar file core.xml
+11:23:28:WU02:FS00:0x21:Reading tar file integrator.xml
+11:23:28:WU02:FS00:0x21:Reading tar file state.xml
+11:23:28:WU02:FS00:0x21:Reading tar file system.xml
+11:23:29:WU02:FS00:0x21:Digital signatures verified
+11:23:29:WU02:FS00:0x21:Folding@home GPU Core21 Folding@home Core
+11:23:29:WU02:FS00:0x21:Version 0.0.17
+11:23:36:WU01:FS00:Upload complete
+11:23:36:WU01:FS00:Server responded WORK_ACK (400)
+11:23:36:WU01:FS00:Final credit estimate, 51623.00 points
+11:23:36:WU01:FS00:Cleaning up
+11:23:51:WU02:FS00:0x21:Completed 0 out of 2500000 steps (0%)
+11:23:51:WU02:FS00:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+11:24:46:WU00:FS01:0x21:Completed 1900000 out of 2500000 steps (76%)
+11:29:16:WU00:FS01:0x21:Completed 1925000 out of 2500000 steps (77%)
+11:33:42:WU00:FS01:0x21:Completed 1950000 out of 2500000 steps (78%)
+11:36:28:WU02:FS00:0x21:Completed 25000 out of 2500000 steps (1%)
+11:38:08:WU00:FS01:0x21:Completed 1975000 out of 2500000 steps (79%)
+11:42:34:WU00:FS01:0x21:Completed 2000000 out of 2500000 steps (80%)
+11:47:05:WU00:FS01:0x21:Completed 2025000 out of 2500000 steps (81%)
+11:49:03:WU02:FS00:0x21:Completed 50000 out of 2500000 steps (2%)
+11:51:30:WU00:FS01:0x21:Completed 2050000 out of 2500000 steps (82%)
+11:55:56:WU00:FS01:0x21:Completed 2075000 out of 2500000 steps (83%)
+12:00:21:WU00:FS01:0x21:Completed 2100000 out of 2500000 steps (84%)
+12:01:38:WU02:FS00:0x21:Completed 75000 out of 2500000 steps (3%)
+12:04:52:WU00:FS01:0x21:Completed 2125000 out of 2500000 steps (85%)
+12:09:18:WU00:FS01:0x21:Completed 2150000 out of 2500000 steps (86%)
+12:13:44:WU00:FS01:0x21:Completed 2175000 out of 2500000 steps (87%)
+12:14:13:WU02:FS00:0x21:Completed 100000 out of 2500000 steps (4%)
+12:18:09:WU00:FS01:0x21:Completed 2200000 out of 2500000 steps (88%)
+12:22:39:WU00:FS01:0x21:Completed 2225000 out of 2500000 steps (89%)
+12:26:52:WU02:FS00:0x21:Completed 125000 out of 2500000 steps (5%)
+12:27:04:WU00:FS01:0x21:Completed 2250000 out of 2500000 steps (90%)
+12:31:30:WU00:FS01:0x21:Completed 2275000 out of 2500000 steps (91%)
+12:35:56:WU00:FS01:0x21:Completed 2300000 out of 2500000 steps (92%)
+12:39:28:WU02:FS00:0x21:Completed 150000 out of 2500000 steps (6%)
+12:40:26:WU00:FS01:0x21:Completed 2325000 out of 2500000 steps (93%)
+12:44:52:WU00:FS01:0x21:Completed 2350000 out of 2500000 steps (94%)
+12:49:18:WU00:FS01:0x21:Completed 2375000 out of 2500000 steps (95%)
+12:52:04:WU02:FS00:0x21:Completed 175000 out of 2500000 steps (7%)
+12:53:45:WU00:FS01:0x21:Completed 2400000 out of 2500000 steps (96%)
+12:58:15:WU00:FS01:0x21:Completed 2425000 out of 2500000 steps (97%)
+13:02:40:WU00:FS01:0x21:Completed 2450000 out of 2500000 steps (98%)
+13:04:41:WU02:FS00:0x21:Completed 200000 out of 2500000 steps (8%)
+13:07:07:WU00:FS01:0x21:Completed 2475000 out of 2500000 steps (99%)
+13:11:32:WU00:FS01:0x21:Completed 2500000 out of 2500000 steps (100%)
+13:11:33:WU01:FS01:Connecting to 171.67.108.45:80
+13:11:33:WU01:FS01:Assigned to work server 140.163.4.234
+13:11:33:WU01:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 140.163.4.234
+13:11:33:WU01:FS01:Connecting to 140.163.4.234:8080
+13:11:34:WU01:FS01:Downloading 3.27MiB
+13:11:35:WU01:FS01:Download complete
+13:11:35:WU01:FS01:Received Unit: id:01 state:DOWNLOAD error:NO_ERROR project:10489 run:0 clone:104 gen:447 core:0x18 unit:0x00000208538b3dba551f05fae3714192
+13:11:37:WU00:FS01:0x21:Saving result file logfile_01.txt
+13:11:37:WU00:FS01:0x21:Saving result file checkpointState.xml
+13:11:37:WU00:FS01:0x21:Saving result file checkpt.crc
+13:11:37:WU00:FS01:0x21:Saving result file log.txt
+13:11:37:WU00:FS01:0x21:Saving result file positions.xtc
+13:11:37:WU00:FS01:0x21:Folding@home Core Shutdown: FINISHED_UNIT
+13:11:38:WU00:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+13:11:38:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9211 run:22 clone:2 gen:12 core:0x21 unit:0x0000001e664f2dd056fb2841e8d9ad65
+13:11:38:WU00:FS01:Uploading 37.95MiB to 171.64.65.104
+13:11:38:WU00:FS01:Connecting to 171.64.65.104:8080
+13:11:38:WU01:FS01:Starting
+13:11:38:WU01:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 01 -suffix 01 -version 704 -lifeline 5148 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+13:11:38:WU01:FS01:Started FahCore on PID 6316
+13:11:38:WU01:FS01:Core PID:2076
+13:11:38:WU01:FS01:FahCore 0x18 started
+13:11:38:WU01:FS01:0x18:*********************** Log Started 2016-05-13T13:11:38Z ***********************
+13:11:38:WU01:FS01:0x18:Project: 10489 (Run 0, Clone 104, Gen 447)
+13:11:38:WU01:FS01:0x18:Unit: 0x00000208538b3dba551f05fae3714192
+13:11:38:WU01:FS01:0x18:CPU: 0x00000000000000000000000000000000
+13:11:38:WU01:FS01:0x18:Machine: 1
+13:11:38:WU01:FS01:0x18:Reading tar file state.xml
+13:11:39:WU01:FS01:0x18:Reading tar file system.xml
+13:11:39:WU01:FS01:0x18:Reading tar file integrator.xml
+13:11:39:WU01:FS01:0x18:Reading tar file core.xml
+13:11:39:WU01:FS01:0x18:Digital signatures verified
+13:11:39:WU01:FS01:0x18:Folding@home GPU core18
+13:11:39:WU01:FS01:0x18:Version 0.0.4
+13:11:44:WU00:FS01:Upload 60.11%
+13:11:48:WU00:FS01:Upload complete
+13:11:48:WU00:FS01:Server responded WORK_ACK (400)
+13:11:48:WU00:FS01:Final credit estimate, 56137.00 points
+13:11:48:WU00:FS01:Cleaning up
+13:11:53:WU01:FS01:0x18:Completed 0 out of 5000000 steps (0%)
+13:11:53:WU01:FS01:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+13:14:15:WU01:FS01:0x18:Completed 50000 out of 5000000 steps (1%)
+13:16:33:WU01:FS01:0x18:Completed 100000 out of 5000000 steps (2%)
+13:17:23:WU02:FS00:0x21:Completed 225000 out of 2500000 steps (9%)
+13:18:56:WU01:FS01:0x18:Completed 150000 out of 5000000 steps (3%)
+13:21:14:WU01:FS01:0x18:Completed 200000 out of 5000000 steps (4%)
+13:23:32:WU01:FS01:0x18:Completed 250000 out of 5000000 steps (5%)
+13:25:56:WU01:FS01:0x18:Completed 300000 out of 5000000 steps (6%)
+13:28:14:WU01:FS01:0x18:Completed 350000 out of 5000000 steps (7%)
+13:29:59:WU02:FS00:0x21:Completed 250000 out of 2500000 steps (10%)
+13:30:37:WU01:FS01:0x18:Completed 400000 out of 5000000 steps (8%)
+13:32:55:WU01:FS01:0x18:Completed 450000 out of 5000000 steps (9%)
+13:35:13:WU01:FS01:0x18:Completed 500000 out of 5000000 steps (10%)
+13:37:37:WU01:FS01:0x18:Completed 550000 out of 5000000 steps (11%)
+13:39:55:WU01:FS01:0x18:Completed 600000 out of 5000000 steps (12%)
+13:42:18:WU01:FS01:0x18:Completed 650000 out of 5000000 steps (13%)
+13:42:36:WU02:FS00:0x21:Completed 275000 out of 2500000 steps (11%)
+13:44:36:WU01:FS01:0x18:Completed 700000 out of 5000000 steps (14%)
+13:46:55:WU01:FS01:0x18:Completed 750000 out of 5000000 steps (15%)
+13:49:18:WU01:FS01:0x18:Completed 800000 out of 5000000 steps (16%)
+13:51:36:WU01:FS01:0x18:Completed 850000 out of 5000000 steps (17%)
+13:53:59:WU01:FS01:0x18:Completed 900000 out of 5000000 steps (18%)
+13:55:12:WU02:FS00:0x21:Completed 300000 out of 2500000 steps (12%)
+13:56:17:WU01:FS01:0x18:Completed 950000 out of 5000000 steps (19%)
+13:58:36:WU01:FS01:0x18:Completed 1000000 out of 5000000 steps (20%)
+******************************* Date: 2016-05-13 *******************************
+14:00:59:WU01:FS01:0x18:Completed 1050000 out of 5000000 steps (21%)
+14:03:17:WU01:FS01:0x18:Completed 1100000 out of 5000000 steps (22%)
+14:05:40:WU01:FS01:0x18:Completed 1150000 out of 5000000 steps (23%)
+14:07:54:WU02:FS00:0x21:Completed 325000 out of 2500000 steps (13%)
+14:07:59:WU01:FS01:0x18:Completed 1200000 out of 5000000 steps (24%)
+14:10:17:WU01:FS01:0x18:Completed 1250000 out of 5000000 steps (25%)
+14:12:40:WU01:FS01:0x18:Completed 1300000 out of 5000000 steps (26%)
+14:14:58:WU01:FS01:0x18:Completed 1350000 out of 5000000 steps (27%)
+14:17:22:WU01:FS01:0x18:Completed 1400000 out of 5000000 steps (28%)
+14:19:40:WU01:FS01:0x18:Completed 1450000 out of 5000000 steps (29%)
+14:20:30:WU02:FS00:0x21:Completed 350000 out of 2500000 steps (14%)
+14:21:58:WU01:FS01:0x18:Completed 1500000 out of 5000000 steps (30%)
+14:24:22:WU01:FS01:0x18:Completed 1550000 out of 5000000 steps (31%)
+14:26:40:WU01:FS01:0x18:Completed 1600000 out of 5000000 steps (32%)
+14:29:03:WU01:FS01:0x18:Completed 1650000 out of 5000000 steps (33%)
+14:31:22:WU01:FS01:0x18:Completed 1700000 out of 5000000 steps (34%)
+14:33:06:WU02:FS00:0x21:Completed 375000 out of 2500000 steps (15%)
+14:33:40:WU01:FS01:0x18:Completed 1750000 out of 5000000 steps (35%)
+14:36:03:WU01:FS01:0x18:Completed 1800000 out of 5000000 steps (36%)
+14:38:21:WU01:FS01:0x18:Completed 1850000 out of 5000000 steps (37%)
+14:40:45:WU01:FS01:0x18:Completed 1900000 out of 5000000 steps (38%)
+14:43:03:WU01:FS01:0x18:Completed 1950000 out of 5000000 steps (39%)
+14:45:21:WU01:FS01:0x18:Completed 2000000 out of 5000000 steps (40%)
+14:45:43:WU02:FS00:0x21:Completed 400000 out of 2500000 steps (16%)
+14:47:45:WU01:FS01:0x18:Completed 2050000 out of 5000000 steps (41%)
+14:50:03:WU01:FS01:0x18:Completed 2100000 out of 5000000 steps (42%)
+14:52:26:WU01:FS01:0x18:Completed 2150000 out of 5000000 steps (43%)
+14:54:44:WU01:FS01:0x18:Completed 2200000 out of 5000000 steps (44%)
+14:57:02:WU01:FS01:0x18:Completed 2250000 out of 5000000 steps (45%)
+14:58:24:WU02:FS00:0x21:Completed 425000 out of 2500000 steps (17%)
+14:59:26:WU01:FS01:0x18:Completed 2300000 out of 5000000 steps (46%)
+15:01:44:WU01:FS01:0x18:Completed 2350000 out of 5000000 steps (47%)
+15:04:07:WU01:FS01:0x18:Completed 2400000 out of 5000000 steps (48%)
+15:06:26:WU01:FS01:0x18:Completed 2450000 out of 5000000 steps (49%)
+15:08:44:WU01:FS01:0x18:Completed 2500000 out of 5000000 steps (50%)
+15:11:00:WU02:FS00:0x21:Completed 450000 out of 2500000 steps (18%)
+15:11:07:WU01:FS01:0x18:Completed 2550000 out of 5000000 steps (51%)
+15:13:25:WU01:FS01:0x18:Completed 2600000 out of 5000000 steps (52%)
+15:15:49:WU01:FS01:0x18:Completed 2650000 out of 5000000 steps (53%)
+15:18:07:WU01:FS01:0x18:Completed 2700000 out of 5000000 steps (54%)
+15:20:25:WU01:FS01:0x18:Completed 2750000 out of 5000000 steps (55%)
+15:22:48:WU01:FS01:0x18:Completed 2800000 out of 5000000 steps (56%)
+15:23:36:WU02:FS00:0x21:Completed 475000 out of 2500000 steps (19%)
+15:25:07:WU01:FS01:0x18:Completed 2850000 out of 5000000 steps (57%)
+15:27:30:WU01:FS01:0x18:Completed 2900000 out of 5000000 steps (58%)
+15:29:48:WU01:FS01:0x18:Completed 2950000 out of 5000000 steps (59%)
+15:32:07:WU01:FS01:0x18:Completed 3000000 out of 5000000 steps (60%)
+15:34:30:WU01:FS01:0x18:Completed 3050000 out of 5000000 steps (61%)
+15:36:13:WU02:FS00:0x21:Completed 500000 out of 2500000 steps (20%)
+15:36:48:WU01:FS01:0x18:Completed 3100000 out of 5000000 steps (62%)
+15:39:12:WU01:FS01:0x18:Completed 3150000 out of 5000000 steps (63%)
+15:41:30:WU01:FS01:0x18:Completed 3200000 out of 5000000 steps (64%)
+15:43:48:WU01:FS01:0x18:Completed 3250000 out of 5000000 steps (65%)
+15:46:12:WU01:FS01:0x18:Completed 3300000 out of 5000000 steps (66%)
+15:48:30:WU01:FS01:0x18:Completed 3350000 out of 5000000 steps (67%)
+15:48:53:WU02:FS00:0x21:Completed 525000 out of 2500000 steps (21%)
+15:50:53:WU01:FS01:0x18:Completed 3400000 out of 5000000 steps (68%)
+15:53:12:WU01:FS01:0x18:Completed 3450000 out of 5000000 steps (69%)
+15:55:30:WU01:FS01:0x18:Completed 3500000 out of 5000000 steps (70%)
+15:57:53:WU01:FS01:0x18:Completed 3550000 out of 5000000 steps (71%)
+16:00:11:WU01:FS01:0x18:Completed 3600000 out of 5000000 steps (72%)
+16:01:29:WU02:FS00:0x21:Completed 550000 out of 2500000 steps (22%)
+16:02:35:WU01:FS01:0x18:Completed 3650000 out of 5000000 steps (73%)
+16:04:53:WU01:FS01:0x18:Completed 3700000 out of 5000000 steps (74%)
+16:07:12:WU01:FS01:0x18:Completed 3750000 out of 5000000 steps (75%)
+16:09:35:WU01:FS01:0x18:Completed 3800000 out of 5000000 steps (76%)
+16:11:53:WU01:FS01:0x18:Completed 3850000 out of 5000000 steps (77%)
+16:14:06:WU02:FS00:0x21:Completed 575000 out of 2500000 steps (23%)
+16:14:17:WU01:FS01:0x18:Completed 3900000 out of 5000000 steps (78%)
+16:16:35:WU01:FS01:0x18:Completed 3950000 out of 5000000 steps (79%)
+16:18:53:WU01:FS01:0x18:Completed 4000000 out of 5000000 steps (80%)
+16:21:17:WU01:FS01:0x18:Completed 4050000 out of 5000000 steps (81%)
+16:23:35:WU01:FS01:0x18:Completed 4100000 out of 5000000 steps (82%)
+16:25:58:WU01:FS01:0x18:Completed 4150000 out of 5000000 steps (83%)
+16:26:42:WU02:FS00:0x21:Completed 600000 out of 2500000 steps (24%)
+16:28:16:WU01:FS01:0x18:Completed 4200000 out of 5000000 steps (84%)
+16:30:35:WU01:FS01:0x18:Completed 4250000 out of 5000000 steps (85%)
+16:32:58:WU01:FS01:0x18:Completed 4300000 out of 5000000 steps (86%)
+16:35:16:WU01:FS01:0x18:Completed 4350000 out of 5000000 steps (87%)
+16:37:39:WU01:FS01:0x18:Completed 4400000 out of 5000000 steps (88%)
+16:39:23:WU02:FS00:0x21:Completed 625000 out of 2500000 steps (25%)
+16:39:58:WU01:FS01:0x18:Completed 4450000 out of 5000000 steps (89%)
+16:42:16:WU01:FS01:0x18:Completed 4500000 out of 5000000 steps (90%)
+16:44:39:WU01:FS01:0x18:Completed 4550000 out of 5000000 steps (91%)
+16:46:58:WU01:FS01:0x18:Completed 4600000 out of 5000000 steps (92%)
+16:49:21:WU01:FS01:0x18:Completed 4650000 out of 5000000 steps (93%)
+16:51:39:WU01:FS01:0x18:Completed 4700000 out of 5000000 steps (94%)
+16:51:59:WU02:FS00:0x21:Completed 650000 out of 2500000 steps (26%)
+16:53:58:WU01:FS01:0x18:Completed 4750000 out of 5000000 steps (95%)
+16:56:21:WU01:FS01:0x18:Completed 4800000 out of 5000000 steps (96%)
+16:58:39:WU01:FS01:0x18:Completed 4850000 out of 5000000 steps (97%)
+17:01:03:WU01:FS01:0x18:Completed 4900000 out of 5000000 steps (98%)
+17:03:21:WU01:FS01:0x18:Completed 4950000 out of 5000000 steps (99%)
+17:04:34:WU02:FS00:0x21:Completed 675000 out of 2500000 steps (27%)
+17:05:39:WU01:FS01:0x18:Completed 5000000 out of 5000000 steps (100%)
+17:05:40:WU00:FS01:Connecting to 171.67.108.45:80
+17:05:40:WU00:FS01:Assigned to work server 140.163.4.235
+17:05:40:WU00:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 140.163.4.235
+17:05:40:WU00:FS01:Connecting to 140.163.4.235:8080
+17:05:41:WU00:FS01:Downloading 4.48MiB
+17:05:43:WU00:FS01:Download complete
+17:05:43:WU00:FS01:Received Unit: id:00 state:DOWNLOAD error:NO_ERROR project:10484 run:0 clone:15 gen:267 core:0x18 unit:0x00000150538b3dbb54ac2a295ecdc2fd
+17:05:44:WU01:FS01:0x18:Saving result file logfile_01.txt
+17:05:44:WU01:FS01:0x18:Saving result file checkpointState.xml
+17:05:45:WU01:FS01:0x18:Saving result file checkpt.crc
+17:05:45:WU01:FS01:0x18:Saving result file log.txt
+17:05:46:WU01:FS01:0x18:Saving result file positions.xtc
+17:05:47:WU01:FS01:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+17:05:47:WU01:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+17:05:47:WU01:FS01:Sending unit results: id:01 state:SEND error:NO_ERROR project:10489 run:0 clone:104 gen:447 core:0x18 unit:0x00000208538b3dba551f05fae3714192
+17:05:47:WU01:FS01:Uploading 8.70MiB to 140.163.4.234
+17:05:47:WU01:FS01:Connecting to 140.163.4.234:8080
+17:05:47:WU00:FS01:Starting
+17:05:47:WU00:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 00 -suffix 01 -version 704 -lifeline 5148 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+17:05:47:WU00:FS01:Started FahCore on PID 6848
+17:05:47:WU00:FS01:Core PID:5708
+17:05:47:WU00:FS01:FahCore 0x18 started
+17:05:48:WU00:FS01:0x18:*********************** Log Started 2016-05-13T17:05:47Z ***********************
+17:05:48:WU00:FS01:0x18:Project: 10484 (Run 0, Clone 15, Gen 267)
+17:05:48:WU00:FS01:0x18:Unit: 0x00000150538b3dbb54ac2a295ecdc2fd
+17:05:48:WU00:FS01:0x18:CPU: 0x00000000000000000000000000000000
+17:05:48:WU00:FS01:0x18:Machine: 1
+17:05:48:WU00:FS01:0x18:Reading tar file state.xml
+17:05:48:WU00:FS01:0x18:Reading tar file system.xml
+17:05:49:WU00:FS01:0x18:Reading tar file integrator.xml
+17:05:49:WU00:FS01:0x18:Reading tar file core.xml
+17:05:49:WU00:FS01:0x18:Digital signatures verified
+17:05:49:WU00:FS01:0x18:Folding@home GPU core18
+17:05:49:WU00:FS01:0x18:Version 0.0.4
+17:05:58:WU01:FS01:Upload complete
+17:05:59:WU01:FS01:Server responded WORK_ACK (400)
+17:05:59:WU01:FS01:Final credit estimate, 75165.00 points
+17:05:59:WU01:FS01:Cleaning up
+17:06:08:WU00:FS01:0x18:Completed 0 out of 5000000 steps (0%)
+17:06:08:WU00:FS01:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+17:09:03:WU00:FS01:0x18:Completed 50000 out of 5000000 steps (1%)
+17:11:52:WU00:FS01:0x18:Completed 100000 out of 5000000 steps (2%)
+17:14:49:WU00:FS01:0x18:Completed 150000 out of 5000000 steps (3%)
+17:17:09:WU02:FS00:0x21:Completed 700000 out of 2500000 steps (28%)
+17:17:39:WU00:FS01:0x18:Completed 200000 out of 5000000 steps (4%)
+17:20:28:WU00:FS01:0x18:Completed 250000 out of 5000000 steps (5%)
+17:23:25:WU00:FS01:0x18:Completed 300000 out of 5000000 steps (6%)
+17:26:15:WU00:FS01:0x18:Completed 350000 out of 5000000 steps (7%)
+17:29:12:WU00:FS01:0x18:Completed 400000 out of 5000000 steps (8%)
+17:29:50:WU02:FS00:0x21:Completed 725000 out of 2500000 steps (29%)
+17:32:02:WU00:FS01:0x18:Completed 450000 out of 5000000 steps (9%)
+17:34:51:WU00:FS01:0x18:Completed 500000 out of 5000000 steps (10%)
+17:37:48:WU00:FS01:0x18:Completed 550000 out of 5000000 steps (11%)
+17:40:37:WU00:FS01:0x18:Completed 600000 out of 5000000 steps (12%)
+17:42:26:WU02:FS00:0x21:Completed 750000 out of 2500000 steps (30%)
+17:43:34:WU00:FS01:0x18:Completed 650000 out of 5000000 steps (13%)
+17:46:24:WU00:FS01:0x18:Completed 700000 out of 5000000 steps (14%)
+17:49:13:WU00:FS01:0x18:Completed 750000 out of 5000000 steps (15%)
+17:52:10:WU00:FS01:0x18:Completed 800000 out of 5000000 steps (16%)
+17:55:00:WU00:FS01:0x18:Completed 850000 out of 5000000 steps (17%)
+17:55:02:WU02:FS00:0x21:Completed 775000 out of 2500000 steps (31%)
+17:57:56:WU00:FS01:0x18:Completed 900000 out of 5000000 steps (18%)
+18:00:46:WU00:FS01:0x18:Completed 950000 out of 5000000 steps (19%)
+18:03:35:WU00:FS01:0x18:Completed 1000000 out of 5000000 steps (20%)
+18:06:32:WU00:FS01:0x18:Completed 1050000 out of 5000000 steps (21%)
+18:07:38:WU02:FS00:0x21:Completed 800000 out of 2500000 steps (32%)
+18:09:22:WU00:FS01:0x18:Completed 1100000 out of 5000000 steps (22%)
+18:12:19:WU00:FS01:0x18:Completed 1150000 out of 5000000 steps (23%)
+18:15:08:WU00:FS01:0x18:Completed 1200000 out of 5000000 steps (24%)
+18:17:58:WU00:FS01:0x18:Completed 1250000 out of 5000000 steps (25%)
+18:20:19:WU02:FS00:0x21:Completed 825000 out of 2500000 steps (33%)
+18:20:55:WU00:FS01:0x18:Completed 1300000 out of 5000000 steps (26%)
+18:23:45:WU00:FS01:0x18:Completed 1350000 out of 5000000 steps (27%)
+18:26:42:WU00:FS01:0x18:Completed 1400000 out of 5000000 steps (28%)
+18:29:31:WU00:FS01:0x18:Completed 1450000 out of 5000000 steps (29%)
+18:32:21:WU00:FS01:0x18:Completed 1500000 out of 5000000 steps (30%)
+18:32:56:WU02:FS00:0x21:Completed 850000 out of 2500000 steps (34%)
+18:35:18:WU00:FS01:0x18:Completed 1550000 out of 5000000 steps (31%)
+18:38:07:WU00:FS01:0x18:Completed 1600000 out of 5000000 steps (32%)
+18:41:04:WU00:FS01:0x18:Completed 1650000 out of 5000000 steps (33%)
+18:43:54:WU00:FS01:0x18:Completed 1700000 out of 5000000 steps (34%)
+18:45:32:WU02:FS00:0x21:Completed 875000 out of 2500000 steps (35%)
+18:46:43:WU00:FS01:0x18:Completed 1750000 out of 5000000 steps (35%)
+18:49:40:WU00:FS01:0x18:Completed 1800000 out of 5000000 steps (36%)
+18:52:29:WU00:FS01:0x18:Completed 1850000 out of 5000000 steps (37%)
+18:55:26:WU00:FS01:0x18:Completed 1900000 out of 5000000 steps (38%)
+18:58:09:WU02:FS00:0x21:Completed 900000 out of 2500000 steps (36%)
+18:58:16:WU00:FS01:0x18:Completed 1950000 out of 5000000 steps (39%)
+19:01:05:WU00:FS01:0x18:Completed 2000000 out of 5000000 steps (40%)
+19:04:02:WU00:FS01:0x18:Completed 2050000 out of 5000000 steps (41%)
+19:06:52:WU00:FS01:0x18:Completed 2100000 out of 5000000 steps (42%)
+19:09:49:WU00:FS01:0x18:Completed 2150000 out of 5000000 steps (43%)
+19:10:51:WU02:FS00:0x21:Completed 925000 out of 2500000 steps (37%)
+19:12:38:WU00:FS01:0x18:Completed 2200000 out of 5000000 steps (44%)
+19:15:28:WU00:FS01:0x18:Completed 2250000 out of 5000000 steps (45%)
+19:18:25:WU00:FS01:0x18:Completed 2300000 out of 5000000 steps (46%)
+19:21:15:WU00:FS01:0x18:Completed 2350000 out of 5000000 steps (47%)
+19:23:28:WU02:FS00:0x21:Completed 950000 out of 2500000 steps (38%)
+19:24:12:WU00:FS01:0x18:Completed 2400000 out of 5000000 steps (48%)
+19:27:01:WU00:FS01:0x18:Completed 2450000 out of 5000000 steps (49%)
+19:29:51:WU00:FS01:0x18:Completed 2500000 out of 5000000 steps (50%)
+19:32:48:WU00:FS01:0x18:Completed 2550000 out of 5000000 steps (51%)
+19:35:38:WU00:FS01:0x18:Completed 2600000 out of 5000000 steps (52%)
+19:36:05:WU02:FS00:0x21:Completed 975000 out of 2500000 steps (39%)
+19:38:35:WU00:FS01:0x18:Completed 2650000 out of 5000000 steps (53%)
+19:41:25:WU00:FS01:0x18:Completed 2700000 out of 5000000 steps (54%)
+19:44:14:WU00:FS01:0x18:Completed 2750000 out of 5000000 steps (55%)
+19:47:12:WU00:FS01:0x18:Completed 2800000 out of 5000000 steps (56%)
+19:48:42:WU02:FS00:0x21:Completed 1000000 out of 2500000 steps (40%)
+19:50:01:WU00:FS01:0x18:Completed 2850000 out of 5000000 steps (57%)
+19:52:59:WU00:FS01:0x18:Completed 2900000 out of 5000000 steps (58%)
+19:55:49:WU00:FS01:0x18:Completed 2950000 out of 5000000 steps (59%)
+19:58:38:WU00:FS01:0x18:Completed 3000000 out of 5000000 steps (60%)
+******************************* Date: 2016-05-13 *******************************
+20:01:22:WU02:FS00:0x21:Completed 1025000 out of 2500000 steps (41%)
+20:01:35:WU00:FS01:0x18:Completed 3050000 out of 5000000 steps (61%)
+20:04:25:WU00:FS01:0x18:Completed 3100000 out of 5000000 steps (62%)
+20:07:22:WU00:FS01:0x18:Completed 3150000 out of 5000000 steps (63%)
+20:10:12:WU00:FS01:0x18:Completed 3200000 out of 5000000 steps (64%)
+20:13:02:WU00:FS01:0x18:Completed 3250000 out of 5000000 steps (65%)
+20:13:59:WU02:FS00:0x21:Completed 1050000 out of 2500000 steps (42%)
+20:15:59:WU00:FS01:0x18:Completed 3300000 out of 5000000 steps (66%)
+20:18:49:WU00:FS01:0x18:Completed 3350000 out of 5000000 steps (67%)
+20:21:46:WU00:FS01:0x18:Completed 3400000 out of 5000000 steps (68%)
+20:24:36:WU00:FS01:0x18:Completed 3450000 out of 5000000 steps (69%)
+20:26:36:WU02:FS00:0x21:Completed 1075000 out of 2500000 steps (43%)
+20:27:26:WU00:FS01:0x18:Completed 3500000 out of 5000000 steps (70%)
+20:30:23:WU00:FS01:0x18:Completed 3550000 out of 5000000 steps (71%)
+20:33:13:WU00:FS01:0x18:Completed 3600000 out of 5000000 steps (72%)
+20:36:10:WU00:FS01:0x18:Completed 3650000 out of 5000000 steps (73%)
+20:39:00:WU00:FS01:0x18:Completed 3700000 out of 5000000 steps (74%)
+20:39:13:WU02:FS00:0x21:Completed 1100000 out of 2500000 steps (44%)
+20:41:49:WU00:FS01:0x18:Completed 3750000 out of 5000000 steps (75%)
+20:44:46:WU00:FS01:0x18:Completed 3800000 out of 5000000 steps (76%)
+20:47:36:WU00:FS01:0x18:Completed 3850000 out of 5000000 steps (77%)
+20:50:33:WU00:FS01:0x18:Completed 3900000 out of 5000000 steps (78%)
+20:51:55:WU02:FS00:0x21:Completed 1125000 out of 2500000 steps (45%)
+20:53:23:WU00:FS01:0x18:Completed 3950000 out of 5000000 steps (79%)
+20:56:13:WU00:FS01:0x18:Completed 4000000 out of 5000000 steps (80%)
+20:59:10:WU00:FS01:0x18:Completed 4050000 out of 5000000 steps (81%)
+21:02:00:WU00:FS01:0x18:Completed 4100000 out of 5000000 steps (82%)
+21:04:32:WU02:FS00:0x21:Completed 1150000 out of 2500000 steps (46%)
+21:04:57:WU00:FS01:0x18:Completed 4150000 out of 5000000 steps (83%)
+21:07:47:WU00:FS01:0x18:Completed 4200000 out of 5000000 steps (84%)
+21:10:36:WU00:FS01:0x18:Completed 4250000 out of 5000000 steps (85%)
+21:13:33:WU00:FS01:0x18:Completed 4300000 out of 5000000 steps (86%)
+21:16:23:WU00:FS01:0x18:Completed 4350000 out of 5000000 steps (87%)
+21:17:10:WU02:FS00:0x21:Completed 1175000 out of 2500000 steps (47%)
+21:19:20:WU00:FS01:0x18:Completed 4400000 out of 5000000 steps (88%)
+21:22:10:WU00:FS01:0x18:Completed 4450000 out of 5000000 steps (89%)
+21:25:00:WU00:FS01:0x18:Completed 4500000 out of 5000000 steps (90%)
+21:27:57:WU00:FS01:0x18:Completed 4550000 out of 5000000 steps (91%)
+21:29:47:WU02:FS00:0x21:Completed 1200000 out of 2500000 steps (48%)
+21:30:47:WU00:FS01:0x18:Completed 4600000 out of 5000000 steps (92%)
+21:33:44:WU00:FS01:0x18:Completed 4650000 out of 5000000 steps (93%)
+21:36:33:WU00:FS01:0x18:Completed 4700000 out of 5000000 steps (94%)
+21:39:23:WU00:FS01:0x18:Completed 4750000 out of 5000000 steps (95%)
+21:42:20:WU00:FS01:0x18:Completed 4800000 out of 5000000 steps (96%)
+21:42:29:WU02:FS00:0x21:Completed 1225000 out of 2500000 steps (49%)
+21:45:10:WU00:FS01:0x18:Completed 4850000 out of 5000000 steps (97%)
+21:48:07:WU00:FS01:0x18:Completed 4900000 out of 5000000 steps (98%)
+21:50:57:WU00:FS01:0x18:Completed 4950000 out of 5000000 steps (99%)
+21:51:38:WARNING:WU02:FS00:FahCore returned an unknown error code which probably indicates that it crashed
+21:51:38:WARNING:WU02:FS00:FahCore returned: UNKNOWN_ENUM (127 = 0x7f)
+21:51:38:WU02:FS00:Starting
+21:51:38:WU02:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 02 -suffix 01 -version 704 -lifeline 5148 -checkpoint 30 -gpu 1 -gpu-vendor nvidia
+21:51:38:WU02:FS00:Started FahCore on PID 1324
+21:51:38:WU02:FS00:Core PID:5412
+21:51:38:WU02:FS00:FahCore 0x21 started
+21:51:39:WU02:FS00:0x21:*********************** Log Started 2016-05-13T21:51:38Z ***********************
+21:51:39:WU02:FS00:0x21:Project: 9206 (Run 0, Clone 280, Gen 22)
+21:51:39:WU02:FS00:0x21:Unit: 0x0000003b664f2dd056fb26bdc040afa4
+21:51:39:WU02:FS00:0x21:CPU: 0x00000000000000000000000000000000
+21:51:39:WU02:FS00:0x21:Machine: 0
+21:51:39:WU02:FS00:0x21:Digital signatures verified
+21:51:39:WU02:FS00:0x21:Folding@home GPU Core21 Folding@home Core
+21:51:39:WU02:FS00:0x21:Version 0.0.17
+21:51:39:WU02:FS00:0x21:  Found a checkpoint file
+21:52:01:WU02:FS00:0x21:Completed 1200000 out of 2500000 steps (48%)
+21:52:01:WU02:FS00:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+21:53:27:WU00:FS01:0x18:Completed 5000000 out of 5000000 steps (100%)
+21:53:28:WU01:FS01:Connecting to 171.67.108.45:80
+21:53:28:WU01:FS01:Assigned to work server 140.163.4.244
+21:53:28:WU01:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 140.163.4.244
+21:53:28:WU01:FS01:Connecting to 140.163.4.244:8080
+21:53:29:WU01:FS01:Downloading 2.55MiB
+21:53:30:WU01:FS01:Download complete
+21:53:30:WU01:FS01:Received Unit: id:01 state:DOWNLOAD error:NO_ERROR project:10490 run:111 clone:0 gen:314 core:0x18 unit:0x0000016b8ca304f45537e8efd43a6483
+21:53:35:WU00:FS01:0x18:Saving result file logfile_01.txt
+21:53:35:WU00:FS01:0x18:Saving result file checkpointState.xml
+21:53:37:WU00:FS01:0x18:Saving result file checkpt.crc
+21:53:37:WU00:FS01:0x18:Saving result file log.txt
+21:53:37:WU00:FS01:0x18:Saving result file positions.xtc
+21:53:38:WU00:FS01:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+21:53:38:WU00:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+21:53:38:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:10484 run:0 clone:15 gen:267 core:0x18 unit:0x00000150538b3dbb54ac2a295ecdc2fd
+21:53:38:WU00:FS01:Uploading 11.89MiB to 140.163.4.235
+21:53:38:WU00:FS01:Connecting to 140.163.4.235:8080
+21:53:38:WU01:FS01:Starting
+21:53:38:WU01:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 01 -suffix 01 -version 704 -lifeline 5148 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+21:53:38:WU01:FS01:Started FahCore on PID 820
+21:53:38:WU01:FS01:Core PID:3352
+21:53:38:WU01:FS01:FahCore 0x18 started
+21:53:39:WU01:FS01:0x18:*********************** Log Started 2016-05-13T21:53:38Z ***********************
+21:53:39:WU01:FS01:0x18:Project: 10490 (Run 111, Clone 0, Gen 314)
+21:53:39:WU01:FS01:0x18:Unit: 0x0000016b8ca304f45537e8efd43a6483
+21:53:39:WU01:FS01:0x18:CPU: 0x00000000000000000000000000000000
+21:53:39:WU01:FS01:0x18:Machine: 1
+21:53:39:WU01:FS01:0x18:Reading tar file core.xml
+21:53:39:WU01:FS01:0x18:Reading tar file system.xml
+21:53:39:WU01:FS01:0x18:Reading tar file integrator.xml
+21:53:39:WU01:FS01:0x18:Reading tar file state.xml
+21:53:39:WU01:FS01:0x18:Digital signatures verified
+21:53:39:WU01:FS01:0x18:Folding@home GPU core18
+21:53:39:WU01:FS01:0x18:Version 0.0.4
+21:53:44:WU00:FS01:Upload 56.78%
+21:53:51:WU01:FS01:0x18:Completed 0 out of 5000000 steps (0%)
+21:53:51:WU01:FS01:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+21:54:00:WU00:FS01:Upload complete
+21:54:00:WU00:FS01:Server responded WORK_ACK (400)
+21:54:00:WU00:FS01:Final credit estimate, 106071.00 points
+21:54:00:WU00:FS01:Cleaning up
+21:55:37:WU01:FS01:0x18:Completed 50000 out of 5000000 steps (1%)
+21:57:18:WU01:FS01:0x18:Completed 100000 out of 5000000 steps (2%)
+21:59:05:WU01:FS01:0x18:Completed 150000 out of 5000000 steps (3%)
+22:00:45:WU01:FS01:0x18:Completed 200000 out of 5000000 steps (4%)
+22:02:26:WU01:FS01:0x18:Completed 250000 out of 5000000 steps (5%)
+22:04:13:WU01:FS01:0x18:Completed 300000 out of 5000000 steps (6%)
+22:04:40:WU02:FS00:0x21:Completed 1225000 out of 2500000 steps (49%)
+22:05:54:WU01:FS01:0x18:Completed 350000 out of 5000000 steps (7%)
+22:07:41:WU01:FS01:0x18:Completed 400000 out of 5000000 steps (8%)
+22:09:22:WU01:FS01:0x18:Completed 450000 out of 5000000 steps (9%)
+22:11:03:WU01:FS01:0x18:Completed 500000 out of 5000000 steps (10%)
+22:12:50:WU01:FS01:0x18:Completed 550000 out of 5000000 steps (11%)
+22:14:31:WU01:FS01:0x18:Completed 600000 out of 5000000 steps (12%)
+22:16:18:WU01:FS01:0x18:Completed 650000 out of 5000000 steps (13%)
+22:17:19:WU02:FS00:0x21:Completed 1250000 out of 2500000 steps (50%)
+22:17:59:WU01:FS01:0x18:Completed 700000 out of 5000000 steps (14%)
+22:19:40:WU01:FS01:0x18:Completed 750000 out of 5000000 steps (15%)
+22:21:27:WU01:FS01:0x18:Completed 800000 out of 5000000 steps (16%)
+22:23:08:WU01:FS01:0x18:Completed 850000 out of 5000000 steps (17%)
+22:24:55:WU01:FS01:0x18:Completed 900000 out of 5000000 steps (18%)
+22:26:36:WU01:FS01:0x18:Completed 950000 out of 5000000 steps (19%)
+22:28:17:WU01:FS01:0x18:Completed 1000000 out of 5000000 steps (20%)
+22:29:57:WU02:FS00:0x21:Completed 1275000 out of 2500000 steps (51%)
+22:30:04:WU01:FS01:0x18:Completed 1050000 out of 5000000 steps (21%)
+22:31:45:WU01:FS01:0x18:Completed 1100000 out of 5000000 steps (22%)
+22:33:32:WU01:FS01:0x18:Completed 1150000 out of 5000000 steps (23%)
+22:35:13:WU01:FS01:0x18:Completed 1200000 out of 5000000 steps (24%)
+22:36:54:WU01:FS01:0x18:Completed 1250000 out of 5000000 steps (25%)
+22:38:41:WU01:FS01:0x18:Completed 1300000 out of 5000000 steps (26%)
+22:40:22:WU01:FS01:0x18:Completed 1350000 out of 5000000 steps (27%)
+22:42:09:WU01:FS01:0x18:Completed 1400000 out of 5000000 steps (28%)
+22:42:34:WU02:FS00:0x21:Completed 1300000 out of 2500000 steps (52%)
+22:43:50:WU01:FS01:0x18:Completed 1450000 out of 5000000 steps (29%)
+22:45:31:WU01:FS01:0x18:Completed 1500000 out of 5000000 steps (30%)
+22:47:18:WU01:FS01:0x18:Completed 1550000 out of 5000000 steps (31%)
+22:48:58:WU01:FS01:0x18:Completed 1600000 out of 5000000 steps (32%)
+22:50:46:WU01:FS01:0x18:Completed 1650000 out of 5000000 steps (33%)
+22:52:27:WU01:FS01:0x18:Completed 1700000 out of 5000000 steps (34%)
+22:54:08:WU01:FS01:0x18:Completed 1750000 out of 5000000 steps (35%)
+22:55:16:WU02:FS00:0x21:Completed 1325000 out of 2500000 steps (53%)
+22:55:54:WU01:FS01:0x18:Completed 1800000 out of 5000000 steps (36%)
+22:57:35:WU01:FS01:0x18:Completed 1850000 out of 5000000 steps (37%)
+22:59:22:WU01:FS01:0x18:Completed 1900000 out of 5000000 steps (38%)
+23:01:03:WU01:FS01:0x18:Completed 1950000 out of 5000000 steps (39%)
+23:02:44:WU01:FS01:0x18:Completed 2000000 out of 5000000 steps (40%)
+23:04:31:WU01:FS01:0x18:Completed 2050000 out of 5000000 steps (41%)
+23:06:12:WU01:FS01:0x18:Completed 2100000 out of 5000000 steps (42%)
+23:07:52:WU02:FS00:0x21:Completed 1350000 out of 2500000 steps (54%)
+23:07:59:WU01:FS01:0x18:Completed 2150000 out of 5000000 steps (43%)
+23:09:40:WU01:FS01:0x18:Completed 2200000 out of 5000000 steps (44%)
+23:11:21:WU01:FS01:0x18:Completed 2250000 out of 5000000 steps (45%)
+23:13:08:WU01:FS01:0x18:Completed 2300000 out of 5000000 steps (46%)
+23:14:49:WU01:FS01:0x18:Completed 2350000 out of 5000000 steps (47%)
+23:16:36:WU01:FS01:0x18:Completed 2400000 out of 5000000 steps (48%)
+23:18:17:WU01:FS01:0x18:Completed 2450000 out of 5000000 steps (49%)
+23:19:58:WU01:FS01:0x18:Completed 2500000 out of 5000000 steps (50%)
+23:20:30:WU02:FS00:0x21:Completed 1375000 out of 2500000 steps (55%)
+23:21:45:WU01:FS01:0x18:Completed 2550000 out of 5000000 steps (51%)
+23:23:26:WU01:FS01:0x18:Completed 2600000 out of 5000000 steps (52%)
+23:25:13:WU01:FS01:0x18:Completed 2650000 out of 5000000 steps (53%)
+23:26:54:WU01:FS01:0x18:Completed 2700000 out of 5000000 steps (54%)
+23:28:35:WU01:FS01:0x18:Completed 2750000 out of 5000000 steps (55%)
+23:30:22:WU01:FS01:0x18:Completed 2800000 out of 5000000 steps (56%)
+23:32:03:WU01:FS01:0x18:Completed 2850000 out of 5000000 steps (57%)
+23:33:08:WU02:FS00:0x21:Completed 1400000 out of 2500000 steps (56%)
+23:33:50:WU01:FS01:0x18:Completed 2900000 out of 5000000 steps (58%)
+23:35:31:WU01:FS01:0x18:Completed 2950000 out of 5000000 steps (59%)
+23:37:12:WU01:FS01:0x18:Completed 3000000 out of 5000000 steps (60%)
+23:38:59:WU01:FS01:0x18:Completed 3050000 out of 5000000 steps (61%)
+23:40:40:WU01:FS01:0x18:Completed 3100000 out of 5000000 steps (62%)
+23:42:27:WU01:FS01:0x18:Completed 3150000 out of 5000000 steps (63%)
+23:44:08:WU01:FS01:0x18:Completed 3200000 out of 5000000 steps (64%)
+23:45:49:WU01:FS01:0x18:Completed 3250000 out of 5000000 steps (65%)
+23:45:51:WU02:FS00:0x21:Completed 1425000 out of 2500000 steps (57%)
+23:47:36:WU01:FS01:0x18:Completed 3300000 out of 5000000 steps (66%)
+23:49:17:WU01:FS01:0x18:Completed 3350000 out of 5000000 steps (67%)
+23:51:04:WU01:FS01:0x18:Completed 3400000 out of 5000000 steps (68%)
+23:52:45:WU01:FS01:0x18:Completed 3450000 out of 5000000 steps (69%)
+23:54:26:WU01:FS01:0x18:Completed 3500000 out of 5000000 steps (70%)
+23:56:13:WU01:FS01:0x18:Completed 3550000 out of 5000000 steps (71%)
+23:57:54:WU01:FS01:0x18:Completed 3600000 out of 5000000 steps (72%)
+23:58:29:WU02:FS00:0x21:Completed 1450000 out of 2500000 steps (58%)
+23:59:41:WU01:FS01:0x18:Completed 3650000 out of 5000000 steps (73%)
+00:01:21:WU01:FS01:0x18:Completed 3700000 out of 5000000 steps (74%)
+00:03:03:WU01:FS01:0x18:Completed 3750000 out of 5000000 steps (75%)
+00:04:50:WU01:FS01:0x18:Completed 3800000 out of 5000000 steps (76%)
+00:06:31:WU01:FS01:0x18:Completed 3850000 out of 5000000 steps (77%)
+00:08:18:WU01:FS01:0x18:Completed 3900000 out of 5000000 steps (78%)
+00:09:59:WU01:FS01:0x18:Completed 3950000 out of 5000000 steps (79%)
+00:11:07:WU02:FS00:0x21:Completed 1475000 out of 2500000 steps (59%)
+00:11:40:WU01:FS01:0x18:Completed 4000000 out of 5000000 steps (80%)
+00:13:27:WU01:FS01:0x18:Completed 4050000 out of 5000000 steps (81%)
+00:15:08:WU01:FS01:0x18:Completed 4100000 out of 5000000 steps (82%)
+00:16:55:WU01:FS01:0x18:Completed 4150000 out of 5000000 steps (83%)
+00:18:36:WU01:FS01:0x18:Completed 4200000 out of 5000000 steps (84%)
+00:20:16:WU01:FS01:0x18:Completed 4250000 out of 5000000 steps (85%)
+00:22:04:WU01:FS01:0x18:Completed 4300000 out of 5000000 steps (86%)
+00:23:45:WU01:FS01:0x18:Completed 4350000 out of 5000000 steps (87%)
+00:23:46:WU02:FS00:0x21:Completed 1500000 out of 2500000 steps (60%)
+00:25:32:WU01:FS01:0x18:Completed 4400000 out of 5000000 steps (88%)
+00:27:13:WU01:FS01:0x18:Completed 4450000 out of 5000000 steps (89%)
+00:28:54:WU01:FS01:0x18:Completed 4500000 out of 5000000 steps (90%)
+00:30:41:WU01:FS01:0x18:Completed 4550000 out of 5000000 steps (91%)
+00:32:22:WU01:FS01:0x18:Completed 4600000 out of 5000000 steps (92%)
+00:34:09:WU01:FS01:0x18:Completed 4650000 out of 5000000 steps (93%)
+00:35:50:WU01:FS01:0x18:Completed 4700000 out of 5000000 steps (94%)
+00:36:29:WU02:FS00:0x21:Completed 1525000 out of 2500000 steps (61%)
+00:37:31:WU01:FS01:0x18:Completed 4750000 out of 5000000 steps (95%)
+00:39:18:WU01:FS01:0x18:Completed 4800000 out of 5000000 steps (96%)
+00:40:59:WU01:FS01:0x18:Completed 4850000 out of 5000000 steps (97%)
+00:42:46:WU01:FS01:0x18:Completed 4900000 out of 5000000 steps (98%)
+00:44:27:WU01:FS01:0x18:Completed 4950000 out of 5000000 steps (99%)
+00:46:08:WU01:FS01:0x18:Completed 5000000 out of 5000000 steps (100%)
+00:46:09:WU00:FS01:Connecting to 171.67.108.45:80
+00:46:09:WU00:FS01:Assigned to work server 171.67.108.144
+00:46:09:WU00:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 171.67.108.144
+00:46:09:WU00:FS01:Connecting to 171.67.108.144:8080
+00:46:09:WU00:FS01:Downloading 35.14MiB
+00:46:14:WU01:FS01:0x18:Saving result file logfile_01.txt
+00:46:14:WU01:FS01:0x18:Saving result file checkpointState.xml
+00:46:15:WU00:FS01:Download 43.93%
+00:46:15:WU01:FS01:0x18:Saving result file checkpt.crc
+00:46:15:WU01:FS01:0x18:Saving result file log.txt
+00:46:15:WU01:FS01:0x18:Saving result file positions.xtc
+00:46:16:WU01:FS01:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+00:46:16:WU01:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+00:46:16:WU01:FS01:Sending unit results: id:01 state:SEND error:NO_ERROR project:10490 run:111 clone:0 gen:314 core:0x18 unit:0x0000016b8ca304f45537e8efd43a6483
+00:46:16:WU01:FS01:Uploading 6.64MiB to 140.163.4.244
+00:46:16:WU01:FS01:Connecting to 140.163.4.244:8080
+00:46:21:WU00:FS01:Download 94.80%
+00:46:21:WU00:FS01:Download complete
+00:46:21:WU00:FS01:Received Unit: id:00 state:DOWNLOAD error:NO_ERROR project:13103 run:2 clone:56 gen:32 core:0x21 unit:0x00000018ab436c9056b22505ff221470
+00:46:21:WU00:FS01:Starting
+00:46:21:WU00:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 00 -suffix 01 -version 704 -lifeline 5148 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+00:46:21:WU00:FS01:Started FahCore on PID 5372
+00:46:21:WU00:FS01:Core PID:5392
+00:46:21:WU00:FS01:FahCore 0x21 started
+00:46:22:WU00:FS01:0x21:*********************** Log Started 2016-05-14T00:46:21Z ***********************
+00:46:22:WU00:FS01:0x21:Project: 13103 (Run 2, Clone 56, Gen 32)
+00:46:22:WU00:FS01:0x21:Unit: 0x00000018ab436c9056b22505ff221470
+00:46:22:WU00:FS01:0x21:CPU: 0x00000000000000000000000000000000
+00:46:22:WU00:FS01:0x21:Machine: 1
+00:46:22:WU00:FS01:0x21:Reading tar file core.xml
+00:46:22:WU00:FS01:0x21:Reading tar file integrator.xml
+00:46:22:WU00:FS01:0x21:Reading tar file state.xml
+00:46:22:WU00:FS01:0x21:Reading tar file system.xml
+00:46:22:WU00:FS01:0x21:Digital signatures verified
+00:46:22:WU00:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+00:46:22:WU00:FS01:0x21:Version 0.0.17
+00:46:26:WU01:FS01:Upload complete
+00:46:26:WU01:FS01:Server responded WORK_ACK (400)
+00:46:26:WU01:FS01:Final credit estimate, 73743.00 points
+00:46:26:WU01:FS01:Cleaning up
+00:46:32:WU00:FS01:0x21:Completed 0 out of 2000000 steps (0%)
+00:46:33:WU00:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+00:48:00:WU00:FS01:0x21:Completed 20000 out of 2000000 steps (1%)
+00:49:07:WU02:FS00:0x21:Completed 1550000 out of 2500000 steps (62%)
+00:49:28:WU00:FS01:0x21:Completed 40000 out of 2000000 steps (2%)
+00:50:59:WU00:FS01:0x21:Completed 60000 out of 2000000 steps (3%)
+00:52:27:WU00:FS01:0x21:Completed 80000 out of 2000000 steps (4%)
+00:53:57:WU00:FS01:0x21:Completed 100000 out of 2000000 steps (5%)
+00:55:25:WU00:FS01:0x21:Completed 120000 out of 2000000 steps (6%)
+00:56:55:WU00:FS01:0x21:Completed 140000 out of 2000000 steps (7%)
+00:58:23:WU00:FS01:0x21:Completed 160000 out of 2000000 steps (8%)
+00:59:54:WU00:FS01:0x21:Completed 180000 out of 2000000 steps (9%)
+01:01:22:WU00:FS01:0x21:Completed 200000 out of 2000000 steps (10%)
+01:01:44:WU02:FS00:0x21:Completed 1575000 out of 2500000 steps (63%)
+01:02:52:WU00:FS01:0x21:Completed 220000 out of 2000000 steps (11%)
+01:04:20:WU00:FS01:0x21:Completed 240000 out of 2000000 steps (12%)
+01:05:51:WU00:FS01:0x21:Completed 260000 out of 2000000 steps (13%)
+01:07:19:WU00:FS01:0x21:Completed 280000 out of 2000000 steps (14%)
+01:08:49:WU00:FS01:0x21:Completed 300000 out of 2000000 steps (15%)
+01:10:17:WU00:FS01:0x21:Completed 320000 out of 2000000 steps (16%)
+01:11:48:WU00:FS01:0x21:Completed 340000 out of 2000000 steps (17%)
+01:13:15:WU00:FS01:0x21:Completed 360000 out of 2000000 steps (18%)
+01:14:22:WU02:FS00:0x21:Completed 1600000 out of 2500000 steps (64%)
+01:14:46:WU00:FS01:0x21:Completed 380000 out of 2000000 steps (19%)
+01:16:14:WU00:FS01:0x21:Completed 400000 out of 2000000 steps (20%)
+01:17:44:WU00:FS01:0x21:Completed 420000 out of 2000000 steps (21%)
+01:19:12:WU00:FS01:0x21:Completed 440000 out of 2000000 steps (22%)
+01:20:43:WU00:FS01:0x21:Completed 460000 out of 2000000 steps (23%)
+01:22:10:WU00:FS01:0x21:Completed 480000 out of 2000000 steps (24%)
+01:23:41:WU00:FS01:0x21:Completed 500000 out of 2000000 steps (25%)
+01:25:09:WU00:FS01:0x21:Completed 520000 out of 2000000 steps (26%)
+01:26:39:WU00:FS01:0x21:Completed 540000 out of 2000000 steps (27%)
+01:27:05:WU02:FS00:0x21:Completed 1625000 out of 2500000 steps (65%)
+01:28:07:WU00:FS01:0x21:Completed 560000 out of 2000000 steps (28%)
+01:29:38:WU00:FS01:0x21:Completed 580000 out of 2000000 steps (29%)
+01:31:06:WU00:FS01:0x21:Completed 600000 out of 2000000 steps (30%)
+01:32:36:WU00:FS01:0x21:Completed 620000 out of 2000000 steps (31%)
+01:34:04:WU00:FS01:0x21:Completed 640000 out of 2000000 steps (32%)
+01:35:34:WU00:FS01:0x21:Completed 660000 out of 2000000 steps (33%)
+01:37:02:WU00:FS01:0x21:Completed 680000 out of 2000000 steps (34%)
+01:38:33:WU00:FS01:0x21:Completed 700000 out of 2000000 steps (35%)
+01:39:42:WU02:FS00:0x21:Completed 1650000 out of 2500000 steps (66%)
+01:40:01:WU00:FS01:0x21:Completed 720000 out of 2000000 steps (36%)
+01:41:31:WU00:FS01:0x21:Completed 740000 out of 2000000 steps (37%)
+01:42:59:WU00:FS01:0x21:Completed 760000 out of 2000000 steps (38%)
+01:44:29:WU00:FS01:0x21:Completed 780000 out of 2000000 steps (39%)
+01:45:57:WU00:FS01:0x21:Completed 800000 out of 2000000 steps (40%)
+01:47:28:WU00:FS01:0x21:Completed 820000 out of 2000000 steps (41%)
+01:48:55:WU00:FS01:0x21:Completed 840000 out of 2000000 steps (42%)
+01:50:26:WU00:FS01:0x21:Completed 860000 out of 2000000 steps (43%)
+01:51:54:WU00:FS01:0x21:Completed 880000 out of 2000000 steps (44%)
+01:52:21:WU02:FS00:0x21:Completed 1675000 out of 2500000 steps (67%)
+01:53:25:WU00:FS01:0x21:Completed 900000 out of 2000000 steps (45%)
+01:54:53:WU00:FS01:0x21:Completed 920000 out of 2000000 steps (46%)
+01:56:23:WU00:FS01:0x21:Completed 940000 out of 2000000 steps (47%)
+01:57:51:WU00:FS01:0x21:Completed 960000 out of 2000000 steps (48%)
+01:59:21:WU00:FS01:0x21:Completed 980000 out of 2000000 steps (49%)
+02:00:49:WU00:FS01:0x21:Completed 1000000 out of 2000000 steps (50%)
+******************************* Date: 2016-05-14 *******************************
+02:02:20:WU00:FS01:0x21:Completed 1020000 out of 2000000 steps (51%)
+02:03:48:WU00:FS01:0x21:Completed 1040000 out of 2000000 steps (52%)
+02:04:59:WU02:FS00:0x21:Completed 1700000 out of 2500000 steps (68%)
+02:05:18:WU00:FS01:0x21:Completed 1060000 out of 2000000 steps (53%)
+02:06:46:WU00:FS01:0x21:Completed 1080000 out of 2000000 steps (54%)
+02:08:17:WU00:FS01:0x21:Completed 1100000 out of 2000000 steps (55%)
+02:09:45:WU00:FS01:0x21:Completed 1120000 out of 2000000 steps (56%)
+02:11:15:WU00:FS01:0x21:Completed 1140000 out of 2000000 steps (57%)
+02:12:43:WU00:FS01:0x21:Completed 1160000 out of 2000000 steps (58%)
+02:14:14:WU00:FS01:0x21:Completed 1180000 out of 2000000 steps (59%)
+02:15:42:WU00:FS01:0x21:Completed 1200000 out of 2000000 steps (60%)
+02:17:12:WU00:FS01:0x21:Completed 1220000 out of 2000000 steps (61%)
+02:17:42:WU02:FS00:0x21:Completed 1725000 out of 2500000 steps (69%)
+02:18:40:WU00:FS01:0x21:Completed 1240000 out of 2000000 steps (62%)
+02:20:10:WU00:FS01:0x21:Completed 1260000 out of 2000000 steps (63%)
+02:21:38:WU00:FS01:0x21:Completed 1280000 out of 2000000 steps (64%)
+02:23:09:WU00:FS01:0x21:Completed 1300000 out of 2000000 steps (65%)
+02:24:37:WU00:FS01:0x21:Completed 1320000 out of 2000000 steps (66%)
+02:26:07:WU00:FS01:0x21:Completed 1340000 out of 2000000 steps (67%)
+02:27:35:WU00:FS01:0x21:Completed 1360000 out of 2000000 steps (68%)
+02:29:06:WU00:FS01:0x21:Completed 1380000 out of 2000000 steps (69%)
+02:30:20:WU02:FS00:0x21:Completed 1750000 out of 2500000 steps (70%)
+02:30:34:WU00:FS01:0x21:Completed 1400000 out of 2000000 steps (70%)
+02:32:04:WU00:FS01:0x21:Completed 1420000 out of 2000000 steps (71%)
+02:33:32:WU00:FS01:0x21:Completed 1440000 out of 2000000 steps (72%)
+02:35:03:WU00:FS01:0x21:Completed 1460000 out of 2000000 steps (73%)
+02:36:31:WU00:FS01:0x21:Completed 1480000 out of 2000000 steps (74%)
+02:38:01:WU00:FS01:0x21:Completed 1500000 out of 2000000 steps (75%)
+02:39:29:WU00:FS01:0x21:Completed 1520000 out of 2000000 steps (76%)
+02:40:59:WU00:FS01:0x21:Completed 1540000 out of 2000000 steps (77%)
+02:42:27:WU00:FS01:0x21:Completed 1560000 out of 2000000 steps (78%)
+02:43:00:WU02:FS00:0x21:Completed 1775000 out of 2500000 steps (71%)
+02:43:57:WU00:FS01:0x21:Completed 1580000 out of 2000000 steps (79%)
+02:45:25:WU00:FS01:0x21:Completed 1600000 out of 2000000 steps (80%)
+02:46:55:WU00:FS01:0x21:Completed 1620000 out of 2000000 steps (81%)
+02:48:23:WU00:FS01:0x21:Completed 1640000 out of 2000000 steps (82%)
+02:49:54:WU00:FS01:0x21:Completed 1660000 out of 2000000 steps (83%)
+02:51:21:WU00:FS01:0x21:Completed 1680000 out of 2000000 steps (84%)
+02:52:51:WU00:FS01:0x21:Completed 1700000 out of 2000000 steps (85%)
+02:54:19:WU00:FS01:0x21:Completed 1720000 out of 2000000 steps (86%)
+02:55:38:WU02:FS00:0x21:Completed 1800000 out of 2500000 steps (72%)
+02:55:50:WU00:FS01:0x21:Completed 1740000 out of 2000000 steps (87%)
+02:57:17:WU00:FS01:0x21:Completed 1760000 out of 2000000 steps (88%)
+02:58:48:WU00:FS01:0x21:Completed 1780000 out of 2000000 steps (89%)
+03:00:16:WU00:FS01:0x21:Completed 1800000 out of 2000000 steps (90%)
+03:01:47:WU00:FS01:0x21:Completed 1820000 out of 2000000 steps (91%)
+03:03:14:WU00:FS01:0x21:Completed 1840000 out of 2000000 steps (92%)
+03:04:45:WU00:FS01:0x21:Completed 1860000 out of 2000000 steps (93%)
+03:06:13:WU00:FS01:0x21:Completed 1880000 out of 2000000 steps (94%)
+03:07:43:WU00:FS01:0x21:Completed 1900000 out of 2000000 steps (95%)
+03:08:20:WU02:FS00:0x21:Completed 1825000 out of 2500000 steps (73%)
+03:09:11:WU00:FS01:0x21:Completed 1920000 out of 2000000 steps (96%)
+03:10:42:WU00:FS01:0x21:Completed 1940000 out of 2000000 steps (97%)
+03:12:10:WU00:FS01:0x21:Completed 1960000 out of 2000000 steps (98%)
+03:13:40:WU00:FS01:0x21:Completed 1980000 out of 2000000 steps (99%)
+03:15:08:WU00:FS01:0x21:Completed 2000000 out of 2000000 steps (100%)
+03:15:09:WU01:FS01:Connecting to 171.67.108.45:80
+03:15:09:WU01:FS01:Assigned to work server 140.163.4.243
+03:15:09:WU01:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 140.163.4.243
+03:15:09:WU01:FS01:Connecting to 140.163.4.243:8080
+03:15:10:WU01:FS01:Downloading 5.11MiB
+03:15:11:WU00:FS01:0x21:Saving result file logfile_01.txt
+03:15:11:WU00:FS01:0x21:Saving result file checkpointState.xml
+03:15:11:WU00:FS01:0x21:Saving result file checkpt.crc
+03:15:11:WU00:FS01:0x21:Saving result file log.txt
+03:15:11:WU00:FS01:0x21:Saving result file positions.xtc
+03:15:11:WU00:FS01:0x21:Folding@home Core Shutdown: FINISHED_UNIT
+03:15:12:WU00:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+03:15:12:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:13103 run:2 clone:56 gen:32 core:0x21 unit:0x00000018ab436c9056b22505ff221470
+03:15:12:WU00:FS01:Uploading 31.02MiB to 171.67.108.144
+03:15:12:WU00:FS01:Connecting to 171.67.108.144:8080
+03:15:12:WU01:FS01:Download complete
+03:15:12:WU01:FS01:Received Unit: id:01 state:DOWNLOAD error:NO_ERROR project:11703 run:0 clone:167 gen:67 core:0x21 unit:0x000000518ca304f3568961d41bef82ca
+03:15:12:WU01:FS01:Starting
+03:15:12:WU01:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 01 -suffix 01 -version 704 -lifeline 5148 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+03:15:12:WU01:FS01:Started FahCore on PID 4960
+03:15:12:WU01:FS01:Core PID:4200
+03:15:12:WU01:FS01:FahCore 0x21 started
+03:15:12:WU01:FS01:0x21:*********************** Log Started 2016-05-14T03:15:12Z ***********************
+03:15:12:WU01:FS01:0x21:Project: 11703 (Run 0, Clone 167, Gen 67)
+03:15:12:WU01:FS01:0x21:Unit: 0x000000518ca304f3568961d41bef82ca
+03:15:12:WU01:FS01:0x21:CPU: 0x00000000000000000000000000000000
+03:15:12:WU01:FS01:0x21:Machine: 1
+03:15:12:WU01:FS01:0x21:Reading tar file core.xml
+03:15:12:WU01:FS01:0x21:Reading tar file system.xml
+03:15:13:WU01:FS01:0x21:Reading tar file integrator.xml
+03:15:13:WU01:FS01:0x21:Reading tar file state.xml
+03:15:13:WU01:FS01:0x21:Digital signatures verified
+03:15:13:WU01:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+03:15:13:WU01:FS01:0x21:Version 0.0.17
+03:15:18:WU00:FS01:Upload 69.90%
+03:15:20:WU00:FS01:Upload complete
+03:15:20:WU01:FS01:0x21:Completed 0 out of 5000000 steps (0%)
+03:15:20:WU01:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+03:15:20:WU00:FS01:Server responded WORK_ACK (400)
+03:15:20:WU00:FS01:Final credit estimate, 54448.00 points
+03:15:20:WU00:FS01:Cleaning up
+03:18:37:WU01:FS01:0x21:Completed 50000 out of 5000000 steps (1%)
+03:20:58:WU02:FS00:0x21:Completed 1850000 out of 2500000 steps (74%)
+03:21:53:WU01:FS01:0x21:Completed 100000 out of 5000000 steps (2%)
+03:25:09:WU01:FS01:0x21:Completed 150000 out of 5000000 steps (3%)
+03:28:25:WU01:FS01:0x21:Completed 200000 out of 5000000 steps (4%)
+03:31:41:WU01:FS01:0x21:Completed 250000 out of 5000000 steps (5%)
+03:33:36:WU02:FS00:0x21:Completed 1875000 out of 2500000 steps (75%)
+03:34:59:WU01:FS01:0x21:Completed 300000 out of 5000000 steps (6%)
+03:38:15:WU01:FS01:0x21:Completed 350000 out of 5000000 steps (7%)
+03:41:32:WU01:FS01:0x21:Completed 400000 out of 5000000 steps (8%)
+03:44:48:WU01:FS01:0x21:Completed 450000 out of 5000000 steps (9%)
+03:46:13:WU02:FS00:0x21:Completed 1900000 out of 2500000 steps (76%)
+03:48:04:WU01:FS01:0x21:Completed 500000 out of 5000000 steps (10%)
+03:51:23:WU01:FS01:0x21:Completed 550000 out of 5000000 steps (11%)
+03:54:39:WU01:FS01:0x21:Completed 600000 out of 5000000 steps (12%)
+03:57:55:WU01:FS01:0x21:Completed 650000 out of 5000000 steps (13%)
+03:58:55:WU02:FS00:0x21:Completed 1925000 out of 2500000 steps (77%)
+04:01:12:WU01:FS01:0x21:Completed 700000 out of 5000000 steps (14%)
+04:04:28:WU01:FS01:0x21:Completed 750000 out of 5000000 steps (15%)
+04:07:47:WU01:FS01:0x21:Completed 800000 out of 5000000 steps (16%)
+04:11:03:WU01:FS01:0x21:Completed 850000 out of 5000000 steps (17%)
+04:11:31:WU02:FS00:0x21:Completed 1950000 out of 2500000 steps (78%)
+04:14:19:WU01:FS01:0x21:Completed 900000 out of 5000000 steps (18%)
+04:17:36:WU01:FS01:0x21:Completed 950000 out of 5000000 steps (19%)
+04:20:52:WU01:FS01:0x21:Completed 1000000 out of 5000000 steps (20%)
+04:24:09:WU02:FS00:0x21:Completed 1975000 out of 2500000 steps (79%)
+04:24:11:WU01:FS01:0x21:Completed 1050000 out of 5000000 steps (21%)
+04:27:27:WU01:FS01:0x21:Completed 1100000 out of 5000000 steps (22%)
+04:30:43:WU01:FS01:0x21:Completed 1150000 out of 5000000 steps (23%)
+04:34:00:WU01:FS01:0x21:Completed 1200000 out of 5000000 steps (24%)
+04:36:46:WU02:FS00:0x21:Completed 2000000 out of 2500000 steps (80%)
+04:37:16:WU01:FS01:0x21:Completed 1250000 out of 5000000 steps (25%)
+04:40:35:WU01:FS01:0x21:Completed 1300000 out of 5000000 steps (26%)
+04:43:51:WU01:FS01:0x21:Completed 1350000 out of 5000000 steps (27%)
+04:47:07:WU01:FS01:0x21:Completed 1400000 out of 5000000 steps (28%)
+04:49:28:WU02:FS00:0x21:Completed 2025000 out of 2500000 steps (81%)
+04:50:24:WU01:FS01:0x21:Completed 1450000 out of 5000000 steps (29%)
+04:53:40:WU01:FS01:0x21:Completed 1500000 out of 5000000 steps (30%)
+04:56:59:WU01:FS01:0x21:Completed 1550000 out of 5000000 steps (31%)
+05:00:15:WU01:FS01:0x21:Completed 1600000 out of 5000000 steps (32%)
+05:02:05:WU02:FS00:0x21:Completed 2050000 out of 2500000 steps (82%)
+05:03:32:WU01:FS01:0x21:Completed 1650000 out of 5000000 steps (33%)
+05:06:48:WU01:FS01:0x21:Completed 1700000 out of 5000000 steps (34%)
+05:10:04:WU01:FS01:0x21:Completed 1750000 out of 5000000 steps (35%)
+05:13:23:WU01:FS01:0x21:Completed 1800000 out of 5000000 steps (36%)
+05:14:43:WU02:FS00:0x21:Completed 2075000 out of 2500000 steps (83%)
+05:16:39:WU01:FS01:0x21:Completed 1850000 out of 5000000 steps (37%)
+05:19:56:WU01:FS01:0x21:Completed 1900000 out of 5000000 steps (38%)
+05:23:12:WU01:FS01:0x21:Completed 1950000 out of 5000000 steps (39%)
+05:26:28:WU01:FS01:0x21:Completed 2000000 out of 5000000 steps (40%)
+05:27:20:WU02:FS00:0x21:Completed 2100000 out of 2500000 steps (84%)
+05:29:47:WU01:FS01:0x21:Completed 2050000 out of 5000000 steps (41%)
+05:33:03:WU01:FS01:0x21:Completed 2100000 out of 5000000 steps (42%)
+05:36:20:WU01:FS01:0x21:Completed 2150000 out of 5000000 steps (43%)
+05:39:36:WU01:FS01:0x21:Completed 2200000 out of 5000000 steps (44%)
+05:40:01:WU02:FS00:0x21:Completed 2125000 out of 2500000 steps (85%)
+05:42:53:WU01:FS01:0x21:Completed 2250000 out of 5000000 steps (45%)
+05:46:11:WU01:FS01:0x21:Completed 2300000 out of 5000000 steps (46%)
+05:49:28:WU01:FS01:0x21:Completed 2350000 out of 5000000 steps (47%)
+05:52:37:WU02:FS00:0x21:Completed 2150000 out of 2500000 steps (86%)
+05:52:44:WU01:FS01:0x21:Completed 2400000 out of 5000000 steps (48%)
+05:56:00:WU01:FS01:0x21:Completed 2450000 out of 5000000 steps (49%)
+05:59:17:WU01:FS01:0x21:Completed 2500000 out of 5000000 steps (50%)
+06:02:35:WU01:FS01:0x21:Completed 2550000 out of 5000000 steps (51%)
+06:05:14:WU02:FS00:0x21:Completed 2175000 out of 2500000 steps (87%)
+06:05:52:WU01:FS01:0x21:Completed 2600000 out of 5000000 steps (52%)
+06:09:08:WU01:FS01:0x21:Completed 2650000 out of 5000000 steps (53%)
+06:12:25:WU01:FS01:0x21:Completed 2700000 out of 5000000 steps (54%)
+06:15:41:WU01:FS01:0x21:Completed 2750000 out of 5000000 steps (55%)
+06:17:50:WU02:FS00:0x21:Completed 2200000 out of 2500000 steps (88%)
+06:19:00:WU01:FS01:0x21:Completed 2800000 out of 5000000 steps (56%)
+06:22:16:WU01:FS01:0x21:Completed 2850000 out of 5000000 steps (57%)
+06:25:33:WU01:FS01:0x21:Completed 2900000 out of 5000000 steps (58%)
+06:28:49:WU01:FS01:0x21:Completed 2950000 out of 5000000 steps (59%)
+06:30:29:WU02:FS00:0x21:Completed 2225000 out of 2500000 steps (89%)
+06:32:05:WU01:FS01:0x21:Completed 3000000 out of 5000000 steps (60%)
+06:35:24:WU01:FS01:0x21:Completed 3050000 out of 5000000 steps (61%)
+06:38:41:WU01:FS01:0x21:Completed 3100000 out of 5000000 steps (62%)
+06:41:57:WU01:FS01:0x21:Completed 3150000 out of 5000000 steps (63%)
+06:43:07:WU02:FS00:0x21:Completed 2250000 out of 2500000 steps (90%)
+06:45:13:WU01:FS01:0x21:Completed 3200000 out of 5000000 steps (64%)
+06:48:30:WU01:FS01:0x21:Completed 3250000 out of 5000000 steps (65%)
+06:51:49:WU01:FS01:0x21:Completed 3300000 out of 5000000 steps (66%)
+06:55:05:WU01:FS01:0x21:Completed 3350000 out of 5000000 steps (67%)
+06:55:44:WU02:FS00:0x21:Completed 2275000 out of 2500000 steps (91%)
+06:58:22:WU01:FS01:0x21:Completed 3400000 out of 5000000 steps (68%)
+07:01:38:WU01:FS01:0x21:Completed 3450000 out of 5000000 steps (69%)
+07:04:54:WU01:FS01:0x21:Completed 3500000 out of 5000000 steps (70%)
+07:08:13:WU01:FS01:0x21:Completed 3550000 out of 5000000 steps (71%)
+07:08:21:WU02:FS00:0x21:Completed 2300000 out of 2500000 steps (92%)
+07:11:29:WU01:FS01:0x21:Completed 3600000 out of 5000000 steps (72%)
+07:14:46:WU01:FS01:0x21:Completed 3650000 out of 5000000 steps (73%)
+07:18:02:WU01:FS01:0x21:Completed 3700000 out of 5000000 steps (74%)
+07:21:01:WU02:FS00:0x21:Completed 2325000 out of 2500000 steps (93%)
+07:21:19:WU01:FS01:0x21:Completed 3750000 out of 5000000 steps (75%)
+07:24:38:WU01:FS01:0x21:Completed 3800000 out of 5000000 steps (76%)
+07:27:55:WU01:FS01:0x21:Completed 3850000 out of 5000000 steps (77%)
+07:31:11:WU01:FS01:0x21:Completed 3900000 out of 5000000 steps (78%)
+07:33:37:WU02:FS00:0x21:Completed 2350000 out of 2500000 steps (94%)
+07:34:27:WU01:FS01:0x21:Completed 3950000 out of 5000000 steps (79%)
+07:37:44:WU01:FS01:0x21:Completed 4000000 out of 5000000 steps (80%)
+07:41:03:WU01:FS01:0x21:Completed 4050000 out of 5000000 steps (81%)
+07:44:19:WU01:FS01:0x21:Completed 4100000 out of 5000000 steps (82%)
+07:46:15:WU02:FS00:0x21:Completed 2375000 out of 2500000 steps (95%)
+07:47:36:WU01:FS01:0x21:Completed 4150000 out of 5000000 steps (83%)
+07:50:52:WU01:FS01:0x21:Completed 4200000 out of 5000000 steps (84%)
+07:54:09:WU01:FS01:0x21:Completed 4250000 out of 5000000 steps (85%)
+07:57:28:WU01:FS01:0x21:Completed 4300000 out of 5000000 steps (86%)
+07:58:53:WU02:FS00:0x21:Completed 2400000 out of 2500000 steps (96%)
+08:00:44:WU01:FS01:0x21:Completed 4350000 out of 5000000 steps (87%)
+******************************* Date: 2016-05-14 *******************************
+08:04:01:WU01:FS01:0x21:Completed 4400000 out of 5000000 steps (88%)
+08:07:17:WU01:FS01:0x21:Completed 4450000 out of 5000000 steps (89%)
+08:10:34:WU01:FS01:0x21:Completed 4500000 out of 5000000 steps (90%)
+08:11:34:WU02:FS00:0x21:Completed 2425000 out of 2500000 steps (97%)
+08:13:53:WU01:FS01:0x21:Completed 4550000 out of 5000000 steps (91%)
+08:17:09:WU01:FS01:0x21:Completed 4600000 out of 5000000 steps (92%)
+08:20:25:WU01:FS01:0x21:Completed 4650000 out of 5000000 steps (93%)
+08:23:42:WU01:FS01:0x21:Completed 4700000 out of 5000000 steps (94%)
+08:24:11:WU02:FS00:0x21:Completed 2450000 out of 2500000 steps (98%)
+08:26:59:WU01:FS01:0x21:Completed 4750000 out of 5000000 steps (95%)
+08:30:17:WU01:FS01:0x21:Completed 4800000 out of 5000000 steps (96%)
+08:33:33:WU01:FS01:0x21:Completed 4850000 out of 5000000 steps (97%)
+08:36:49:WU02:FS00:0x21:Completed 2475000 out of 2500000 steps (99%)
+08:36:50:WU01:FS01:0x21:Completed 4900000 out of 5000000 steps (98%)
+08:40:06:WU01:FS01:0x21:Completed 4950000 out of 5000000 steps (99%)
+08:43:23:WU01:FS01:0x21:Completed 5000000 out of 5000000 steps (100%)
+08:43:24:WU00:FS01:Connecting to 171.67.108.45:80
+08:43:24:WU00:FS01:Assigned to work server 171.64.65.92
+08:43:24:WU00:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 171.64.65.92
+08:43:24:WU00:FS01:Connecting to 171.64.65.92:8080
+08:43:24:WU00:FS01:Downloading 3.05MiB
+08:43:25:WU01:FS01:0x21:Saving result file logfile_01.txt
+08:43:25:WU01:FS01:0x21:Saving result file checkpointState.xml
+08:43:25:WU00:FS01:Download complete
+08:43:25:WU00:FS01:Received Unit: id:00 state:DOWNLOAD error:NO_ERROR project:9160 run:8 clone:0 gen:362 core:0x18 unit:0x00000198ab40415c567464543463f86d
+08:43:27:WU01:FS01:0x21:Saving result file checkpt.crc
+08:43:27:WU01:FS01:0x21:Saving result file log.txt
+08:43:27:WU01:FS01:0x21:Saving result file positions.xtc
+08:43:27:WU01:FS01:0x21:Folding@home Core Shutdown: FINISHED_UNIT
+08:43:28:WU01:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+08:43:28:WU01:FS01:Sending unit results: id:01 state:SEND error:NO_ERROR project:11703 run:0 clone:167 gen:67 core:0x21 unit:0x000000518ca304f3568961d41bef82ca
+08:43:28:WU01:FS01:Uploading 9.09MiB to 140.163.4.243
+08:43:28:WU01:FS01:Connecting to 140.163.4.243:8080
+08:43:28:WU00:FS01:Starting
+08:43:28:WU00:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 00 -suffix 01 -version 704 -lifeline 5148 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+08:43:28:WU00:FS01:Started FahCore on PID 6044
+08:43:28:WU00:FS01:Core PID:4484
+08:43:28:WU00:FS01:FahCore 0x18 started
+08:43:28:WU00:FS01:0x18:*********************** Log Started 2016-05-14T08:43:28Z ***********************
+08:43:28:WU00:FS01:0x18:Project: 9160 (Run 8, Clone 0, Gen 362)
+08:43:28:WU00:FS01:0x18:Unit: 0x00000198ab40415c567464543463f86d
+08:43:28:WU00:FS01:0x18:CPU: 0x00000000000000000000000000000000
+08:43:28:WU00:FS01:0x18:Machine: 1
+08:43:28:WU00:FS01:0x18:Reading tar file core.xml
+08:43:28:WU00:FS01:0x18:Reading tar file system.xml
+08:43:28:WU00:FS01:0x18:Reading tar file integrator.xml
+08:43:28:WU00:FS01:0x18:Reading tar file state.xml
+08:43:29:WU00:FS01:0x18:Digital signatures verified
+08:43:29:WU00:FS01:0x18:Folding@home GPU core18
+08:43:29:WU00:FS01:0x18:Version 0.0.4
+08:43:41:WU01:FS01:Upload complete
+08:43:41:WU01:FS01:Server responded WORK_ACK (400)
+08:43:41:WU01:FS01:Final credit estimate, 137900.00 points
+08:43:41:WU01:FS01:Cleaning up
+08:43:41:WU00:FS01:0x18:Completed 0 out of 2500000 steps (0%)
+08:43:41:WU00:FS01:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+08:44:50:WU00:FS01:0x18:Completed 25000 out of 2500000 steps (1%)
+08:45:56:WU00:FS01:0x18:Completed 50000 out of 2500000 steps (2%)
+08:47:01:WU00:FS01:0x18:Completed 75000 out of 2500000 steps (3%)
+08:48:06:WU00:FS01:0x18:Completed 100000 out of 2500000 steps (4%)
+08:49:16:WU00:FS01:0x18:Completed 125000 out of 2500000 steps (5%)
+08:49:27:WU02:FS00:0x21:Completed 2500000 out of 2500000 steps (100%)
+08:49:28:WU01:FS00:Connecting to 171.67.108.45:80
+08:49:28:WU01:FS00:Assigned to work server 171.64.65.92
+08:49:28:WU01:FS00:Requesting new work unit for slot 00: RUNNING gpu:1:GM107 [GeForce GTX 750 Ti] from 171.64.65.92
+08:49:28:WU01:FS00:Connecting to 171.64.65.92:8080
+08:49:28:WU01:FS00:Downloading 3.33MiB
+08:49:29:WU01:FS00:Download complete
+08:49:29:WU01:FS00:Received Unit: id:01 state:DOWNLOAD error:NO_ERROR project:9161 run:12 clone:0 gen:220 core:0x18 unit:0x000000f6ab40415c567466141b54a3df
+08:49:32:WU02:FS00:0x21:Saving result file logfile_01.txt
+08:49:32:WU02:FS00:0x21:Saving result file checkpointState.xml
+08:49:32:WU02:FS00:0x21:Saving result file checkpt.crc
+08:49:32:WU02:FS00:0x21:Saving result file log.txt
+08:49:32:WU02:FS00:0x21:Saving result file positions.xtc
+08:49:32:WU02:FS00:0x21:Folding@home Core Shutdown: FINISHED_UNIT
+08:49:32:WU02:FS00:FahCore returned: FINISHED_UNIT (100 = 0x64)
+08:49:32:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9206 run:0 clone:280 gen:22 core:0x21 unit:0x0000003b664f2dd056fb26bdc040afa4
+08:49:32:WU02:FS00:Uploading 37.15MiB to 171.64.65.104
+08:49:32:WU02:FS00:Connecting to 171.64.65.104:8080
+08:49:33:WU01:FS00:Starting
+08:49:33:WU01:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 01 -suffix 01 -version 704 -lifeline 5148 -checkpoint 30 -gpu 1 -gpu-vendor nvidia
+08:49:33:WU01:FS00:Started FahCore on PID 4512
+08:49:33:WU01:FS00:Core PID:3340
+08:49:33:WU01:FS00:FahCore 0x18 started
+08:49:33:WU01:FS00:0x18:*********************** Log Started 2016-05-14T08:49:33Z ***********************
+08:49:33:WU01:FS00:0x18:Project: 9161 (Run 12, Clone 0, Gen 220)
+08:49:33:WU01:FS00:0x18:Unit: 0x000000f6ab40415c567466141b54a3df
+08:49:33:WU01:FS00:0x18:CPU: 0x00000000000000000000000000000000
+08:49:33:WU01:FS00:0x18:Machine: 0
+08:49:33:WU01:FS00:0x18:Reading tar file core.xml
+08:49:33:WU01:FS00:0x18:Reading tar file system.xml
+08:49:33:WU01:FS00:0x18:Reading tar file integrator.xml
+08:49:33:WU01:FS00:0x18:Reading tar file state.xml
+08:49:34:WU01:FS00:0x18:Digital signatures verified
+08:49:34:WU01:FS00:0x18:Folding@home GPU core18
+08:49:34:WU01:FS00:0x18:Version 0.0.4
+08:49:38:WU02:FS00:Upload 54.17%
+08:49:42:WU02:FS00:Upload complete
+08:49:42:WU02:FS00:Server responded WORK_ACK (400)
+08:49:42:WU02:FS00:Final credit estimate, 100864.00 points
+08:49:42:WU02:FS00:Cleaning up

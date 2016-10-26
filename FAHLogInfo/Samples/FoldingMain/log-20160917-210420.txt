@@ -1,0 +1,111 @@
+*********************** Log Started 2016-09-17T21:01:36Z ***********************
+21:01:36:************************* Folding@home Client *************************
+21:01:36:      Website: http://folding.stanford.edu/
+21:01:36:    Copyright: (c) 2009-2014 Stanford University
+21:01:36:       Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+21:01:36:         Args: 
+21:01:36:       Config: C:/Users/mikek/AppData/Roaming/FAHClient/config.xml
+21:01:36:******************************** Build ********************************
+21:01:36:      Version: 7.4.4
+21:01:36:         Date: Mar 4 2014
+21:01:36:         Time: 20:26:54
+21:01:36:      SVN Rev: 4130
+21:01:36:       Branch: fah/trunk/client
+21:01:36:     Compiler: Intel(R) C++ MSVC 1500 mode 1200
+21:01:36:      Options: /TP /nologo /EHa /Qdiag-disable:4297,4103,1786,279 /Ox -arch:SSE
+21:01:36:               /QaxSSE2,SSE3,SSSE3,SSE4.1,SSE4.2 /Qopenmp /Qrestrict /MT /Qmkl
+21:01:36:     Platform: win32 XP
+21:01:36:         Bits: 32
+21:01:36:         Mode: Release
+21:01:36:******************************* System ********************************
+21:01:36:          CPU: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+21:01:36:       CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+21:01:36:         CPUs: 4
+21:01:36:       Memory: 15.89GiB
+21:01:36:  Free Memory: 14.60GiB
+21:01:36:      Threads: WINDOWS_THREADS
+21:01:36:   OS Version: 6.2
+21:01:36:  Has Battery: false
+21:01:36:   On Battery: false
+21:01:36:   UTC Offset: -7
+21:01:36:          PID: 5468
+21:01:36:          CWD: C:/Users/mikek/AppData/Roaming/FAHClient
+21:01:36:           OS: Windows 10 Pro
+21:01:36:      OS Arch: AMD64
+21:01:36:         GPUs: 2
+21:01:36:        GPU 0: NVIDIA:5 GM200 [GeForce GTX 980 Ti]
+21:01:36:        GPU 1: NVIDIA:4 GM107 [GeForce GTX 750 Ti]
+21:01:36:         CUDA: 5.2
+21:01:36:  CUDA Driver: 8000
+21:01:36:Win32 Service: false
+21:01:36:***********************************************************************
+21:01:36:<config>
+21:01:36:  <!-- Folding Core -->
+21:01:36:  <checkpoint v='30'/>
+21:01:36:
+21:01:36:  <!-- HTTP Server -->
+21:01:36:  <allow v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+21:01:36:
+21:01:36:  <!-- Network -->
+21:01:36:  <proxy v=':8080'/>
+21:01:36:
+21:01:36:  <!-- Remote Command Server -->
+21:01:36:  <command-allow-no-pass v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+21:01:36:  <password v='*********'/>
+21:01:36:
+21:01:36:  <!-- User Information -->
+21:01:36:  <passkey v='********************************'/>
+21:01:36:  <team v='111065'/>
+21:01:36:  <user v='Mektacular'/>
+21:01:36:
+21:01:36:  <!-- Folding Slots -->
+21:01:36:  <slot id='1' type='GPU'>
+21:01:36:    <next-unit-percentage v='100'/>
+21:01:36:  </slot>
+21:01:36:  <slot id='0' type='GPU'>
+21:01:36:    <next-unit-percentage v='100'/>
+21:01:36:  </slot>
+21:01:36:</config>
+21:01:36:Trying to access database...
+21:01:36:Successfully acquired database lock
+21:01:36:Enabled folding slot 01: READY gpu:0:GM200 [GeForce GTX 980 Ti]
+21:01:36:Enabled folding slot 00: READY gpu:1:GM107 [GeForce GTX 750 Ti]
+21:01:36:WU02:FS01:Starting
+21:01:36:WU02:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 02 -suffix 01 -version 704 -lifeline 5468 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+21:01:36:WU02:FS01:Started FahCore on PID 5612
+21:01:36:WU02:FS01:Core PID:5632
+21:01:36:WU02:FS01:FahCore 0x21 started
+21:01:36:WU01:FS00:Starting
+21:01:36:WU01:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 01 -suffix 01 -version 704 -lifeline 5468 -checkpoint 30 -gpu 1 -gpu-vendor nvidia
+21:01:36:WU01:FS00:Started FahCore on PID 5652
+21:01:36:WU01:FS00:Core PID:5672
+21:01:36:WU01:FS00:FahCore 0x21 started
+21:01:37:WU02:FS01:0x21:*********************** Log Started 2016-09-17T21:01:36Z ***********************
+21:01:37:WU02:FS01:0x21:Project: 9209 (Run 52, Clone 6, Gen 28)
+21:01:37:WU02:FS01:0x21:Unit: 0x00000045ab436c685796c0e87266f788
+21:01:37:WU02:FS01:0x21:CPU: 0x00000000000000000000000000000000
+21:01:37:WU02:FS01:0x21:Machine: 1
+21:01:37:WU02:FS01:0x21:Digital signatures verified
+21:01:37:WU02:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+21:01:37:WU02:FS01:0x21:Version 0.0.17
+21:01:37:WU01:FS00:0x21:*********************** Log Started 2016-09-17T21:01:36Z ***********************
+21:01:37:WU01:FS00:0x21:Project: 9179 (Run 43, Clone 2, Gen 12)
+21:01:37:WU01:FS00:0x21:Unit: 0x0000000eab436c9f57bdce051f389517
+21:01:37:WU01:FS00:0x21:CPU: 0x00000000000000000000000000000000
+21:01:37:WU01:FS00:0x21:Machine: 0
+21:01:37:WU01:FS00:0x21:Digital signatures verified
+21:01:37:WU01:FS00:0x21:Folding@home GPU Core21 Folding@home Core
+21:01:37:WU01:FS00:0x21:Version 0.0.17
+21:01:37:WU02:FS01:0x21:  Found a checkpoint file
+21:01:37:WU01:FS00:0x21:  Found a checkpoint file
+21:01:45:WU01:FS00:0x21:Completed 1400000 out of 2500000 steps (56%)
+21:01:45:WU01:FS00:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+21:02:09:WU02:FS01:0x21:Completed 1400000 out of 2500000 steps (56%)
+21:02:09:WU02:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+21:03:27:WARNING:WU02:FS01:FahCore crashed with Windows unhandled exception code 0x40010004, searching for this code online may provide more information
+21:03:27:WARNING:WU02:FS01:FahCore returned: UNKNOWN_ENUM (1073807364 = 0x40010004)
+21:03:27:WARNING:WU01:FS00:FahCore crashed with Windows unhandled exception code 0x40010004, searching for this code online may provide more information
+21:03:27:WARNING:WU01:FS00:FahCore returned: UNKNOWN_ENUM (1073807364 = 0x40010004)
+21:03:27:WU02:FS01:Starting
+21:03:27:WU02:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 02 -suffix 01 -version 704 -lifeline 5468 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+21:03:27:WU02:FS01:Started FahCore on PID 6100

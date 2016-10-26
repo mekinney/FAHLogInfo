@@ -1,0 +1,176 @@
+*********************** Log Started 2016-05-17T16:13:45Z ***********************
+16:13:45:************************* Folding@home Client *************************
+16:13:45:      Website: http://folding.stanford.edu/
+16:13:45:    Copyright: (c) 2009-2014 Stanford University
+16:13:45:       Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+16:13:45:         Args: --open-web-control
+16:13:45:       Config: C:/Users/mikek/AppData/Roaming/FAHClient/config.xml
+16:13:45:******************************** Build ********************************
+16:13:45:      Version: 7.4.4
+16:13:45:         Date: Mar 4 2014
+16:13:45:         Time: 20:26:54
+16:13:45:      SVN Rev: 4130
+16:13:45:       Branch: fah/trunk/client
+16:13:45:     Compiler: Intel(R) C++ MSVC 1500 mode 1200
+16:13:45:      Options: /TP /nologo /EHa /Qdiag-disable:4297,4103,1786,279 /Ox -arch:SSE
+16:13:45:               /QaxSSE2,SSE3,SSSE3,SSE4.1,SSE4.2 /Qopenmp /Qrestrict /MT /Qmkl
+16:13:45:     Platform: win32 XP
+16:13:45:         Bits: 32
+16:13:45:         Mode: Release
+16:13:45:******************************* System ********************************
+16:13:45:          CPU: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+16:13:45:       CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+16:13:45:         CPUs: 4
+16:13:45:       Memory: 15.89GiB
+16:13:45:  Free Memory: 14.63GiB
+16:13:45:      Threads: WINDOWS_THREADS
+16:13:45:   OS Version: 6.2
+16:13:45:  Has Battery: false
+16:13:45:   On Battery: false
+16:13:45:   UTC Offset: -7
+16:13:45:          PID: 4924
+16:13:45:          CWD: C:/Users/mikek/AppData/Roaming/FAHClient
+16:13:45:           OS: Windows 10 Pro
+16:13:45:      OS Arch: AMD64
+16:13:45:         GPUs: 2
+16:13:45:        GPU 0: NVIDIA:5 GM200 [GeForce GTX 980 Ti]
+16:13:45:        GPU 1: NVIDIA:4 GM107 [GeForce GTX 750 Ti]
+16:13:45:         CUDA: 5.2
+16:13:45:  CUDA Driver: 8000
+16:13:45:Win32 Service: false
+16:13:45:***********************************************************************
+16:13:45:<config>
+16:13:45:  <!-- Folding Core -->
+16:13:45:  <checkpoint v='30'/>
+16:13:45:
+16:13:45:  <!-- HTTP Server -->
+16:13:45:  <allow v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+16:13:45:
+16:13:45:  <!-- Network -->
+16:13:45:  <proxy v=':8080'/>
+16:13:45:
+16:13:45:  <!-- Remote Command Server -->
+16:13:45:  <command-allow-no-pass v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+16:13:45:  <password v='*********'/>
+16:13:45:
+16:13:45:  <!-- User Information -->
+16:13:45:  <passkey v='********************************'/>
+16:13:45:  <team v='111065'/>
+16:13:45:  <user v='Mektacular'/>
+16:13:45:
+16:13:45:  <!-- Folding Slots -->
+16:13:45:  <slot id='1' type='GPU'>
+16:13:45:    <next-unit-percentage v='100'/>
+16:13:45:  </slot>
+16:13:45:  <slot id='0' type='GPU'>
+16:13:45:    <next-unit-percentage v='100'/>
+16:13:45:  </slot>
+16:13:45:</config>
+16:13:45:Trying to access database...
+16:13:45:Successfully acquired database lock
+16:13:45:Enabled folding slot 01: READY gpu:0:GM200 [GeForce GTX 980 Ti]
+16:13:45:Enabled folding slot 00: READY gpu:1:GM107 [GeForce GTX 750 Ti]
+16:13:45:WU02:FS01:Starting
+16:13:45:WU02:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 02 -suffix 01 -version 704 -lifeline 4924 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+16:13:45:WU02:FS01:Started FahCore on PID 5356
+16:13:45:WU02:FS01:Core PID:5428
+16:13:45:WU02:FS01:FahCore 0x21 started
+16:13:45:WU00:FS00:Starting
+16:13:45:WU00:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 00 -suffix 01 -version 704 -lifeline 4924 -checkpoint 30 -gpu 1 -gpu-vendor nvidia
+16:13:45:WU00:FS00:Started FahCore on PID 5452
+16:13:45:WU00:FS00:Core PID:5820
+16:13:45:WU00:FS00:FahCore 0x18 started
+16:13:46:WU02:FS01:0x21:*********************** Log Started 2016-05-17T16:13:45Z ***********************
+16:13:46:WU02:FS01:0x21:Project: 11705 (Run 0, Clone 173, Gen 60)
+16:13:46:WU02:FS01:0x21:Unit: 0x000000468ca304f3568962bd473dc875
+16:13:46:WU02:FS01:0x21:CPU: 0x00000000000000000000000000000000
+16:13:46:WU02:FS01:0x21:Machine: 1
+16:13:46:WU02:FS01:0x21:Digital signatures verified
+16:13:46:WU02:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+16:13:46:WU02:FS01:0x21:Version 0.0.17
+16:13:46:WU00:FS00:0x18:*********************** Log Started 2016-05-17T16:13:45Z ***********************
+16:13:46:WU00:FS00:0x18:Project: 9151 (Run 6, Clone 15, Gen 200)
+16:13:46:WU00:FS00:0x18:Unit: 0x000000e8ab436c9f566253cf19d9919f
+16:13:46:WU00:FS00:0x18:CPU: 0x00000000000000000000000000000000
+16:13:46:WU00:FS00:0x18:Machine: 0
+16:13:46:WU00:FS00:0x18:Digital signatures verified
+16:13:46:WU00:FS00:0x18:Folding@home GPU core18
+16:13:46:WU00:FS00:0x18:Version 0.0.4
+16:13:46:WU00:FS00:0x18:  Found a checkpoint file
+16:13:46:WU02:FS01:0x21:  Found a checkpoint file
+16:13:47:12:127.0.0.1:New Web connection
+16:13:53:WU02:FS01:0x21:Completed 1250000 out of 5000000 steps (25%)
+16:13:53:WU02:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+16:14:00:WU00:FS00:0x18:Completed 100000 out of 2500000 steps (4%)
+16:14:00:WU00:FS00:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+16:16:42:WU02:FS01:0x21:Completed 1300000 out of 5000000 steps (26%)
+16:17:34:WU00:FS00:0x18:Completed 125000 out of 2500000 steps (5%)
+16:19:27:WU02:FS01:0x21:Completed 1350000 out of 5000000 steps (27%)
+16:21:03:WU00:FS00:0x18:Completed 150000 out of 2500000 steps (6%)
+16:22:13:WU02:FS01:0x21:Completed 1400000 out of 5000000 steps (28%)
+16:24:32:WU00:FS00:0x18:Completed 175000 out of 2500000 steps (7%)
+16:24:59:WU02:FS01:0x21:Completed 1450000 out of 5000000 steps (29%)
+16:27:44:WU02:FS01:0x21:Completed 1500000 out of 5000000 steps (30%)
+16:28:01:WU00:FS00:0x18:Completed 200000 out of 2500000 steps (8%)
+16:30:32:WU02:FS01:0x21:Completed 1550000 out of 5000000 steps (31%)
+16:31:34:WU00:FS00:0x18:Completed 225000 out of 2500000 steps (9%)
+16:33:18:WU02:FS01:0x21:Completed 1600000 out of 5000000 steps (32%)
+16:35:03:WU00:FS00:0x18:Completed 250000 out of 2500000 steps (10%)
+16:36:04:WU02:FS01:0x21:Completed 1650000 out of 5000000 steps (33%)
+16:38:32:WU00:FS00:0x18:Completed 275000 out of 2500000 steps (11%)
+16:38:50:WU02:FS01:0x21:Completed 1700000 out of 5000000 steps (34%)
+16:41:35:WU02:FS01:0x21:Completed 1750000 out of 5000000 steps (35%)
+16:42:00:WU00:FS00:0x18:Completed 300000 out of 2500000 steps (12%)
+16:44:23:WU02:FS01:0x21:Completed 1800000 out of 5000000 steps (36%)
+16:45:34:WU00:FS00:0x18:Completed 325000 out of 2500000 steps (13%)
+16:47:09:WU02:FS01:0x21:Completed 1850000 out of 5000000 steps (37%)
+16:49:02:WU00:FS00:0x18:Completed 350000 out of 2500000 steps (14%)
+16:49:54:WU02:FS01:0x21:Completed 1900000 out of 5000000 steps (38%)
+16:52:31:WU00:FS00:0x18:Completed 375000 out of 2500000 steps (15%)
+16:52:40:WU02:FS01:0x21:Completed 1950000 out of 5000000 steps (39%)
+16:55:26:WU02:FS01:0x21:Completed 2000000 out of 5000000 steps (40%)
+16:56:00:WU00:FS00:0x18:Completed 400000 out of 2500000 steps (16%)
+16:58:14:WU02:FS01:0x21:Completed 2050000 out of 5000000 steps (41%)
+16:59:34:WU00:FS00:0x18:Completed 425000 out of 2500000 steps (17%)
+17:01:00:WU02:FS01:0x21:Completed 2100000 out of 5000000 steps (42%)
+17:03:02:WU00:FS00:0x18:Completed 450000 out of 2500000 steps (18%)
+17:03:45:WU02:FS01:0x21:Completed 2150000 out of 5000000 steps (43%)
+17:06:30:WU00:FS00:0x18:Completed 475000 out of 2500000 steps (19%)
+17:06:31:WU02:FS01:0x21:Completed 2200000 out of 5000000 steps (44%)
+17:09:17:WU02:FS01:0x21:Completed 2250000 out of 5000000 steps (45%)
+17:09:59:WU00:FS00:0x18:Completed 500000 out of 2500000 steps (20%)
+17:12:05:WU02:FS01:0x21:Completed 2300000 out of 5000000 steps (46%)
+17:13:32:WU00:FS00:0x18:Completed 525000 out of 2500000 steps (21%)
+17:14:50:WU02:FS01:0x21:Completed 2350000 out of 5000000 steps (47%)
+17:17:01:WU00:FS00:0x18:Completed 550000 out of 2500000 steps (22%)
+17:17:36:WU02:FS01:0x21:Completed 2400000 out of 5000000 steps (48%)
+17:20:21:WU02:FS01:0x21:Completed 2450000 out of 5000000 steps (49%)
+17:20:30:WU00:FS00:0x18:Completed 575000 out of 2500000 steps (23%)
+17:23:07:WU02:FS01:0x21:Completed 2500000 out of 5000000 steps (50%)
+17:23:58:WU00:FS00:0x18:Completed 600000 out of 2500000 steps (24%)
+17:25:55:WU02:FS01:0x21:Completed 2550000 out of 5000000 steps (51%)
+17:27:32:WU00:FS00:0x18:Completed 625000 out of 2500000 steps (25%)
+17:28:40:WU02:FS01:0x21:Completed 2600000 out of 5000000 steps (52%)
+17:31:00:WU00:FS00:0x18:Completed 650000 out of 2500000 steps (26%)
+17:31:26:WU02:FS01:0x21:Completed 2650000 out of 5000000 steps (53%)
+17:34:12:WU02:FS01:0x21:Completed 2700000 out of 5000000 steps (54%)
+17:34:29:WU00:FS00:0x18:Completed 675000 out of 2500000 steps (27%)
+17:36:57:WU02:FS01:0x21:Completed 2750000 out of 5000000 steps (55%)
+17:37:57:WU00:FS00:0x18:Completed 700000 out of 2500000 steps (28%)
+17:39:45:WU02:FS01:0x21:Completed 2800000 out of 5000000 steps (56%)
+17:41:31:WU00:FS00:0x18:Completed 725000 out of 2500000 steps (29%)
+17:42:30:WU02:FS01:0x21:Completed 2850000 out of 5000000 steps (57%)
+17:44:59:WU00:FS00:0x18:Completed 750000 out of 2500000 steps (30%)
+17:45:16:WU02:FS01:0x21:Completed 2900000 out of 5000000 steps (58%)
+17:48:02:WU02:FS01:0x21:Completed 2950000 out of 5000000 steps (59%)
+17:48:29:WU00:FS00:0x18:Completed 775000 out of 2500000 steps (31%)
+17:50:48:WU02:FS01:0x21:Completed 3000000 out of 5000000 steps (60%)
+17:51:58:WU00:FS00:0x18:Completed 800000 out of 2500000 steps (32%)
+17:53:36:WU02:FS01:0x21:Completed 3050000 out of 5000000 steps (61%)
+17:54:29:WARNING:WU02:FS01:FahCore crashed with Windows unhandled exception code 0x40010004, searching for this code online may provide more information
+17:54:29:WARNING:WU02:FS01:FahCore returned: UNKNOWN_ENUM (1073807364 = 0x40010004)
+17:54:29:WARNING:WU00:FS00:FahCore crashed with Windows unhandled exception code 0x40010004, searching for this code online may provide more information
+17:54:29:WARNING:WU00:FS00:FahCore returned: UNKNOWN_ENUM (1073807364 = 0x40010004)
+17:54:30:WU02:FS01:Starting
+17:54:30:WU02:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 02 -suffix 01 -version 704 -lifeline 4924 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+17:54:30:WU02:FS01:Started FahCore on PID 4640

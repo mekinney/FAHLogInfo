@@ -1,0 +1,119 @@
+*********************** Log Started 2016-08-17T21:06:02Z ***********************
+21:06:02:************************* Folding@home Client *************************
+21:06:02:      Website: http://folding.stanford.edu/
+21:06:02:    Copyright: (c) 2009-2014 Stanford University
+21:06:02:       Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+21:06:02:         Args: 
+21:06:02:       Config: C:/Users/mikek/AppData/Roaming/FAHClient/config.xml
+21:06:02:******************************** Build ********************************
+21:06:02:      Version: 7.4.4
+21:06:02:         Date: Mar 4 2014
+21:06:02:         Time: 20:26:54
+21:06:02:      SVN Rev: 4130
+21:06:02:       Branch: fah/trunk/client
+21:06:02:     Compiler: Intel(R) C++ MSVC 1500 mode 1200
+21:06:02:      Options: /TP /nologo /EHa /Qdiag-disable:4297,4103,1786,279 /Ox -arch:SSE
+21:06:02:               /QaxSSE2,SSE3,SSSE3,SSE4.1,SSE4.2 /Qopenmp /Qrestrict /MT /Qmkl
+21:06:02:     Platform: win32 XP
+21:06:02:         Bits: 32
+21:06:02:         Mode: Release
+21:06:02:******************************* System ********************************
+21:06:02:          CPU: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+21:06:02:       CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+21:06:02:         CPUs: 4
+21:06:02:       Memory: 15.89GiB
+21:06:02:  Free Memory: 14.41GiB
+21:06:02:      Threads: WINDOWS_THREADS
+21:06:02:   OS Version: 6.2
+21:06:02:  Has Battery: false
+21:06:02:   On Battery: false
+21:06:02:   UTC Offset: -7
+21:06:02:          PID: 6840
+21:06:02:          CWD: C:/Users/mikek/AppData/Roaming/FAHClient
+21:06:02:           OS: Windows 10 Pro
+21:06:02:      OS Arch: AMD64
+21:06:02:         GPUs: 2
+21:06:02:        GPU 0: NVIDIA:5 GM200 [GeForce GTX 980 Ti]
+21:06:02:        GPU 1: NVIDIA:4 GM107 [GeForce GTX 750 Ti]
+21:06:02:         CUDA: 5.2
+21:06:02:  CUDA Driver: 8000
+21:06:02:Win32 Service: false
+21:06:02:***********************************************************************
+21:06:02:<config>
+21:06:02:  <!-- Folding Core -->
+21:06:02:  <checkpoint v='30'/>
+21:06:02:
+21:06:02:  <!-- HTTP Server -->
+21:06:02:  <allow v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+21:06:02:
+21:06:02:  <!-- Network -->
+21:06:02:  <proxy v=':8080'/>
+21:06:02:
+21:06:02:  <!-- Remote Command Server -->
+21:06:02:  <command-allow-no-pass v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+21:06:02:  <password v='*********'/>
+21:06:02:
+21:06:02:  <!-- User Information -->
+21:06:02:  <passkey v='********************************'/>
+21:06:02:  <team v='111065'/>
+21:06:02:  <user v='Mektacular'/>
+21:06:02:
+21:06:02:  <!-- Folding Slots -->
+21:06:02:  <slot id='1' type='GPU'>
+21:06:02:    <next-unit-percentage v='100'/>
+21:06:02:  </slot>
+21:06:02:  <slot id='0' type='GPU'>
+21:06:02:    <next-unit-percentage v='100'/>
+21:06:02:  </slot>
+21:06:02:</config>
+21:06:02:Trying to access database...
+21:06:02:Successfully acquired database lock
+21:06:02:Enabled folding slot 01: READY gpu:0:GM200 [GeForce GTX 980 Ti]
+21:06:02:Enabled folding slot 00: READY gpu:1:GM107 [GeForce GTX 750 Ti]
+21:06:02:WU01:FS00:Starting
+21:06:02:WU01:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 01 -suffix 01 -version 704 -lifeline 6840 -checkpoint 30 -gpu 1 -gpu-vendor nvidia
+21:06:02:WU01:FS00:Started FahCore on PID 5824
+21:06:03:WU01:FS00:Core PID:5800
+21:06:03:WU01:FS00:FahCore 0x21 started
+21:06:03:WU00:FS01:Starting
+21:06:03:WU00:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 00 -suffix 01 -version 704 -lifeline 6840 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+21:06:03:WU00:FS01:Started FahCore on PID 6808
+21:06:03:WU00:FS01:Core PID:6728
+21:06:03:WU00:FS01:FahCore 0x21 started
+21:06:03:WU00:FS01:0x21:*********************** Log Started 2016-08-17T21:06:03Z ***********************
+21:06:03:WU00:FS01:0x21:Project: 10496 (Run 16, Clone 3, Gen 50)
+21:06:03:WU00:FS01:0x21:Unit: 0x000000448ca304f556bba74d3721a55d
+21:06:03:WU00:FS01:0x21:CPU: 0x00000000000000000000000000000000
+21:06:03:WU00:FS01:0x21:Machine: 1
+21:06:03:WU00:FS01:0x21:Digital signatures verified
+21:06:03:WU00:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+21:06:03:WU00:FS01:0x21:Version 0.0.17
+21:06:03:WU01:FS00:0x21:*********************** Log Started 2016-08-17T21:06:03Z ***********************
+21:06:03:WU01:FS00:0x21:Project: 11704 (Run 0, Clone 4, Gen 114)
+21:06:03:WU01:FS00:0x21:Unit: 0x0000008b8ca304f3568833fb7dd16f50
+21:06:03:WU01:FS00:0x21:CPU: 0x00000000000000000000000000000000
+21:06:03:WU01:FS00:0x21:Machine: 0
+21:06:03:WU01:FS00:0x21:Digital signatures verified
+21:06:03:WU01:FS00:0x21:Folding@home GPU Core21 Folding@home Core
+21:06:03:WU01:FS00:0x21:Version 0.0.17
+21:06:04:WU00:FS01:0x21:  Found a checkpoint file
+21:06:05:WU01:FS00:0x21:  Found a checkpoint file
+21:06:12:WU01:FS00:0x21:Completed 3750000 out of 5000000 steps (75%)
+21:06:12:WU01:FS00:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+21:06:33:WU00:FS01:0x21:Completed 875000 out of 2000000 steps (43%)
+21:06:33:WU00:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+21:07:02:WU00:FS01:0x21:Completed 880000 out of 2000000 steps (44%)
+21:08:56:WU00:FS01:0x21:Completed 900000 out of 2000000 steps (45%)
+21:10:50:WU00:FS01:0x21:Completed 920000 out of 2000000 steps (46%)
+21:12:34:FS01:Paused
+21:12:34:FS00:Paused
+21:12:34:FS01:Shutting core down
+21:12:34:FS00:Shutting core down
+21:12:34:WU01:FS00:0x21:WARNING:Console control signal 1 on PID 5800
+21:12:34:WU01:FS00:0x21:Exiting, please wait. . .
+21:12:34:WU00:FS01:0x21:WARNING:Console control signal 1 on PID 6728
+21:12:34:WU00:FS01:0x21:Exiting, please wait. . .
+21:12:34:WU00:FS01:0x21:Folding@home Core Shutdown: INTERRUPTED
+21:12:34:WU01:FS00:0x21:Folding@home Core Shutdown: INTERRUPTED
+21:12:34:WU01:FS00:FahCore returned: INTERRUPTED (102 = 0x66)
+21:12:34:WU00:FS01:FahCore returned: INTERRUPTED (102 = 0x66)

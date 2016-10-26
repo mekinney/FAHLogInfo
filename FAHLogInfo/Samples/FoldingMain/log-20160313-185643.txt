@@ -1,0 +1,2069 @@
+*********************** Log Started 2016-03-12T21:18:56Z ***********************
+21:18:56:************************* Folding@home Client *************************
+21:18:56:      Website: http://folding.stanford.edu/
+21:18:56:    Copyright: (c) 2009-2014 Stanford University
+21:18:56:       Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+21:18:56:         Args: 
+21:18:56:       Config: C:/Users/mikek/AppData/Roaming/FAHClient/config.xml
+21:18:56:******************************** Build ********************************
+21:18:56:      Version: 7.4.4
+21:18:56:         Date: Mar 4 2014
+21:18:56:         Time: 20:26:54
+21:18:56:      SVN Rev: 4130
+21:18:56:       Branch: fah/trunk/client
+21:18:56:     Compiler: Intel(R) C++ MSVC 1500 mode 1200
+21:18:56:      Options: /TP /nologo /EHa /Qdiag-disable:4297,4103,1786,279 /Ox -arch:SSE
+21:18:56:               /QaxSSE2,SSE3,SSSE3,SSE4.1,SSE4.2 /Qopenmp /Qrestrict /MT /Qmkl
+21:18:56:     Platform: win32 XP
+21:18:56:         Bits: 32
+21:18:56:         Mode: Release
+21:18:56:******************************* System ********************************
+21:18:56:          CPU: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+21:18:56:       CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+21:18:56:         CPUs: 4
+21:18:56:       Memory: 15.89GiB
+21:18:56:  Free Memory: 14.63GiB
+21:18:56:      Threads: WINDOWS_THREADS
+21:18:56:   OS Version: 6.2
+21:18:56:  Has Battery: false
+21:18:56:   On Battery: false
+21:18:56:   UTC Offset: -8
+21:18:56:          PID: 4704
+21:18:56:          CWD: C:/Users/mikek/AppData/Roaming/FAHClient
+21:18:56:           OS: Windows 10 Pro
+21:18:56:      OS Arch: AMD64
+21:18:56:         GPUs: 2
+21:18:56:        GPU 0: NVIDIA:5 GM200 [GeForce GTX 980 Ti]
+21:18:56:        GPU 1: NVIDIA:4 GM107 [GeForce GTX 750 Ti]
+21:18:56:         CUDA: 5.2
+21:18:56:  CUDA Driver: 8000
+21:18:56:Win32 Service: false
+21:18:56:***********************************************************************
+21:18:56:<config>
+21:18:56:  <!-- Folding Core -->
+21:18:56:  <checkpoint v='30'/>
+21:18:56:
+21:18:56:  <!-- HTTP Server -->
+21:18:56:  <allow v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+21:18:56:
+21:18:56:  <!-- Network -->
+21:18:56:  <proxy v=':8080'/>
+21:18:56:
+21:18:56:  <!-- Remote Command Server -->
+21:18:56:  <command-allow-no-pass v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+21:18:56:  <password v='*********'/>
+21:18:56:
+21:18:56:  <!-- User Information -->
+21:18:56:  <passkey v='********************************'/>
+21:18:56:  <team v='111065'/>
+21:18:56:  <user v='Mektacular'/>
+21:18:56:
+21:18:56:  <!-- Folding Slots -->
+21:18:56:  <slot id='1' type='GPU'>
+21:18:56:    <next-unit-percentage v='100'/>
+21:18:56:  </slot>
+21:18:56:  <slot id='0' type='GPU'>
+21:18:56:    <next-unit-percentage v='100'/>
+21:18:56:  </slot>
+21:18:56:  <slot id='2' type='CPU'>
+21:18:56:    <cpus v='2'/>
+21:18:56:  </slot>
+21:18:56:</config>
+21:18:56:Trying to access database...
+21:18:56:Successfully acquired database lock
+21:18:56:Enabled folding slot 01: READY gpu:0:GM200 [GeForce GTX 980 Ti]
+21:18:56:Enabled folding slot 00: READY gpu:1:GM107 [GeForce GTX 750 Ti]
+21:18:56:Enabled folding slot 02: READY cpu:2
+21:18:56:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+21:18:56:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+21:18:56:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+21:18:56:WU00:FS01:Connecting to 171.64.65.104:8080
+21:18:56:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+21:18:56:WU03:FS00:Starting
+21:18:56:WU02:FS00:Connecting to 171.64.65.104:8080
+21:18:56:WU03:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 03 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 1 -gpu-vendor nvidia
+21:18:57:WU03:FS00:Started FahCore on PID 2500
+21:18:57:WU03:FS00:Core PID:3176
+21:18:57:WU03:FS00:FahCore 0x18 started
+21:18:57:WU04:FS01:Starting
+21:18:57:WU04:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 04 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+21:18:57:WU04:FS01:Started FahCore on PID 3712
+21:18:57:WU04:FS01:Core PID:4728
+21:18:57:WU04:FS01:FahCore 0x18 started
+21:18:57:WU01:FS02:Connecting to 171.67.108.45:8080
+21:18:57:WU03:FS00:0x18:*********************** Log Started 2016-03-12T21:18:57Z ***********************
+21:18:57:WU03:FS00:0x18:Project: 10490 (Run 159, Clone 0, Gen 167)
+21:18:57:WU03:FS00:0x18:Unit: 0x000000b58ca304f45537e8f47e253329
+21:18:57:WU03:FS00:0x18:CPU: 0x00000000000000000000000000000000
+21:18:57:WU03:FS00:0x18:Machine: 0
+21:18:57:WU03:FS00:0x18:Digital signatures verified
+21:18:57:WU03:FS00:0x18:Folding@home GPU core18
+21:18:57:WU03:FS00:0x18:Version 0.0.4
+21:18:57:WU03:FS00:0x18:  Found a checkpoint file
+21:18:57:WU04:FS01:0x18:*********************** Log Started 2016-03-12T21:18:57Z ***********************
+21:18:57:WU04:FS01:0x18:Project: 9135 (Run 40, Clone 0, Gen 389)
+21:18:57:WU04:FS01:0x18:Unit: 0x000001cb0a3b1e615564ed325707f6f4
+21:18:57:WU04:FS01:0x18:CPU: 0x00000000000000000000000000000000
+21:18:57:WU04:FS01:0x18:Machine: 1
+21:18:57:WU04:FS01:0x18:Digital signatures verified
+21:18:57:WU04:FS01:0x18:Folding@home GPU core18
+21:18:57:WU04:FS01:0x18:Version 0.0.4
+21:18:57:WU04:FS01:0x18:  Found a checkpoint file
+21:18:58:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+21:18:58:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+21:18:58:WU02:FS00:Connecting to 171.64.65.104:80
+21:18:58:WU00:FS01:Connecting to 171.64.65.104:80
+21:18:58:WU01:FS02:Assigned to work server 155.247.166.219
+21:18:58:WU01:FS02:Requesting new work unit for slot 02: READY cpu:2 from 155.247.166.219
+21:18:58:WU01:FS02:Connecting to 155.247.166.219:8080
+21:18:58:WU01:FS02:Downloading 116.48KiB
+21:18:59:WU01:FS02:Download complete
+21:18:59:WU01:FS02:Received Unit: id:01 state:DOWNLOAD error:NO_ERROR project:6399 run:9 clone:31 gen:60 core:0xa4 unit:0x0000004d0002894b5462cbe6fcd227d7
+21:18:59:WU01:FS02:Starting
+21:18:59:WU01:FS02:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/Core_a4.fah/FahCore_a4.exe -dir 01 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -np 2
+21:18:59:WU01:FS02:Started FahCore on PID 3516
+21:18:59:WU01:FS02:Core PID:2192
+21:18:59:WU01:FS02:FahCore 0xa4 started
+21:18:59:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:18:59:WU02:FS00:Trying to send results to collection server
+21:18:59:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+21:18:59:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:18:59:WU02:FS00:Connecting to 171.65.103.160:8080
+21:18:59:WU00:FS01:Trying to send results to collection server
+21:18:59:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+21:18:59:WU00:FS01:Connecting to 171.65.103.160:8080
+21:18:59:WU01:FS02:0xa4:
+21:18:59:WU01:FS02:0xa4:*------------------------------*
+21:18:59:WU01:FS02:0xa4:Folding@Home Gromacs GB Core
+21:18:59:WU01:FS02:0xa4:Version 2.27 (Dec. 15, 2010)
+21:18:59:WU01:FS02:0xa4:
+21:18:59:WU01:FS02:0xa4:Preparing to commence simulation
+21:18:59:WU01:FS02:0xa4:- Looking at optimizations...
+21:18:59:WU01:FS02:0xa4:- Created dyn
+21:18:59:WU01:FS02:0xa4:- Files status OK
+21:18:59:WU01:FS02:0xa4:- Expanded 118761 -> 269764 (decompressed 227.1 percent)
+21:18:59:WU01:FS02:0xa4:Called DecompressByteArray: compressed_data_size=118761 data_size=269764, decompressed_data_size=269764 diff=0
+21:18:59:WU01:FS02:0xa4:- Digital signature verified
+21:18:59:WU01:FS02:0xa4:
+21:18:59:WU01:FS02:0xa4:Project: 6399 (Run 9, Clone 31, Gen 60)
+21:18:59:WU01:FS02:0xa4:
+21:18:59:WU01:FS02:0xa4:Assembly optimizations on if available.
+21:18:59:WU01:FS02:0xa4:Entering M.D.
+21:19:05:WU00:FS01:Upload 64.65%
+21:19:05:WU02:FS00:Upload 69.30%
+21:19:05:WU01:FS02:0xa4:Mapping NT from 2 to 2 
+21:19:06:WU01:FS02:0xa4:Completed 0 out of 5000000 steps  (0%)
+21:19:07:WU02:FS00:Upload complete
+21:19:07:WU02:FS00:Server responded PLEASE_WAIT (464)
+21:19:07:WARNING:WU02:FS00:Failed to send results, will try again later
+21:19:07:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+21:19:07:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+21:19:07:WU02:FS00:Connecting to 171.64.65.104:8080
+21:19:07:WU00:FS01:Upload complete
+21:19:08:WU00:FS01:Server responded PLEASE_WAIT (464)
+21:19:08:WARNING:WU00:FS01:Failed to send results, will try again later
+21:19:08:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+21:19:08:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+21:19:08:WU00:FS01:Connecting to 171.64.65.104:8080
+21:19:09:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+21:19:09:WU02:FS00:Connecting to 171.64.65.104:80
+21:19:09:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+21:19:09:WU00:FS01:Connecting to 171.64.65.104:80
+21:19:10:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:19:10:WU02:FS00:Trying to send results to collection server
+21:19:10:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+21:19:10:WU02:FS00:Connecting to 171.65.103.160:8080
+21:19:10:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:19:10:WU00:FS01:Trying to send results to collection server
+21:19:10:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+21:19:10:WU00:FS01:Connecting to 171.65.103.160:8080
+21:19:11:WU03:FS00:0x18:Completed 750000 out of 5000000 steps (15%)
+21:19:11:WU03:FS00:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+21:19:13:WU04:FS01:0x18:Completed 2300000 out of 2500000 steps (92%)
+21:19:13:WU04:FS01:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+21:19:16:WU00:FS01:Upload 64.29%
+21:19:16:WU02:FS00:Upload 70.37%
+21:19:16:FS02:Paused
+21:19:16:FS02:Shutting core down
+21:19:18:WU02:FS00:Upload complete
+21:19:18:WU02:FS00:Server responded PLEASE_WAIT (464)
+21:19:18:WARNING:WU02:FS00:Failed to send results, will try again later
+21:19:19:WU00:FS01:Upload complete
+21:19:19:WU00:FS01:Server responded PLEASE_WAIT (464)
+21:19:19:WARNING:WU00:FS01:Failed to send results, will try again later
+21:19:19:WU01:FS02:FahCore returned: INTERRUPTED (102 = 0x66)
+21:19:57:Removing old file 'configs/config-20160209-171329.xml'
+21:19:57:Saving configuration to config.xml
+21:19:57:<config>
+21:19:57:  <!-- Folding Core -->
+21:19:57:  <checkpoint v='30'/>
+21:19:57:
+21:19:57:  <!-- HTTP Server -->
+21:19:57:  <allow v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+21:19:57:
+21:19:57:  <!-- Network -->
+21:19:57:  <proxy v=':8080'/>
+21:19:57:
+21:19:57:  <!-- Remote Command Server -->
+21:19:57:  <command-allow-no-pass v='127.0.0.1,192.168.1.2-198.162.1.250'/>
+21:19:57:  <password v='*********'/>
+21:19:57:
+21:19:57:  <!-- User Information -->
+21:19:57:  <passkey v='********************************'/>
+21:19:57:  <team v='111065'/>
+21:19:57:  <user v='Mektacular'/>
+21:19:57:
+21:19:57:  <!-- Folding Slots -->
+21:19:57:  <slot id='1' type='GPU'>
+21:19:57:    <next-unit-percentage v='100'/>
+21:19:57:  </slot>
+21:19:57:  <slot id='0' type='GPU'>
+21:19:57:    <next-unit-percentage v='100'/>
+21:19:57:  </slot>
+21:19:57:  <slot id='2' type='CPU'>
+21:19:57:    <cpus v='2'/>
+21:19:57:    <paused v='true'/>
+21:19:57:  </slot>
+21:19:57:</config>
+21:20:07:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+21:20:07:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+21:20:07:WU02:FS00:Connecting to 171.64.65.104:8080
+21:20:08:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+21:20:08:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+21:20:08:WU00:FS01:Connecting to 171.64.65.104:8080
+21:20:09:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+21:20:09:WU02:FS00:Connecting to 171.64.65.104:80
+21:20:09:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+21:20:09:WU00:FS01:Connecting to 171.64.65.104:80
+21:20:10:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:20:10:WU02:FS00:Trying to send results to collection server
+21:20:10:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+21:20:10:WU02:FS00:Connecting to 171.65.103.160:8080
+21:20:10:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:20:10:WU00:FS01:Trying to send results to collection server
+21:20:10:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+21:20:10:WU00:FS01:Connecting to 171.65.103.160:8080
+21:20:15:WU04:FS01:0x18:Completed 2325000 out of 2500000 steps (93%)
+21:20:16:WU02:FS00:Upload 76.80%
+21:20:16:WU00:FS01:Upload 61.79%
+21:20:18:WU02:FS00:Upload complete
+21:20:18:WU02:FS00:Server responded PLEASE_WAIT (464)
+21:20:18:WARNING:WU02:FS00:Failed to send results, will try again later
+21:20:18:WU00:FS01:Upload complete
+21:20:18:WU00:FS01:Server responded PLEASE_WAIT (464)
+21:20:18:WARNING:WU00:FS01:Failed to send results, will try again later
+21:21:13:WU04:FS01:0x18:Completed 2350000 out of 2500000 steps (94%)
+21:21:45:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+21:21:45:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+21:21:45:WU02:FS00:Connecting to 171.64.65.104:8080
+21:21:45:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+21:21:45:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+21:21:45:WU00:FS01:Connecting to 171.64.65.104:8080
+21:21:46:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+21:21:46:WU02:FS00:Connecting to 171.64.65.104:80
+21:21:46:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+21:21:46:WU00:FS01:Connecting to 171.64.65.104:80
+21:21:47:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:21:47:WU02:FS00:Trying to send results to collection server
+21:21:47:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+21:21:47:WU02:FS00:Connecting to 171.65.103.160:8080
+21:21:47:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:21:47:WU00:FS01:Trying to send results to collection server
+21:21:47:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+21:21:47:WU00:FS01:Connecting to 171.65.103.160:8080
+21:21:53:WU00:FS01:Upload 63.93%
+21:21:53:WU02:FS00:Upload 69.30%
+21:21:55:WU02:FS00:Upload complete
+21:21:55:WU02:FS00:Server responded PLEASE_WAIT (464)
+21:21:55:WARNING:WU02:FS00:Failed to send results, will try again later
+21:21:56:WU00:FS01:Upload complete
+21:21:56:WU00:FS01:Server responded PLEASE_WAIT (464)
+21:21:56:WARNING:WU00:FS01:Failed to send results, will try again later
+21:22:11:WU04:FS01:0x18:Completed 2375000 out of 2500000 steps (95%)
+21:23:08:WU04:FS01:0x18:Completed 2400000 out of 2500000 steps (96%)
+21:24:11:WU04:FS01:0x18:Completed 2425000 out of 2500000 steps (97%)
+21:24:22:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+21:24:22:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+21:24:22:WU02:FS00:Connecting to 171.64.65.104:8080
+21:24:22:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+21:24:22:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+21:24:22:WU00:FS01:Connecting to 171.64.65.104:8080
+21:24:23:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+21:24:23:WU02:FS00:Connecting to 171.64.65.104:80
+21:24:24:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+21:24:24:WU00:FS01:Connecting to 171.64.65.104:80
+21:24:24:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:24:24:WU02:FS00:Trying to send results to collection server
+21:24:24:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+21:24:24:WU02:FS00:Connecting to 171.65.103.160:8080
+21:24:25:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:24:25:WU00:FS01:Trying to send results to collection server
+21:24:25:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+21:24:25:WU00:FS01:Connecting to 171.65.103.160:8080
+21:24:30:WU02:FS00:Upload 51.44%
+21:24:31:WU00:FS01:Upload 87.51%
+21:24:32:WU00:FS01:Upload complete
+21:24:32:WU00:FS01:Server responded PLEASE_WAIT (464)
+21:24:32:WARNING:WU00:FS01:Failed to send results, will try again later
+21:24:33:WU02:FS00:Upload complete
+21:24:33:WU02:FS00:Server responded PLEASE_WAIT (464)
+21:24:33:WARNING:WU02:FS00:Failed to send results, will try again later
+21:25:09:WU04:FS01:0x18:Completed 2450000 out of 2500000 steps (98%)
+21:25:19:WU03:FS00:0x18:Completed 800000 out of 5000000 steps (16%)
+21:26:07:WU04:FS01:0x18:Completed 2475000 out of 2500000 steps (99%)
+21:27:04:WU04:FS01:0x18:Completed 2500000 out of 2500000 steps (100%)
+21:27:05:WU05:FS01:Connecting to 171.67.108.45:80
+21:27:05:WU05:FS01:Assigned to work server 140.163.4.242
+21:27:05:WU05:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 140.163.4.242
+21:27:05:WU05:FS01:Connecting to 140.163.4.242:8080
+21:27:06:WU05:FS01:Downloading 5.32MiB
+21:27:10:WU04:FS01:0x18:Saving result file logfile_01.txt
+21:27:10:WU04:FS01:0x18:Saving result file checkpointState.xml
+21:27:11:WU04:FS01:0x18:Saving result file checkpt.crc
+21:27:11:WU04:FS01:0x18:Saving result file log.txt
+21:27:11:WU04:FS01:0x18:Saving result file positions.xtc
+21:27:11:WU04:FS01:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+21:27:12:WU05:FS01:Download 52.89%
+21:27:12:WU04:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+21:27:12:WU04:FS01:Sending unit results: id:04 state:SEND error:NO_ERROR project:9135 run:40 clone:0 gen:389 core:0x18 unit:0x000001cb0a3b1e615564ed325707f6f4
+21:27:12:WU04:FS01:Uploading 5.75MiB to 171.64.65.61
+21:27:12:WU04:FS01:Connecting to 171.64.65.61:8080
+21:27:15:WU05:FS01:Download complete
+21:27:15:WU05:FS01:Received Unit: id:05 state:DOWNLOAD error:NO_ERROR project:11406 run:0 clone:29 gen:76 core:0x21 unit:0x0000005e8ca304f25686b19d748e80fa
+21:27:15:WU05:FS01:Starting
+21:27:15:WU05:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 05 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+21:27:16:WU05:FS01:Started FahCore on PID 4860
+21:27:16:WU05:FS01:Core PID:2152
+21:27:16:WU05:FS01:FahCore 0x21 started
+21:27:16:WU05:FS01:0x21:*********************** Log Started 2016-03-12T21:27:16Z ***********************
+21:27:16:WU05:FS01:0x21:Project: 11406 (Run 0, Clone 29, Gen 76)
+21:27:16:WU05:FS01:0x21:Unit: 0x0000005e8ca304f25686b19d748e80fa
+21:27:16:WU05:FS01:0x21:CPU: 0x00000000000000000000000000000000
+21:27:16:WU05:FS01:0x21:Machine: 1
+21:27:16:WU05:FS01:0x21:Reading tar file core.xml
+21:27:16:WU05:FS01:0x21:Reading tar file system.xml
+21:27:16:WU05:FS01:0x21:Reading tar file integrator.xml
+21:27:16:WU05:FS01:0x21:Reading tar file state.xml
+21:27:17:WU05:FS01:0x21:Digital signatures verified
+21:27:17:WU05:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+21:27:17:WU05:FS01:0x21:Version 0.0.17
+21:27:19:WU04:FS01:Upload complete
+21:27:20:WU04:FS01:Server responded WORK_ACK (400)
+21:27:20:WU04:FS01:Final credit estimate, 47265.00 points
+21:27:20:WU04:FS01:Cleaning up
+21:27:25:WU05:FS01:0x21:Completed 0 out of 5000000 steps (0%)
+21:27:25:WU05:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+21:28:36:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+21:28:36:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+21:28:36:WU02:FS00:Connecting to 171.64.65.104:8080
+21:28:37:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+21:28:37:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+21:28:37:WU00:FS01:Connecting to 171.64.65.104:8080
+21:28:37:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+21:28:37:WU02:FS00:Connecting to 171.64.65.104:80
+21:28:38:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+21:28:38:WU00:FS01:Connecting to 171.64.65.104:80
+21:28:39:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:28:39:WU02:FS00:Trying to send results to collection server
+21:28:39:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+21:28:39:WU02:FS00:Connecting to 171.65.103.160:8080
+21:28:40:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:28:40:WU00:FS01:Trying to send results to collection server
+21:28:40:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+21:28:40:WU00:FS01:Connecting to 171.65.103.160:8080
+21:28:45:WU02:FS00:Upload 86.44%
+21:28:46:WU00:FS01:Upload 56.79%
+21:28:46:WU02:FS00:Upload complete
+21:28:46:WU02:FS00:Server responded PLEASE_WAIT (464)
+21:28:46:WARNING:WU02:FS00:Failed to send results, will try again later
+21:28:48:WU00:FS01:Upload complete
+21:28:48:WU00:FS01:Server responded PLEASE_WAIT (464)
+21:28:48:WARNING:WU00:FS01:Failed to send results, will try again later
+21:30:47:WU05:FS01:0x21:Completed 50000 out of 5000000 steps (1%)
+21:31:53:WU03:FS00:0x18:Completed 850000 out of 5000000 steps (17%)
+21:33:39:WU05:FS01:0x21:Completed 100000 out of 5000000 steps (2%)
+21:35:28:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+21:35:28:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+21:35:28:WU02:FS00:Connecting to 171.64.65.104:8080
+21:35:28:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+21:35:28:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+21:35:28:WU00:FS01:Connecting to 171.64.65.104:8080
+21:35:29:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+21:35:29:WU02:FS00:Connecting to 171.64.65.104:80
+21:35:29:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+21:35:29:WU00:FS01:Connecting to 171.64.65.104:80
+21:35:30:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:35:30:WU02:FS00:Trying to send results to collection server
+21:35:30:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+21:35:30:WU02:FS00:Connecting to 171.65.103.160:8080
+21:35:31:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:35:31:WU00:FS01:Trying to send results to collection server
+21:35:31:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+21:35:31:WU00:FS01:Connecting to 171.65.103.160:8080
+21:35:36:WU02:FS00:Upload 47.15%
+21:35:37:WU00:FS01:Upload 83.22%
+21:35:38:WU00:FS01:Upload complete
+21:35:38:WU00:FS01:Server responded PLEASE_WAIT (464)
+21:35:38:WARNING:WU00:FS01:Failed to send results, will try again later
+21:35:40:WU02:FS00:Upload complete
+21:35:40:WU02:FS00:Server responded PLEASE_WAIT (464)
+21:35:40:WARNING:WU02:FS00:Failed to send results, will try again later
+21:36:28:WU05:FS01:0x21:Completed 150000 out of 5000000 steps (3%)
+21:38:02:WU03:FS00:0x18:Completed 900000 out of 5000000 steps (18%)
+21:39:13:WU05:FS01:0x21:Completed 200000 out of 5000000 steps (4%)
+21:41:58:WU05:FS01:0x21:Completed 250000 out of 5000000 steps (5%)
+21:44:05:WU03:FS00:0x18:Completed 950000 out of 5000000 steps (19%)
+21:44:46:WU05:FS01:0x21:Completed 300000 out of 5000000 steps (6%)
+21:46:33:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+21:46:33:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+21:46:33:WU02:FS00:Connecting to 171.64.65.104:8080
+21:46:34:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+21:46:34:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+21:46:34:WU00:FS01:Connecting to 171.64.65.104:8080
+21:46:34:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+21:46:34:WU02:FS00:Connecting to 171.64.65.104:80
+21:46:35:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+21:46:35:WU00:FS01:Connecting to 171.64.65.104:80
+21:46:36:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:46:36:WU02:FS00:Trying to send results to collection server
+21:46:36:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+21:46:36:WU02:FS00:Connecting to 171.65.103.160:8080
+21:46:36:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+21:46:36:WU00:FS01:Trying to send results to collection server
+21:46:36:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+21:46:36:WU00:FS01:Connecting to 171.65.103.160:8080
+21:46:42:WU00:FS01:Upload 63.58%
+21:46:42:WU02:FS00:Upload 77.87%
+21:46:43:WU02:FS00:Upload complete
+21:46:44:WU02:FS00:Server responded PLEASE_WAIT (464)
+21:46:44:WARNING:WU02:FS00:Failed to send results, will try again later
+21:46:44:WU00:FS01:Upload complete
+21:46:45:WU00:FS01:Server responded PLEASE_WAIT (464)
+21:46:45:WARNING:WU00:FS01:Failed to send results, will try again later
+21:47:32:WU05:FS01:0x21:Completed 350000 out of 5000000 steps (7%)
+21:50:09:WU03:FS00:0x18:Completed 1000000 out of 5000000 steps (20%)
+21:50:20:WU05:FS01:0x21:Completed 400000 out of 5000000 steps (8%)
+21:53:05:WU05:FS01:0x21:Completed 450000 out of 5000000 steps (9%)
+21:55:51:WU05:FS01:0x21:Completed 500000 out of 5000000 steps (10%)
+21:56:17:WU03:FS00:0x18:Completed 1050000 out of 5000000 steps (21%)
+21:58:39:WU05:FS01:0x21:Completed 550000 out of 5000000 steps (11%)
+22:01:25:WU05:FS01:0x21:Completed 600000 out of 5000000 steps (12%)
+22:02:21:WU03:FS00:0x18:Completed 1100000 out of 5000000 steps (22%)
+22:04:13:WU05:FS01:0x21:Completed 650000 out of 5000000 steps (13%)
+22:04:30:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+22:04:30:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+22:04:30:WU02:FS00:Connecting to 171.64.65.104:8080
+22:04:31:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+22:04:31:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+22:04:31:WU00:FS01:Connecting to 171.64.65.104:8080
+22:04:31:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+22:04:31:WU02:FS00:Connecting to 171.64.65.104:80
+22:04:32:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+22:04:32:WU00:FS01:Connecting to 171.64.65.104:80
+22:04:32:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+22:04:32:WU02:FS00:Trying to send results to collection server
+22:04:32:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+22:04:32:WU02:FS00:Connecting to 171.65.103.160:8080
+22:04:33:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+22:04:33:WU00:FS01:Trying to send results to collection server
+22:04:33:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+22:04:33:WU00:FS01:Connecting to 171.65.103.160:8080
+22:04:38:WU02:FS00:Upload 68.94%
+22:04:39:WU00:FS01:Upload 67.51%
+22:04:40:WU02:FS00:Upload complete
+22:04:40:WU02:FS00:Server responded PLEASE_WAIT (464)
+22:04:40:WARNING:WU02:FS00:Failed to send results, will try again later
+22:04:41:WU00:FS01:Upload complete
+22:04:41:WU00:FS01:Server responded PLEASE_WAIT (464)
+22:04:41:WARNING:WU00:FS01:Failed to send results, will try again later
+22:06:59:WU05:FS01:0x21:Completed 700000 out of 5000000 steps (14%)
+22:08:30:WU03:FS00:0x18:Completed 1150000 out of 5000000 steps (23%)
+22:09:45:WU05:FS01:0x21:Completed 750000 out of 5000000 steps (15%)
+22:12:33:WU05:FS01:0x21:Completed 800000 out of 5000000 steps (16%)
+22:14:34:WU03:FS00:0x18:Completed 1200000 out of 5000000 steps (24%)
+22:15:19:WU05:FS01:0x21:Completed 850000 out of 5000000 steps (17%)
+22:18:07:WU05:FS01:0x21:Completed 900000 out of 5000000 steps (18%)
+22:20:38:WU03:FS00:0x18:Completed 1250000 out of 5000000 steps (25%)
+22:20:53:WU05:FS01:0x21:Completed 950000 out of 5000000 steps (19%)
+22:23:39:WU05:FS01:0x21:Completed 1000000 out of 5000000 steps (20%)
+22:26:27:WU05:FS01:0x21:Completed 1050000 out of 5000000 steps (21%)
+22:26:47:WU03:FS00:0x18:Completed 1300000 out of 5000000 steps (26%)
+22:29:14:WU05:FS01:0x21:Completed 1100000 out of 5000000 steps (22%)
+22:32:02:WU05:FS01:0x21:Completed 1150000 out of 5000000 steps (23%)
+22:32:50:WU03:FS00:0x18:Completed 1350000 out of 5000000 steps (27%)
+22:33:32:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+22:33:32:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+22:33:32:WU02:FS00:Connecting to 171.64.65.104:8080
+22:33:33:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+22:33:33:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+22:33:33:WU00:FS01:Connecting to 171.64.65.104:8080
+22:33:33:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+22:33:33:WU02:FS00:Connecting to 171.64.65.104:80
+22:33:34:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+22:33:34:WU00:FS01:Connecting to 171.64.65.104:80
+22:33:34:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+22:33:34:WU02:FS00:Trying to send results to collection server
+22:33:34:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+22:33:34:WU02:FS00:Connecting to 171.65.103.160:8080
+22:33:35:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+22:33:35:WU00:FS01:Trying to send results to collection server
+22:33:35:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+22:33:35:WU00:FS01:Connecting to 171.65.103.160:8080
+22:33:40:WU02:FS00:Upload 83.23%
+22:33:41:WU00:FS01:Upload 50.00%
+22:33:41:WU02:FS00:Upload complete
+22:33:41:WU02:FS00:Server responded PLEASE_WAIT (464)
+22:33:41:WARNING:WU02:FS00:Failed to send results, will try again later
+22:33:43:WU00:FS01:Upload complete
+22:33:44:WU00:FS01:Server responded PLEASE_WAIT (464)
+22:33:44:WARNING:WU00:FS01:Failed to send results, will try again later
+22:34:48:WU05:FS01:0x21:Completed 1200000 out of 5000000 steps (24%)
+22:37:34:WU05:FS01:0x21:Completed 1250000 out of 5000000 steps (25%)
+22:38:59:WU03:FS00:0x18:Completed 1400000 out of 5000000 steps (28%)
+22:40:23:WU05:FS01:0x21:Completed 1300000 out of 5000000 steps (26%)
+22:43:09:WU05:FS01:0x21:Completed 1350000 out of 5000000 steps (27%)
+22:45:03:WU03:FS00:0x18:Completed 1450000 out of 5000000 steps (29%)
+22:45:58:WU05:FS01:0x21:Completed 1400000 out of 5000000 steps (28%)
+22:48:44:WU05:FS01:0x21:Completed 1450000 out of 5000000 steps (29%)
+22:51:07:WU03:FS00:0x18:Completed 1500000 out of 5000000 steps (30%)
+22:51:29:WU05:FS01:0x21:Completed 1500000 out of 5000000 steps (30%)
+22:54:18:WU05:FS01:0x21:Completed 1550000 out of 5000000 steps (31%)
+22:57:04:WU05:FS01:0x21:Completed 1600000 out of 5000000 steps (32%)
+22:57:16:WU03:FS00:0x18:Completed 1550000 out of 5000000 steps (31%)
+22:59:52:WU05:FS01:0x21:Completed 1650000 out of 5000000 steps (33%)
+23:02:38:WU05:FS01:0x21:Completed 1700000 out of 5000000 steps (34%)
+23:03:20:WU03:FS00:0x18:Completed 1600000 out of 5000000 steps (32%)
+23:05:24:WU05:FS01:0x21:Completed 1750000 out of 5000000 steps (35%)
+23:08:12:WU05:FS01:0x21:Completed 1800000 out of 5000000 steps (36%)
+23:09:29:WU03:FS00:0x18:Completed 1650000 out of 5000000 steps (33%)
+23:10:58:WU05:FS01:0x21:Completed 1850000 out of 5000000 steps (37%)
+23:13:46:WU05:FS01:0x21:Completed 1900000 out of 5000000 steps (38%)
+23:15:33:WU03:FS00:0x18:Completed 1700000 out of 5000000 steps (34%)
+23:16:32:WU05:FS01:0x21:Completed 1950000 out of 5000000 steps (39%)
+23:19:18:WU05:FS01:0x21:Completed 2000000 out of 5000000 steps (40%)
+23:20:31:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+23:20:31:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+23:20:31:WU02:FS00:Connecting to 171.64.65.104:8080
+23:20:31:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+23:20:31:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+23:20:31:WU00:FS01:Connecting to 171.64.65.104:8080
+23:20:32:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+23:20:32:WU02:FS00:Connecting to 171.64.65.104:80
+23:20:33:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+23:20:33:WU00:FS01:Connecting to 171.64.65.104:80
+23:20:33:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+23:20:33:WU02:FS00:Trying to send results to collection server
+23:20:33:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+23:20:33:WU02:FS00:Connecting to 171.65.103.160:8080
+23:20:34:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+23:20:34:WU00:FS01:Trying to send results to collection server
+23:20:34:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+23:20:34:WU00:FS01:Connecting to 171.65.103.160:8080
+23:20:39:WU02:FS00:Upload 66.44%
+23:20:40:WU00:FS01:Upload 73.22%
+23:20:41:WU02:FS00:Upload complete
+23:20:42:WU02:FS00:Server responded PLEASE_WAIT (464)
+23:20:42:WARNING:WU02:FS00:Failed to send results, will try again later
+23:20:42:WU00:FS01:Upload complete
+23:20:42:WU00:FS01:Server responded PLEASE_WAIT (464)
+23:20:42:WARNING:WU00:FS01:Failed to send results, will try again later
+23:21:37:WU03:FS00:0x18:Completed 1750000 out of 5000000 steps (35%)
+23:22:06:WU05:FS01:0x21:Completed 2050000 out of 5000000 steps (41%)
+23:24:52:WU05:FS01:0x21:Completed 2100000 out of 5000000 steps (42%)
+23:27:40:WU05:FS01:0x21:Completed 2150000 out of 5000000 steps (43%)
+23:27:45:WU03:FS00:0x18:Completed 1800000 out of 5000000 steps (36%)
+23:30:26:WU05:FS01:0x21:Completed 2200000 out of 5000000 steps (44%)
+23:33:12:WU05:FS01:0x21:Completed 2250000 out of 5000000 steps (45%)
+23:33:49:WU03:FS00:0x18:Completed 1850000 out of 5000000 steps (37%)
+23:36:00:WU05:FS01:0x21:Completed 2300000 out of 5000000 steps (46%)
+23:38:46:WU05:FS01:0x21:Completed 2350000 out of 5000000 steps (47%)
+23:39:58:WU03:FS00:0x18:Completed 1900000 out of 5000000 steps (38%)
+23:41:35:WU05:FS01:0x21:Completed 2400000 out of 5000000 steps (48%)
+23:44:20:WU05:FS01:0x21:Completed 2450000 out of 5000000 steps (49%)
+23:46:02:WU03:FS00:0x18:Completed 1950000 out of 5000000 steps (39%)
+23:47:07:WU05:FS01:0x21:Completed 2500000 out of 5000000 steps (50%)
+23:49:55:WU05:FS01:0x21:Completed 2550000 out of 5000000 steps (51%)
+23:52:06:WU03:FS00:0x18:Completed 2000000 out of 5000000 steps (40%)
+23:52:41:WU05:FS01:0x21:Completed 2600000 out of 5000000 steps (52%)
+23:55:29:WU05:FS01:0x21:Completed 2650000 out of 5000000 steps (53%)
+23:58:15:WU03:FS00:0x18:Completed 2050000 out of 5000000 steps (41%)
+23:58:15:WU05:FS01:0x21:Completed 2700000 out of 5000000 steps (54%)
+00:01:01:WU05:FS01:0x21:Completed 2750000 out of 5000000 steps (55%)
+00:03:49:WU05:FS01:0x21:Completed 2800000 out of 5000000 steps (56%)
+00:04:19:WU03:FS00:0x18:Completed 2100000 out of 5000000 steps (42%)
+00:06:35:WU05:FS01:0x21:Completed 2850000 out of 5000000 steps (57%)
+00:09:23:WU05:FS01:0x21:Completed 2900000 out of 5000000 steps (58%)
+00:10:28:WU03:FS00:0x18:Completed 2150000 out of 5000000 steps (43%)
+00:12:09:WU05:FS01:0x21:Completed 2950000 out of 5000000 steps (59%)
+00:14:55:WU05:FS01:0x21:Completed 3000000 out of 5000000 steps (60%)
+00:16:32:WU03:FS00:0x18:Completed 2200000 out of 5000000 steps (44%)
+00:17:43:WU05:FS01:0x21:Completed 3050000 out of 5000000 steps (61%)
+00:20:29:WU05:FS01:0x21:Completed 3100000 out of 5000000 steps (62%)
+00:22:37:WU03:FS00:0x18:Completed 2250000 out of 5000000 steps (45%)
+00:23:18:WU05:FS01:0x21:Completed 3150000 out of 5000000 steps (63%)
+00:26:03:WU05:FS01:0x21:Completed 3200000 out of 5000000 steps (64%)
+00:28:46:WU03:FS00:0x18:Completed 2300000 out of 5000000 steps (46%)
+00:28:49:WU05:FS01:0x21:Completed 3250000 out of 5000000 steps (65%)
+00:31:38:WU05:FS01:0x21:Completed 3300000 out of 5000000 steps (66%)
+00:34:24:WU05:FS01:0x21:Completed 3350000 out of 5000000 steps (67%)
+00:34:50:WU03:FS00:0x18:Completed 2350000 out of 5000000 steps (47%)
+00:36:32:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+00:36:32:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+00:36:32:WU02:FS00:Connecting to 171.64.65.104:8080
+00:36:33:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+00:36:33:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+00:36:33:WU00:FS01:Connecting to 171.64.65.104:8080
+00:36:33:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+00:36:33:WU02:FS00:Connecting to 171.64.65.104:80
+00:36:34:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+00:36:34:WU00:FS01:Connecting to 171.64.65.104:80
+00:36:34:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+00:36:34:WU02:FS00:Trying to send results to collection server
+00:36:34:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+00:36:34:WU02:FS00:Connecting to 171.65.103.160:8080
+00:36:35:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+00:36:35:WU00:FS01:Trying to send results to collection server
+00:36:35:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+00:36:35:WU00:FS01:Connecting to 171.65.103.160:8080
+00:36:40:WU02:FS00:Upload 71.08%
+00:36:41:WU00:FS01:Upload 67.15%
+00:36:42:WU02:FS00:Upload complete
+00:36:42:WU02:FS00:Server responded PLEASE_WAIT (464)
+00:36:42:WARNING:WU02:FS00:Failed to send results, will try again later
+00:36:43:WU00:FS01:Upload complete
+00:36:43:WU00:FS01:Server responded PLEASE_WAIT (464)
+00:36:43:WARNING:WU00:FS01:Failed to send results, will try again later
+00:37:12:WU05:FS01:0x21:Completed 3400000 out of 5000000 steps (68%)
+00:39:58:WU05:FS01:0x21:Completed 3450000 out of 5000000 steps (69%)
+00:40:59:WU03:FS00:0x18:Completed 2400000 out of 5000000 steps (48%)
+00:42:44:WU05:FS01:0x21:Completed 3500000 out of 5000000 steps (70%)
+00:45:32:WU05:FS01:0x21:Completed 3550000 out of 5000000 steps (71%)
+00:47:03:WU03:FS00:0x18:Completed 2450000 out of 5000000 steps (49%)
+00:48:18:WU05:FS01:0x21:Completed 3600000 out of 5000000 steps (72%)
+00:51:06:WU05:FS01:0x21:Completed 3650000 out of 5000000 steps (73%)
+00:53:08:WU03:FS00:0x18:Completed 2500000 out of 5000000 steps (50%)
+00:53:52:WU05:FS01:0x21:Completed 3700000 out of 5000000 steps (74%)
+00:56:38:WU05:FS01:0x21:Completed 3750000 out of 5000000 steps (75%)
+00:59:17:WU03:FS00:0x18:Completed 2550000 out of 5000000 steps (51%)
+00:59:26:WU05:FS01:0x21:Completed 3800000 out of 5000000 steps (76%)
+01:02:12:WU05:FS01:0x21:Completed 3850000 out of 5000000 steps (77%)
+01:05:01:WU05:FS01:0x21:Completed 3900000 out of 5000000 steps (78%)
+01:05:21:WU03:FS00:0x18:Completed 2600000 out of 5000000 steps (52%)
+01:07:46:WU05:FS01:0x21:Completed 3950000 out of 5000000 steps (79%)
+01:10:32:WU05:FS01:0x21:Completed 4000000 out of 5000000 steps (80%)
+01:11:30:WU03:FS00:0x18:Completed 2650000 out of 5000000 steps (53%)
+01:13:20:WU05:FS01:0x21:Completed 4050000 out of 5000000 steps (81%)
+01:16:06:WU05:FS01:0x21:Completed 4100000 out of 5000000 steps (82%)
+01:17:34:WU03:FS00:0x18:Completed 2700000 out of 5000000 steps (54%)
+01:18:55:WU05:FS01:0x21:Completed 4150000 out of 5000000 steps (83%)
+01:21:41:WU05:FS01:0x21:Completed 4200000 out of 5000000 steps (84%)
+01:23:38:WU03:FS00:0x18:Completed 2750000 out of 5000000 steps (55%)
+01:24:26:WU05:FS01:0x21:Completed 4250000 out of 5000000 steps (85%)
+01:27:15:WU05:FS01:0x21:Completed 4300000 out of 5000000 steps (86%)
+01:29:47:WU03:FS00:0x18:Completed 2800000 out of 5000000 steps (56%)
+01:30:01:WU05:FS01:0x21:Completed 4350000 out of 5000000 steps (87%)
+01:32:49:WU05:FS01:0x21:Completed 4400000 out of 5000000 steps (88%)
+01:35:35:WU05:FS01:0x21:Completed 4450000 out of 5000000 steps (89%)
+01:35:51:WU03:FS00:0x18:Completed 2850000 out of 5000000 steps (57%)
+01:38:21:WU05:FS01:0x21:Completed 4500000 out of 5000000 steps (90%)
+01:41:09:WU05:FS01:0x21:Completed 4550000 out of 5000000 steps (91%)
+01:42:00:WU03:FS00:0x18:Completed 2900000 out of 5000000 steps (58%)
+01:43:54:WU05:FS01:0x21:Completed 4600000 out of 5000000 steps (92%)
+01:46:43:WU05:FS01:0x21:Completed 4650000 out of 5000000 steps (93%)
+01:48:04:WU03:FS00:0x18:Completed 2950000 out of 5000000 steps (59%)
+01:49:29:WU05:FS01:0x21:Completed 4700000 out of 5000000 steps (94%)
+01:52:15:WU05:FS01:0x21:Completed 4750000 out of 5000000 steps (95%)
+01:54:08:WU03:FS00:0x18:Completed 3000000 out of 5000000 steps (60%)
+01:55:03:WU05:FS01:0x21:Completed 4800000 out of 5000000 steps (96%)
+01:57:48:WU05:FS01:0x21:Completed 4850000 out of 5000000 steps (97%)
+02:00:17:WU03:FS00:0x18:Completed 3050000 out of 5000000 steps (61%)
+02:00:36:WU05:FS01:0x21:Completed 4900000 out of 5000000 steps (98%)
+02:03:22:WU05:FS01:0x21:Completed 4950000 out of 5000000 steps (99%)
+02:06:08:WU05:FS01:0x21:Completed 5000000 out of 5000000 steps (100%)
+02:06:09:WU04:FS01:Connecting to 171.67.108.45:80
+02:06:09:WU04:FS01:Assigned to work server 171.67.108.157
+02:06:09:WU04:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 171.67.108.157
+02:06:09:WU04:FS01:Connecting to 171.67.108.157:8080
+02:06:10:WU04:FS01:Downloading 29.47MiB
+02:06:11:WU05:FS01:0x21:Saving result file logfile_01.txt
+02:06:11:WU05:FS01:0x21:Saving result file checkpointState.xml
+02:06:12:WU05:FS01:0x21:Saving result file checkpt.crc
+02:06:12:WU05:FS01:0x21:Saving result file log.txt
+02:06:12:WU05:FS01:0x21:Saving result file positions.xtc
+02:06:14:WU05:FS01:0x21:Folding@home Core Shutdown: FINISHED_UNIT
+02:06:14:WU05:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+02:06:14:WU05:FS01:Sending unit results: id:05 state:SEND error:NO_ERROR project:11406 run:0 clone:29 gen:76 core:0x21 unit:0x0000005e8ca304f25686b19d748e80fa
+02:06:14:WU05:FS01:Uploading 14.00MiB to 140.163.4.242
+02:06:14:WU05:FS01:Connecting to 140.163.4.242:8080
+02:06:16:WU04:FS01:Download 65.75%
+02:06:20:WU05:FS01:Upload 100.00%
+02:06:20:WU04:FS01:Download complete
+02:06:20:WU04:FS01:Received Unit: id:04 state:DOWNLOAD error:NO_ERROR project:9442 run:19 clone:2 gen:43 core:0x21 unit:0x00000031ab436c9d56b48569f2434676
+02:06:20:WU04:FS01:Starting
+02:06:20:WU04:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 04 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+02:06:20:WU04:FS01:Started FahCore on PID 6656
+02:06:20:WU04:FS01:Core PID:1200
+02:06:20:WU04:FS01:FahCore 0x21 started
+02:06:21:WU04:FS01:0x21:*********************** Log Started 2016-03-13T02:06:20Z ***********************
+02:06:21:WU04:FS01:0x21:Project: 9442 (Run 19, Clone 2, Gen 43)
+02:06:21:WU04:FS01:0x21:Unit: 0x00000031ab436c9d56b48569f2434676
+02:06:21:WU04:FS01:0x21:CPU: 0x00000000000000000000000000000000
+02:06:21:WU04:FS01:0x21:Machine: 1
+02:06:21:WU04:FS01:0x21:Reading tar file core.xml
+02:06:21:WU04:FS01:0x21:Reading tar file integrator.xml
+02:06:21:WU04:FS01:0x21:Reading tar file state.xml
+02:06:21:WU04:FS01:0x21:Reading tar file system.xml
+02:06:21:WU03:FS00:0x18:Completed 3100000 out of 5000000 steps (62%)
+02:06:21:WU04:FS01:0x21:Digital signatures verified
+02:06:21:WU04:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+02:06:21:WU04:FS01:0x21:Version 0.0.17
+02:06:28:WU04:FS01:0x21:Completed 0 out of 2500000 steps (0%)
+02:06:28:WU04:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+02:06:30:WU05:FS01:Upload complete
+02:06:30:WU05:FS01:Server responded WORK_ACK (400)
+02:06:30:WU05:FS01:Final credit estimate, 142084.00 points
+02:06:30:WU05:FS01:Cleaning up
+02:07:50:WU04:FS01:0x21:Completed 25000 out of 2500000 steps (1%)
+02:09:09:WU04:FS01:0x21:Completed 50000 out of 2500000 steps (2%)
+02:10:30:WU04:FS01:0x21:Completed 75000 out of 2500000 steps (3%)
+02:11:49:WU04:FS01:0x21:Completed 100000 out of 2500000 steps (4%)
+02:12:30:WU03:FS00:0x18:Completed 3150000 out of 5000000 steps (63%)
+02:13:10:WU04:FS01:0x21:Completed 125000 out of 2500000 steps (5%)
+02:14:28:WU04:FS01:0x21:Completed 150000 out of 2500000 steps (6%)
+02:15:49:WU04:FS01:0x21:Completed 175000 out of 2500000 steps (7%)
+02:17:08:WU04:FS01:0x21:Completed 200000 out of 2500000 steps (8%)
+02:18:29:WU04:FS01:0x21:Completed 225000 out of 2500000 steps (9%)
+02:18:34:WU03:FS00:0x18:Completed 3200000 out of 5000000 steps (64%)
+02:19:48:WU04:FS01:0x21:Completed 250000 out of 2500000 steps (10%)
+02:21:09:WU04:FS01:0x21:Completed 275000 out of 2500000 steps (11%)
+02:22:27:WU04:FS01:0x21:Completed 300000 out of 2500000 steps (12%)
+02:23:49:WU04:FS01:0x21:Completed 325000 out of 2500000 steps (13%)
+02:24:38:WU03:FS00:0x18:Completed 3250000 out of 5000000 steps (65%)
+02:25:07:WU04:FS01:0x21:Completed 350000 out of 2500000 steps (14%)
+02:26:28:WU04:FS01:0x21:Completed 375000 out of 2500000 steps (15%)
+02:27:47:WU04:FS01:0x21:Completed 400000 out of 2500000 steps (16%)
+02:29:08:WU04:FS01:0x21:Completed 425000 out of 2500000 steps (17%)
+02:30:27:WU04:FS01:0x21:Completed 450000 out of 2500000 steps (18%)
+02:30:47:WU03:FS00:0x18:Completed 3300000 out of 5000000 steps (66%)
+02:31:48:WU04:FS01:0x21:Completed 475000 out of 2500000 steps (19%)
+02:33:07:WU04:FS01:0x21:Completed 500000 out of 2500000 steps (20%)
+02:34:28:WU04:FS01:0x21:Completed 525000 out of 2500000 steps (21%)
+02:35:47:WU04:FS01:0x21:Completed 550000 out of 2500000 steps (22%)
+02:36:52:WU03:FS00:0x18:Completed 3350000 out of 5000000 steps (67%)
+02:37:08:WU04:FS01:0x21:Completed 575000 out of 2500000 steps (23%)
+02:38:27:WU04:FS01:0x21:Completed 600000 out of 2500000 steps (24%)
+02:39:32:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+02:39:32:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+02:39:32:WU02:FS00:Connecting to 171.64.65.104:8080
+02:39:32:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+02:39:32:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+02:39:32:WU00:FS01:Connecting to 171.64.65.104:8080
+02:39:33:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+02:39:33:WU02:FS00:Connecting to 171.64.65.104:80
+02:39:33:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+02:39:33:WU00:FS01:Connecting to 171.64.65.104:80
+02:39:34:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+02:39:34:WU02:FS00:Trying to send results to collection server
+02:39:34:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+02:39:34:WU02:FS00:Connecting to 171.65.103.160:8080
+02:39:34:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+02:39:34:WU00:FS01:Trying to send results to collection server
+02:39:34:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+02:39:34:WU00:FS01:Connecting to 171.65.103.160:8080
+02:39:40:WU00:FS01:Upload 64.29%
+02:39:40:WU02:FS00:Upload 69.30%
+02:39:42:WU02:FS00:Upload complete
+02:39:42:WU02:FS00:Server responded PLEASE_WAIT (464)
+02:39:42:WARNING:WU02:FS00:Failed to send results, will try again later
+02:39:42:WU00:FS01:Upload complete
+02:39:43:WU00:FS01:Server responded PLEASE_WAIT (464)
+02:39:43:WARNING:WU00:FS01:Failed to send results, will try again later
+02:39:48:WU04:FS01:0x21:Completed 625000 out of 2500000 steps (25%)
+02:41:06:WU04:FS01:0x21:Completed 650000 out of 2500000 steps (26%)
+02:42:27:WU04:FS01:0x21:Completed 675000 out of 2500000 steps (27%)
+02:43:01:WU03:FS00:0x18:Completed 3400000 out of 5000000 steps (68%)
+02:43:46:WU04:FS01:0x21:Completed 700000 out of 2500000 steps (28%)
+02:45:07:WU04:FS01:0x21:Completed 725000 out of 2500000 steps (29%)
+02:46:26:WU04:FS01:0x21:Completed 750000 out of 2500000 steps (30%)
+02:47:46:WU04:FS01:0x21:Completed 775000 out of 2500000 steps (31%)
+02:49:05:WU03:FS00:0x18:Completed 3450000 out of 5000000 steps (69%)
+02:49:05:WU04:FS01:0x21:Completed 800000 out of 2500000 steps (32%)
+02:50:26:WU04:FS01:0x21:Completed 825000 out of 2500000 steps (33%)
+02:51:45:WU04:FS01:0x21:Completed 850000 out of 2500000 steps (34%)
+02:53:05:WU04:FS01:0x21:Completed 875000 out of 2500000 steps (35%)
+02:54:24:WU04:FS01:0x21:Completed 900000 out of 2500000 steps (36%)
+02:55:09:WU03:FS00:0x18:Completed 3500000 out of 5000000 steps (70%)
+02:55:45:WU04:FS01:0x21:Completed 925000 out of 2500000 steps (37%)
+02:57:04:WU04:FS01:0x21:Completed 950000 out of 2500000 steps (38%)
+02:58:24:WU04:FS01:0x21:Completed 975000 out of 2500000 steps (39%)
+02:59:43:WU04:FS01:0x21:Completed 1000000 out of 2500000 steps (40%)
+03:01:04:WU04:FS01:0x21:Completed 1025000 out of 2500000 steps (41%)
+03:01:18:WU03:FS00:0x18:Completed 3550000 out of 5000000 steps (71%)
+03:02:23:WU04:FS01:0x21:Completed 1050000 out of 2500000 steps (42%)
+03:03:43:WU04:FS01:0x21:Completed 1075000 out of 2500000 steps (43%)
+03:05:02:WU04:FS01:0x21:Completed 1100000 out of 2500000 steps (44%)
+03:06:23:WU04:FS01:0x21:Completed 1125000 out of 2500000 steps (45%)
+03:07:21:WU03:FS00:0x18:Completed 3600000 out of 5000000 steps (72%)
+03:07:42:WU04:FS01:0x21:Completed 1150000 out of 2500000 steps (46%)
+03:09:03:WU04:FS01:0x21:Completed 1175000 out of 2500000 steps (47%)
+03:10:21:WU04:FS01:0x21:Completed 1200000 out of 2500000 steps (48%)
+03:11:42:WU04:FS01:0x21:Completed 1225000 out of 2500000 steps (49%)
+03:13:01:WU04:FS01:0x21:Completed 1250000 out of 2500000 steps (50%)
+03:13:30:WU03:FS00:0x18:Completed 3650000 out of 5000000 steps (73%)
+03:14:22:WU04:FS01:0x21:Completed 1275000 out of 2500000 steps (51%)
+03:15:40:WU04:FS01:0x21:Completed 1300000 out of 2500000 steps (52%)
+03:17:01:WU04:FS01:0x21:Completed 1325000 out of 2500000 steps (53%)
+03:18:20:WU04:FS01:0x21:Completed 1350000 out of 2500000 steps (54%)
+******************************* Date: 2016-03-13 *******************************
+03:19:34:WU03:FS00:0x18:Completed 3700000 out of 5000000 steps (74%)
+03:19:41:WU04:FS01:0x21:Completed 1375000 out of 2500000 steps (55%)
+03:20:59:WU04:FS01:0x21:Completed 1400000 out of 2500000 steps (56%)
+03:22:20:WU04:FS01:0x21:Completed 1425000 out of 2500000 steps (57%)
+03:23:39:WU04:FS01:0x21:Completed 1450000 out of 2500000 steps (58%)
+03:25:00:WU04:FS01:0x21:Completed 1475000 out of 2500000 steps (59%)
+03:25:38:WU03:FS00:0x18:Completed 3750000 out of 5000000 steps (75%)
+03:26:19:WU04:FS01:0x21:Completed 1500000 out of 2500000 steps (60%)
+03:27:39:WU04:FS01:0x21:Completed 1525000 out of 2500000 steps (61%)
+03:28:58:WU04:FS01:0x21:Completed 1550000 out of 2500000 steps (62%)
+03:30:19:WU04:FS01:0x21:Completed 1575000 out of 2500000 steps (63%)
+03:31:38:WU04:FS01:0x21:Completed 1600000 out of 2500000 steps (64%)
+03:31:47:WU03:FS00:0x18:Completed 3800000 out of 5000000 steps (76%)
+03:32:59:WU04:FS01:0x21:Completed 1625000 out of 2500000 steps (65%)
+03:34:17:WU04:FS01:0x21:Completed 1650000 out of 2500000 steps (66%)
+03:35:38:WU04:FS01:0x21:Completed 1675000 out of 2500000 steps (67%)
+03:36:57:WU04:FS01:0x21:Completed 1700000 out of 2500000 steps (68%)
+03:37:52:WU03:FS00:0x18:Completed 3850000 out of 5000000 steps (77%)
+03:38:18:WU04:FS01:0x21:Completed 1725000 out of 2500000 steps (69%)
+03:39:37:WU04:FS01:0x21:Completed 1750000 out of 2500000 steps (70%)
+03:40:58:WU04:FS01:0x21:Completed 1775000 out of 2500000 steps (71%)
+03:42:17:WU04:FS01:0x21:Completed 1800000 out of 2500000 steps (72%)
+03:43:38:WU04:FS01:0x21:Completed 1825000 out of 2500000 steps (73%)
+03:44:01:WU03:FS00:0x18:Completed 3900000 out of 5000000 steps (78%)
+03:44:57:WU04:FS01:0x21:Completed 1850000 out of 2500000 steps (74%)
+03:46:18:WU04:FS01:0x21:Completed 1875000 out of 2500000 steps (75%)
+03:47:37:WU04:FS01:0x21:Completed 1900000 out of 2500000 steps (76%)
+03:48:58:WU04:FS01:0x21:Completed 1925000 out of 2500000 steps (77%)
+03:50:05:WU03:FS00:0x18:Completed 3950000 out of 5000000 steps (79%)
+03:50:17:WU04:FS01:0x21:Completed 1950000 out of 2500000 steps (78%)
+03:51:38:WU04:FS01:0x21:Completed 1975000 out of 2500000 steps (79%)
+03:52:57:WU04:FS01:0x21:Completed 2000000 out of 2500000 steps (80%)
+03:54:18:WU04:FS01:0x21:Completed 2025000 out of 2500000 steps (81%)
+03:55:37:WU04:FS01:0x21:Completed 2050000 out of 2500000 steps (82%)
+03:56:09:WU03:FS00:0x18:Completed 4000000 out of 5000000 steps (80%)
+03:56:57:WU04:FS01:0x21:Completed 2075000 out of 2500000 steps (83%)
+03:58:16:WU04:FS01:0x21:Completed 2100000 out of 2500000 steps (84%)
+03:59:37:WU04:FS01:0x21:Completed 2125000 out of 2500000 steps (85%)
+04:00:56:WU04:FS01:0x21:Completed 2150000 out of 2500000 steps (86%)
+04:02:17:WU04:FS01:0x21:Completed 2175000 out of 2500000 steps (87%)
+04:02:18:WU03:FS00:0x18:Completed 4050000 out of 5000000 steps (81%)
+04:03:36:WU04:FS01:0x21:Completed 2200000 out of 2500000 steps (88%)
+04:04:56:WU04:FS01:0x21:Completed 2225000 out of 2500000 steps (89%)
+04:06:15:WU04:FS01:0x21:Completed 2250000 out of 2500000 steps (90%)
+04:07:36:WU04:FS01:0x21:Completed 2275000 out of 2500000 steps (91%)
+04:08:22:WU03:FS00:0x18:Completed 4100000 out of 5000000 steps (82%)
+04:08:55:WU04:FS01:0x21:Completed 2300000 out of 2500000 steps (92%)
+04:10:16:WU04:FS01:0x21:Completed 2325000 out of 2500000 steps (93%)
+04:11:34:WU04:FS01:0x21:Completed 2350000 out of 2500000 steps (94%)
+04:12:55:WU04:FS01:0x21:Completed 2375000 out of 2500000 steps (95%)
+04:14:14:WU04:FS01:0x21:Completed 2400000 out of 2500000 steps (96%)
+04:14:31:WU03:FS00:0x18:Completed 4150000 out of 5000000 steps (83%)
+04:15:35:WU04:FS01:0x21:Completed 2425000 out of 2500000 steps (97%)
+04:16:54:WU04:FS01:0x21:Completed 2450000 out of 2500000 steps (98%)
+04:18:15:WU04:FS01:0x21:Completed 2475000 out of 2500000 steps (99%)
+04:19:33:WU04:FS01:0x21:Completed 2500000 out of 2500000 steps (100%)
+04:19:34:WU05:FS01:Connecting to 171.67.108.45:80
+04:19:34:WU05:FS01:Assigned to work server 171.64.65.93
+04:19:34:WU05:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 171.64.65.93
+04:19:34:WU05:FS01:Connecting to 171.64.65.93:8080
+04:19:34:WU05:FS01:Downloading 27.99MiB
+04:19:36:WU04:FS01:0x21:Saving result file logfile_01.txt
+04:19:36:WU04:FS01:0x21:Saving result file checkpointState.xml
+04:19:36:WU04:FS01:0x21:Saving result file checkpt.crc
+04:19:36:WU04:FS01:0x21:Saving result file log.txt
+04:19:36:WU04:FS01:0x21:Saving result file positions.xtc
+04:19:36:WU04:FS01:0x21:Folding@home Core Shutdown: FINISHED_UNIT
+04:19:36:WU04:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+04:19:36:WU04:FS01:Sending unit results: id:04 state:SEND error:NO_ERROR project:9442 run:19 clone:2 gen:43 core:0x21 unit:0x00000031ab436c9d56b48569f2434676
+04:19:36:WU04:FS01:Uploading 25.38MiB to 171.67.108.157
+04:19:36:WU04:FS01:Connecting to 171.67.108.157:8080
+04:19:40:WU05:FS01:Download 42.65%
+04:19:42:WU04:FS01:Upload 70.19%
+04:19:44:WU04:FS01:Upload complete
+04:19:44:WU04:FS01:Server responded WORK_ACK (400)
+04:19:44:WU04:FS01:Final credit estimate, 66127.00 points
+04:19:44:WU04:FS01:Cleaning up
+04:19:46:WU05:FS01:Download 69.44%
+04:19:48:WU05:FS01:Download complete
+04:19:48:WU05:FS01:Received Unit: id:05 state:DOWNLOAD error:NO_ERROR project:9172 run:3 clone:5 gen:75 core:0x21 unit:0x0000005aab40415d567d29f7decd426a
+04:19:48:WU05:FS01:Starting
+04:19:48:WU05:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 05 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+04:19:48:WU05:FS01:Started FahCore on PID 4580
+04:19:48:WU05:FS01:Core PID:3864
+04:19:48:WU05:FS01:FahCore 0x21 started
+04:19:49:WU05:FS01:0x21:*********************** Log Started 2016-03-13T04:19:48Z ***********************
+04:19:49:WU05:FS01:0x21:Project: 9172 (Run 3, Clone 5, Gen 75)
+04:19:49:WU05:FS01:0x21:Unit: 0x0000005aab40415d567d29f7decd426a
+04:19:49:WU05:FS01:0x21:CPU: 0x00000000000000000000000000000000
+04:19:49:WU05:FS01:0x21:Machine: 1
+04:19:49:WU05:FS01:0x21:Reading tar file core.xml
+04:19:49:WU05:FS01:0x21:Reading tar file integrator.xml
+04:19:49:WU05:FS01:0x21:Reading tar file state.xml
+04:19:49:WU05:FS01:0x21:Reading tar file system.xml
+04:19:49:WU05:FS01:0x21:Digital signatures verified
+04:19:49:WU05:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+04:19:49:WU05:FS01:0x21:Version 0.0.17
+04:19:57:WU05:FS01:0x21:Completed 0 out of 2500000 steps (0%)
+04:19:57:WU05:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+04:20:35:WU03:FS00:0x18:Completed 4200000 out of 5000000 steps (84%)
+04:21:11:WU05:FS01:0x21:Completed 25000 out of 2500000 steps (1%)
+04:22:24:WU05:FS01:0x21:Completed 50000 out of 2500000 steps (2%)
+04:23:38:WU05:FS01:0x21:Completed 75000 out of 2500000 steps (3%)
+04:24:51:WU05:FS01:0x21:Completed 100000 out of 2500000 steps (4%)
+04:26:06:WU05:FS01:0x21:Completed 125000 out of 2500000 steps (5%)
+04:26:39:WU03:FS00:0x18:Completed 4250000 out of 5000000 steps (85%)
+04:27:19:WU05:FS01:0x21:Completed 150000 out of 2500000 steps (6%)
+04:28:33:WU05:FS01:0x21:Completed 175000 out of 2500000 steps (7%)
+04:29:46:WU05:FS01:0x21:Completed 200000 out of 2500000 steps (8%)
+04:31:01:WU05:FS01:0x21:Completed 225000 out of 2500000 steps (9%)
+04:32:14:WU05:FS01:0x21:Completed 250000 out of 2500000 steps (10%)
+04:32:48:WU03:FS00:0x18:Completed 4300000 out of 5000000 steps (86%)
+04:33:28:WU05:FS01:0x21:Completed 275000 out of 2500000 steps (11%)
+04:34:41:WU05:FS01:0x21:Completed 300000 out of 2500000 steps (12%)
+04:35:56:WU05:FS01:0x21:Completed 325000 out of 2500000 steps (13%)
+04:37:09:WU05:FS01:0x21:Completed 350000 out of 2500000 steps (14%)
+04:38:23:WU05:FS01:0x21:Completed 375000 out of 2500000 steps (15%)
+04:38:52:WU03:FS00:0x18:Completed 4350000 out of 5000000 steps (87%)
+04:39:36:WU05:FS01:0x21:Completed 400000 out of 2500000 steps (16%)
+04:40:51:WU05:FS01:0x21:Completed 425000 out of 2500000 steps (17%)
+04:42:05:WU05:FS01:0x21:Completed 450000 out of 2500000 steps (18%)
+04:43:18:WU05:FS01:0x21:Completed 475000 out of 2500000 steps (19%)
+04:44:32:WU05:FS01:0x21:Completed 500000 out of 2500000 steps (20%)
+04:45:00:WU03:FS00:0x18:Completed 4400000 out of 5000000 steps (88%)
+04:45:48:WU05:FS01:0x21:Completed 525000 out of 2500000 steps (21%)
+04:47:01:WU05:FS01:0x21:Completed 550000 out of 2500000 steps (22%)
+04:48:15:WU05:FS01:0x21:Completed 575000 out of 2500000 steps (23%)
+04:49:29:WU05:FS01:0x21:Completed 600000 out of 2500000 steps (24%)
+04:50:44:WU05:FS01:0x21:Completed 625000 out of 2500000 steps (25%)
+04:51:04:WU03:FS00:0x18:Completed 4450000 out of 5000000 steps (89%)
+04:51:58:WU05:FS01:0x21:Completed 650000 out of 2500000 steps (26%)
+04:53:12:WU05:FS01:0x21:Completed 675000 out of 2500000 steps (27%)
+04:54:25:WU05:FS01:0x21:Completed 700000 out of 2500000 steps (28%)
+04:55:41:WU05:FS01:0x21:Completed 725000 out of 2500000 steps (29%)
+04:56:55:WU05:FS01:0x21:Completed 750000 out of 2500000 steps (30%)
+04:57:09:WU03:FS00:0x18:Completed 4500000 out of 5000000 steps (90%)
+04:58:08:WU05:FS01:0x21:Completed 775000 out of 2500000 steps (31%)
+04:59:22:WU05:FS01:0x21:Completed 800000 out of 2500000 steps (32%)
+05:00:37:WU05:FS01:0x21:Completed 825000 out of 2500000 steps (33%)
+05:01:51:WU05:FS01:0x21:Completed 850000 out of 2500000 steps (34%)
+05:03:04:WU05:FS01:0x21:Completed 875000 out of 2500000 steps (35%)
+05:03:17:WU03:FS00:0x18:Completed 4550000 out of 5000000 steps (91%)
+05:04:18:WU05:FS01:0x21:Completed 900000 out of 2500000 steps (36%)
+05:05:33:WU05:FS01:0x21:Completed 925000 out of 2500000 steps (37%)
+05:06:47:WU05:FS01:0x21:Completed 950000 out of 2500000 steps (38%)
+05:08:00:WU05:FS01:0x21:Completed 975000 out of 2500000 steps (39%)
+05:09:14:WU05:FS01:0x21:Completed 1000000 out of 2500000 steps (40%)
+05:09:21:WU03:FS00:0x18:Completed 4600000 out of 5000000 steps (92%)
+05:10:30:WU05:FS01:0x21:Completed 1025000 out of 2500000 steps (41%)
+05:11:43:WU05:FS01:0x21:Completed 1050000 out of 2500000 steps (42%)
+05:12:57:WU05:FS01:0x21:Completed 1075000 out of 2500000 steps (43%)
+05:14:10:WU05:FS01:0x21:Completed 1100000 out of 2500000 steps (44%)
+05:15:26:WU05:FS01:0x21:Completed 1125000 out of 2500000 steps (45%)
+05:15:30:WU03:FS00:0x18:Completed 4650000 out of 5000000 steps (93%)
+05:16:39:WU05:FS01:0x21:Completed 1150000 out of 2500000 steps (46%)
+05:17:53:WU05:FS01:0x21:Completed 1175000 out of 2500000 steps (47%)
+05:19:06:WU05:FS01:0x21:Completed 1200000 out of 2500000 steps (48%)
+05:20:22:WU05:FS01:0x21:Completed 1225000 out of 2500000 steps (49%)
+05:21:34:WU03:FS00:0x18:Completed 4700000 out of 5000000 steps (94%)
+05:21:35:WU05:FS01:0x21:Completed 1250000 out of 2500000 steps (50%)
+05:22:49:WU05:FS01:0x21:Completed 1275000 out of 2500000 steps (51%)
+05:24:02:WU05:FS01:0x21:Completed 1300000 out of 2500000 steps (52%)
+05:25:18:WU05:FS01:0x21:Completed 1325000 out of 2500000 steps (53%)
+05:26:31:WU05:FS01:0x21:Completed 1350000 out of 2500000 steps (54%)
+05:27:39:WU03:FS00:0x18:Completed 4750000 out of 5000000 steps (95%)
+05:27:45:WU05:FS01:0x21:Completed 1375000 out of 2500000 steps (55%)
+05:28:58:WU05:FS01:0x21:Completed 1400000 out of 2500000 steps (56%)
+05:30:14:WU05:FS01:0x21:Completed 1425000 out of 2500000 steps (57%)
+05:31:28:WU05:FS01:0x21:Completed 1450000 out of 2500000 steps (58%)
+05:32:41:WU05:FS01:0x21:Completed 1475000 out of 2500000 steps (59%)
+05:33:47:WU03:FS00:0x18:Completed 4800000 out of 5000000 steps (96%)
+05:33:54:WU05:FS01:0x21:Completed 1500000 out of 2500000 steps (60%)
+05:35:10:WU05:FS01:0x21:Completed 1525000 out of 2500000 steps (61%)
+05:36:24:WU05:FS01:0x21:Completed 1550000 out of 2500000 steps (62%)
+05:37:37:WU05:FS01:0x21:Completed 1575000 out of 2500000 steps (63%)
+05:38:51:WU05:FS01:0x21:Completed 1600000 out of 2500000 steps (64%)
+05:39:51:WU03:FS00:0x18:Completed 4850000 out of 5000000 steps (97%)
+05:40:06:WU05:FS01:0x21:Completed 1625000 out of 2500000 steps (65%)
+05:41:20:WU05:FS01:0x21:Completed 1650000 out of 2500000 steps (66%)
+05:42:33:WU05:FS01:0x21:Completed 1675000 out of 2500000 steps (67%)
+05:43:47:WU05:FS01:0x21:Completed 1700000 out of 2500000 steps (68%)
+05:45:02:WU05:FS01:0x21:Completed 1725000 out of 2500000 steps (69%)
+05:46:00:WU03:FS00:0x18:Completed 4900000 out of 5000000 steps (98%)
+05:46:16:WU05:FS01:0x21:Completed 1750000 out of 2500000 steps (70%)
+05:47:29:WU05:FS01:0x21:Completed 1775000 out of 2500000 steps (71%)
+05:48:43:WU05:FS01:0x21:Completed 1800000 out of 2500000 steps (72%)
+05:49:58:WU05:FS01:0x21:Completed 1825000 out of 2500000 steps (73%)
+05:51:12:WU05:FS01:0x21:Completed 1850000 out of 2500000 steps (74%)
+05:52:05:WU03:FS00:0x18:Completed 4950000 out of 5000000 steps (99%)
+05:52:26:WU05:FS01:0x21:Completed 1875000 out of 2500000 steps (75%)
+05:53:39:WU05:FS01:0x21:Completed 1900000 out of 2500000 steps (76%)
+05:54:55:WU05:FS01:0x21:Completed 1925000 out of 2500000 steps (77%)
+05:56:08:WU05:FS01:0x21:Completed 1950000 out of 2500000 steps (78%)
+05:57:22:WU05:FS01:0x21:Completed 1975000 out of 2500000 steps (79%)
+05:58:09:WU03:FS00:0x18:Completed 5000000 out of 5000000 steps (100%)
+05:58:09:WU04:FS00:Connecting to 171.67.108.45:80
+05:58:09:WU04:FS00:Assigned to work server 171.64.65.84
+05:58:09:WU04:FS00:Requesting new work unit for slot 00: RUNNING gpu:1:GM107 [GeForce GTX 750 Ti] from 171.64.65.84
+05:58:09:WU04:FS00:Connecting to 171.64.65.84:8080
+05:58:10:WU04:FS00:Downloading 2.62MiB
+05:58:11:WU04:FS00:Download complete
+05:58:11:WU04:FS00:Received Unit: id:04 state:DOWNLOAD error:NO_ERROR project:9159 run:151 clone:0 gen:135 core:0x18 unit:0x00000098ab404154567457c9170da396
+05:58:14:WU03:FS00:0x18:Saving result file logfile_01.txt
+05:58:14:WU03:FS00:0x18:Saving result file checkpointState.xml
+05:58:14:WU03:FS00:0x18:Saving result file checkpt.crc
+05:58:14:WU03:FS00:0x18:Saving result file log.txt
+05:58:14:WU03:FS00:0x18:Saving result file positions.xtc
+05:58:15:WU03:FS00:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+05:58:16:WU03:FS00:FahCore returned: FINISHED_UNIT (100 = 0x64)
+05:58:16:WU03:FS00:Sending unit results: id:03 state:SEND error:NO_ERROR project:10490 run:159 clone:0 gen:167 core:0x18 unit:0x000000b58ca304f45537e8f47e253329
+05:58:16:WU03:FS00:Uploading 6.65MiB to 140.163.4.244
+05:58:16:WU03:FS00:Connecting to 140.163.4.244:8080
+05:58:16:WU04:FS00:Starting
+05:58:16:WU04:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 04 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 1 -gpu-vendor nvidia
+05:58:16:WU04:FS00:Started FahCore on PID 4576
+05:58:16:WU04:FS00:Core PID:6656
+05:58:16:WU04:FS00:FahCore 0x18 started
+05:58:16:WU04:FS00:0x18:*********************** Log Started 2016-03-13T05:58:16Z ***********************
+05:58:16:WU04:FS00:0x18:Project: 9159 (Run 151, Clone 0, Gen 135)
+05:58:16:WU04:FS00:0x18:Unit: 0x00000098ab404154567457c9170da396
+05:58:16:WU04:FS00:0x18:CPU: 0x00000000000000000000000000000000
+05:58:16:WU04:FS00:0x18:Machine: 0
+05:58:16:WU04:FS00:0x18:Reading tar file core.xml
+05:58:16:WU04:FS00:0x18:Reading tar file system.xml
+05:58:16:WU04:FS00:0x18:Reading tar file integrator.xml
+05:58:16:WU04:FS00:0x18:Reading tar file state.xml
+05:58:17:WU04:FS00:0x18:Digital signatures verified
+05:58:17:WU04:FS00:0x18:Folding@home GPU core18
+05:58:17:WU04:FS00:0x18:Version 0.0.4
+05:58:25:WU03:FS00:Upload complete
+05:58:25:WU03:FS00:Server responded WORK_ACK (400)
+05:58:25:WU03:FS00:Final credit estimate, 38979.00 points
+05:58:25:WU03:FS00:Cleaning up
+05:58:30:WU04:FS00:0x18:Completed 0 out of 2500000 steps (0%)
+05:58:30:WU04:FS00:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+05:58:32:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+05:58:32:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+05:58:32:WU02:FS00:Connecting to 171.64.65.104:8080
+05:58:33:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+05:58:33:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+05:58:33:WU00:FS01:Connecting to 171.64.65.104:8080
+05:58:33:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+05:58:33:WU02:FS00:Connecting to 171.64.65.104:80
+05:58:34:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+05:58:34:WU00:FS01:Connecting to 171.64.65.104:80
+05:58:34:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+05:58:34:WU02:FS00:Trying to send results to collection server
+05:58:34:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+05:58:34:WU02:FS00:Connecting to 171.65.103.160:8080
+05:58:35:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+05:58:35:WU00:FS01:Trying to send results to collection server
+05:58:35:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+05:58:35:WU00:FS01:Connecting to 171.65.103.160:8080
+05:58:35:WU05:FS01:0x21:Completed 2000000 out of 2500000 steps (80%)
+05:58:40:WU02:FS00:Upload 67.15%
+05:58:41:WU00:FS01:Upload 67.15%
+05:58:42:WU02:FS00:Upload complete
+05:58:42:WU02:FS00:Server responded PLEASE_WAIT (464)
+05:58:42:WARNING:WU02:FS00:Failed to send results, will try again later
+05:58:43:WU00:FS01:Upload complete
+05:58:43:WU00:FS01:Server responded PLEASE_WAIT (464)
+05:58:43:WARNING:WU00:FS01:Failed to send results, will try again later
+05:59:51:WU05:FS01:0x21:Completed 2025000 out of 2500000 steps (81%)
+06:01:04:WU05:FS01:0x21:Completed 2050000 out of 2500000 steps (82%)
+06:01:48:WU04:FS00:0x18:Completed 25000 out of 2500000 steps (1%)
+06:02:17:WU05:FS01:0x21:Completed 2075000 out of 2500000 steps (83%)
+06:03:31:WU05:FS01:0x21:Completed 2100000 out of 2500000 steps (84%)
+06:04:46:WU05:FS01:0x21:Completed 2125000 out of 2500000 steps (85%)
+06:05:03:WU04:FS00:0x18:Completed 50000 out of 2500000 steps (2%)
+06:06:00:WU05:FS01:0x21:Completed 2150000 out of 2500000 steps (86%)
+06:07:13:WU05:FS01:0x21:Completed 2175000 out of 2500000 steps (87%)
+06:08:18:WU04:FS00:0x18:Completed 75000 out of 2500000 steps (3%)
+06:08:27:WU05:FS01:0x21:Completed 2200000 out of 2500000 steps (88%)
+06:09:42:WU05:FS01:0x21:Completed 2225000 out of 2500000 steps (89%)
+06:10:56:WU05:FS01:0x21:Completed 2250000 out of 2500000 steps (90%)
+06:11:33:WU04:FS00:0x18:Completed 100000 out of 2500000 steps (4%)
+06:12:09:WU05:FS01:0x21:Completed 2275000 out of 2500000 steps (91%)
+06:13:22:WU05:FS01:0x21:Completed 2300000 out of 2500000 steps (92%)
+06:14:38:WU05:FS01:0x21:Completed 2325000 out of 2500000 steps (93%)
+06:14:53:WU04:FS00:0x18:Completed 125000 out of 2500000 steps (5%)
+06:15:51:WU05:FS01:0x21:Completed 2350000 out of 2500000 steps (94%)
+06:17:05:WU05:FS01:0x21:Completed 2375000 out of 2500000 steps (95%)
+06:18:08:WU04:FS00:0x18:Completed 150000 out of 2500000 steps (6%)
+06:18:18:WU05:FS01:0x21:Completed 2400000 out of 2500000 steps (96%)
+06:19:33:WU05:FS01:0x21:Completed 2425000 out of 2500000 steps (97%)
+06:20:47:WU05:FS01:0x21:Completed 2450000 out of 2500000 steps (98%)
+06:21:23:WU04:FS00:0x18:Completed 175000 out of 2500000 steps (7%)
+06:22:00:WU05:FS01:0x21:Completed 2475000 out of 2500000 steps (99%)
+06:23:14:WU05:FS01:0x21:Completed 2500000 out of 2500000 steps (100%)
+06:23:15:WU03:FS01:Connecting to 171.67.108.45:80
+06:23:15:WU03:FS01:Assigned to work server 140.163.4.243
+06:23:15:WU03:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 140.163.4.243
+06:23:15:WU03:FS01:Connecting to 140.163.4.243:8080
+06:23:16:ERROR:WU03:FS01:Exception: Server did not assign work unit
+06:23:16:WU05:FS01:0x21:Saving result file logfile_01.txt
+06:23:16:WU05:FS01:0x21:Saving result file checkpointState.xml
+06:23:16:WU05:FS01:0x21:Saving result file checkpt.crc
+06:23:16:WU05:FS01:0x21:Saving result file log.txt
+06:23:16:WU05:FS01:0x21:Saving result file positions.xtc
+06:23:16:WU05:FS01:0x21:Folding@home Core Shutdown: FINISHED_UNIT
+06:23:16:WU03:FS01:Connecting to 171.67.108.45:80
+06:23:16:WU03:FS01:Assigned to work server 171.64.65.92
+06:23:16:WU03:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 171.64.65.92
+06:23:16:WU03:FS01:Connecting to 171.64.65.92:8080
+06:23:16:WU05:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+06:23:16:WU05:FS01:Sending unit results: id:05 state:SEND error:NO_ERROR project:9172 run:3 clone:5 gen:75 core:0x21 unit:0x0000005aab40415d567d29f7decd426a
+06:23:16:WU05:FS01:Uploading 17.80MiB to 171.64.65.93
+06:23:16:WU03:FS01:Downloading 2.97MiB
+06:23:16:WU05:FS01:Connecting to 171.64.65.93:8080
+06:23:18:WU03:FS01:Download complete
+06:23:18:WU03:FS01:Received Unit: id:03 state:DOWNLOAD error:NO_ERROR project:9162 run:139 clone:0 gen:194 core:0x18 unit:0x000000d2ab40415c5674813c3923e38d
+06:23:18:WU03:FS01:Starting
+06:23:18:WU03:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 03 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+06:23:18:WU03:FS01:Started FahCore on PID 7100
+06:23:18:WU03:FS01:Core PID:1220
+06:23:18:WU03:FS01:FahCore 0x18 started
+06:23:19:WU03:FS01:0x18:*********************** Log Started 2016-03-13T06:23:18Z ***********************
+06:23:19:WU03:FS01:0x18:Project: 9162 (Run 139, Clone 0, Gen 194)
+06:23:19:WU03:FS01:0x18:Unit: 0x000000d2ab40415c5674813c3923e38d
+06:23:19:WU03:FS01:0x18:CPU: 0x00000000000000000000000000000000
+06:23:19:WU03:FS01:0x18:Machine: 1
+06:23:19:WU03:FS01:0x18:Reading tar file core.xml
+06:23:19:WU03:FS01:0x18:Reading tar file system.xml
+06:23:19:WU03:FS01:0x18:Reading tar file integrator.xml
+06:23:19:WU03:FS01:0x18:Reading tar file state.xml
+06:23:19:WU03:FS01:0x18:Digital signatures verified
+06:23:19:WU03:FS01:0x18:Folding@home GPU core18
+06:23:19:WU03:FS01:0x18:Version 0.0.4
+06:23:22:WU05:FS01:Upload complete
+06:23:22:WU05:FS01:Server responded WORK_ACK (400)
+06:23:22:WU05:FS01:Final credit estimate, 49502.00 points
+06:23:22:WU05:FS01:Cleaning up
+06:23:33:WU03:FS01:0x18:Completed 0 out of 2500000 steps (0%)
+06:23:33:WU03:FS01:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+06:24:34:WU03:FS01:0x18:Completed 25000 out of 2500000 steps (1%)
+06:24:38:WU04:FS00:0x18:Completed 200000 out of 2500000 steps (8%)
+06:25:31:WU03:FS01:0x18:Completed 50000 out of 2500000 steps (2%)
+06:26:28:WU03:FS01:0x18:Completed 75000 out of 2500000 steps (3%)
+06:27:25:WU03:FS01:0x18:Completed 100000 out of 2500000 steps (4%)
+06:27:57:WU04:FS00:0x18:Completed 225000 out of 2500000 steps (9%)
+06:28:26:WU03:FS01:0x18:Completed 125000 out of 2500000 steps (5%)
+06:29:23:WU03:FS01:0x18:Completed 150000 out of 2500000 steps (6%)
+06:30:20:WU03:FS01:0x18:Completed 175000 out of 2500000 steps (7%)
+06:31:12:WU04:FS00:0x18:Completed 250000 out of 2500000 steps (10%)
+06:31:17:WU03:FS01:0x18:Completed 200000 out of 2500000 steps (8%)
+06:32:19:WU03:FS01:0x18:Completed 225000 out of 2500000 steps (9%)
+06:33:16:WU03:FS01:0x18:Completed 250000 out of 2500000 steps (10%)
+06:34:13:WU03:FS01:0x18:Completed 275000 out of 2500000 steps (11%)
+06:34:27:WU04:FS00:0x18:Completed 275000 out of 2500000 steps (11%)
+06:35:10:WU03:FS01:0x18:Completed 300000 out of 2500000 steps (12%)
+06:36:12:WU03:FS01:0x18:Completed 325000 out of 2500000 steps (13%)
+06:37:09:WU03:FS01:0x18:Completed 350000 out of 2500000 steps (14%)
+06:37:42:WU04:FS00:0x18:Completed 300000 out of 2500000 steps (12%)
+06:38:06:WU03:FS01:0x18:Completed 375000 out of 2500000 steps (15%)
+06:39:03:WU03:FS01:0x18:Completed 400000 out of 2500000 steps (16%)
+06:40:05:WU03:FS01:0x18:Completed 425000 out of 2500000 steps (17%)
+06:41:02:WU04:FS00:0x18:Completed 325000 out of 2500000 steps (13%)
+06:41:02:WU03:FS01:0x18:Completed 450000 out of 2500000 steps (18%)
+06:41:59:WU03:FS01:0x18:Completed 475000 out of 2500000 steps (19%)
+06:42:56:WU03:FS01:0x18:Completed 500000 out of 2500000 steps (20%)
+06:43:58:WU03:FS01:0x18:Completed 525000 out of 2500000 steps (21%)
+06:44:17:WU04:FS00:0x18:Completed 350000 out of 2500000 steps (14%)
+06:44:55:WU03:FS01:0x18:Completed 550000 out of 2500000 steps (22%)
+06:45:52:WU03:FS01:0x18:Completed 575000 out of 2500000 steps (23%)
+06:46:49:WU03:FS01:0x18:Completed 600000 out of 2500000 steps (24%)
+06:47:32:WU04:FS00:0x18:Completed 375000 out of 2500000 steps (15%)
+06:47:51:WU03:FS01:0x18:Completed 625000 out of 2500000 steps (25%)
+06:48:47:WU03:FS01:0x18:Completed 650000 out of 2500000 steps (26%)
+06:49:45:WU03:FS01:0x18:Completed 675000 out of 2500000 steps (27%)
+06:50:41:WU03:FS01:0x18:Completed 700000 out of 2500000 steps (28%)
+06:50:47:WU04:FS00:0x18:Completed 400000 out of 2500000 steps (16%)
+06:51:43:WU03:FS01:0x18:Completed 725000 out of 2500000 steps (29%)
+06:52:40:WU03:FS01:0x18:Completed 750000 out of 2500000 steps (30%)
+06:53:37:WU03:FS01:0x18:Completed 775000 out of 2500000 steps (31%)
+06:54:06:WU04:FS00:0x18:Completed 425000 out of 2500000 steps (17%)
+06:54:34:WU03:FS01:0x18:Completed 800000 out of 2500000 steps (32%)
+06:55:36:WU03:FS01:0x18:Completed 825000 out of 2500000 steps (33%)
+06:56:33:WU03:FS01:0x18:Completed 850000 out of 2500000 steps (34%)
+06:57:21:WU04:FS00:0x18:Completed 450000 out of 2500000 steps (18%)
+06:57:30:WU03:FS01:0x18:Completed 875000 out of 2500000 steps (35%)
+06:58:27:WU03:FS01:0x18:Completed 900000 out of 2500000 steps (36%)
+06:59:29:WU03:FS01:0x18:Completed 925000 out of 2500000 steps (37%)
+07:00:26:WU03:FS01:0x18:Completed 950000 out of 2500000 steps (38%)
+07:00:36:WU04:FS00:0x18:Completed 475000 out of 2500000 steps (19%)
+07:01:23:WU03:FS01:0x18:Completed 975000 out of 2500000 steps (39%)
+07:02:20:WU03:FS01:0x18:Completed 1000000 out of 2500000 steps (40%)
+07:03:22:WU03:FS01:0x18:Completed 1025000 out of 2500000 steps (41%)
+07:03:52:WU04:FS00:0x18:Completed 500000 out of 2500000 steps (20%)
+07:04:19:WU03:FS01:0x18:Completed 1050000 out of 2500000 steps (42%)
+07:05:16:WU03:FS01:0x18:Completed 1075000 out of 2500000 steps (43%)
+07:06:13:WU03:FS01:0x18:Completed 1100000 out of 2500000 steps (44%)
+07:07:11:WU04:FS00:0x18:Completed 525000 out of 2500000 steps (21%)
+07:07:15:WU03:FS01:0x18:Completed 1125000 out of 2500000 steps (45%)
+07:08:12:WU03:FS01:0x18:Completed 1150000 out of 2500000 steps (46%)
+07:09:09:WU03:FS01:0x18:Completed 1175000 out of 2500000 steps (47%)
+07:10:06:WU03:FS01:0x18:Completed 1200000 out of 2500000 steps (48%)
+07:10:26:WU04:FS00:0x18:Completed 550000 out of 2500000 steps (22%)
+07:11:08:WU03:FS01:0x18:Completed 1225000 out of 2500000 steps (49%)
+07:12:05:WU03:FS01:0x18:Completed 1250000 out of 2500000 steps (50%)
+07:13:02:WU03:FS01:0x18:Completed 1275000 out of 2500000 steps (51%)
+07:13:41:WU04:FS00:0x18:Completed 575000 out of 2500000 steps (23%)
+07:13:59:WU03:FS01:0x18:Completed 1300000 out of 2500000 steps (52%)
+07:15:01:WU03:FS01:0x18:Completed 1325000 out of 2500000 steps (53%)
+07:15:58:WU03:FS01:0x18:Completed 1350000 out of 2500000 steps (54%)
+07:16:55:WU03:FS01:0x18:Completed 1375000 out of 2500000 steps (55%)
+07:16:57:WU04:FS00:0x18:Completed 600000 out of 2500000 steps (24%)
+07:17:52:WU03:FS01:0x18:Completed 1400000 out of 2500000 steps (56%)
+07:18:54:WU03:FS01:0x18:Completed 1425000 out of 2500000 steps (57%)
+07:19:51:WU03:FS01:0x18:Completed 1450000 out of 2500000 steps (58%)
+07:20:16:WU04:FS00:0x18:Completed 625000 out of 2500000 steps (25%)
+07:20:48:WU03:FS01:0x18:Completed 1475000 out of 2500000 steps (59%)
+07:21:45:WU03:FS01:0x18:Completed 1500000 out of 2500000 steps (60%)
+07:22:46:WU03:FS01:0x18:Completed 1525000 out of 2500000 steps (61%)
+07:23:31:WU04:FS00:0x18:Completed 650000 out of 2500000 steps (26%)
+07:23:43:WU03:FS01:0x18:Completed 1550000 out of 2500000 steps (62%)
+07:24:40:WU03:FS01:0x18:Completed 1575000 out of 2500000 steps (63%)
+07:25:37:WU03:FS01:0x18:Completed 1600000 out of 2500000 steps (64%)
+07:26:39:WU03:FS01:0x18:Completed 1625000 out of 2500000 steps (65%)
+07:26:46:WU04:FS00:0x18:Completed 675000 out of 2500000 steps (27%)
+07:27:36:WU03:FS01:0x18:Completed 1650000 out of 2500000 steps (66%)
+07:28:33:WU03:FS01:0x18:Completed 1675000 out of 2500000 steps (67%)
+07:29:30:WU03:FS01:0x18:Completed 1700000 out of 2500000 steps (68%)
+07:30:00:WU04:FS00:0x18:Completed 700000 out of 2500000 steps (28%)
+07:30:32:WU03:FS01:0x18:Completed 1725000 out of 2500000 steps (69%)
+07:31:29:WU03:FS01:0x18:Completed 1750000 out of 2500000 steps (70%)
+07:32:26:WU03:FS01:0x18:Completed 1775000 out of 2500000 steps (71%)
+07:33:20:WU04:FS00:0x18:Completed 725000 out of 2500000 steps (29%)
+07:33:23:WU03:FS01:0x18:Completed 1800000 out of 2500000 steps (72%)
+07:34:25:WU03:FS01:0x18:Completed 1825000 out of 2500000 steps (73%)
+07:35:22:WU03:FS01:0x18:Completed 1850000 out of 2500000 steps (74%)
+07:36:19:WU03:FS01:0x18:Completed 1875000 out of 2500000 steps (75%)
+07:36:35:WU04:FS00:0x18:Completed 750000 out of 2500000 steps (30%)
+07:37:16:WU03:FS01:0x18:Completed 1900000 out of 2500000 steps (76%)
+07:38:18:WU03:FS01:0x18:Completed 1925000 out of 2500000 steps (77%)
+07:39:15:WU03:FS01:0x18:Completed 1950000 out of 2500000 steps (78%)
+07:39:50:WU04:FS00:0x18:Completed 775000 out of 2500000 steps (31%)
+07:40:12:WU03:FS01:0x18:Completed 1975000 out of 2500000 steps (79%)
+07:41:09:WU03:FS01:0x18:Completed 2000000 out of 2500000 steps (80%)
+07:42:11:WU03:FS01:0x18:Completed 2025000 out of 2500000 steps (81%)
+07:43:05:WU04:FS00:0x18:Completed 800000 out of 2500000 steps (32%)
+07:43:08:WU03:FS01:0x18:Completed 2050000 out of 2500000 steps (82%)
+07:44:05:WU03:FS01:0x18:Completed 2075000 out of 2500000 steps (83%)
+07:45:02:WU03:FS01:0x18:Completed 2100000 out of 2500000 steps (84%)
+07:46:04:WU03:FS01:0x18:Completed 2125000 out of 2500000 steps (85%)
+07:46:25:WU04:FS00:0x18:Completed 825000 out of 2500000 steps (33%)
+07:47:01:WU03:FS01:0x18:Completed 2150000 out of 2500000 steps (86%)
+07:47:58:WU03:FS01:0x18:Completed 2175000 out of 2500000 steps (87%)
+07:48:55:WU03:FS01:0x18:Completed 2200000 out of 2500000 steps (88%)
+07:49:40:WU04:FS00:0x18:Completed 850000 out of 2500000 steps (34%)
+07:49:57:WU03:FS01:0x18:Completed 2225000 out of 2500000 steps (89%)
+07:50:54:WU03:FS01:0x18:Completed 2250000 out of 2500000 steps (90%)
+07:51:51:WU03:FS01:0x18:Completed 2275000 out of 2500000 steps (91%)
+07:52:48:WU03:FS01:0x18:Completed 2300000 out of 2500000 steps (92%)
+07:52:55:WU04:FS00:0x18:Completed 875000 out of 2500000 steps (35%)
+07:53:50:WU03:FS01:0x18:Completed 2325000 out of 2500000 steps (93%)
+07:54:47:WU03:FS01:0x18:Completed 2350000 out of 2500000 steps (94%)
+07:55:44:WU03:FS01:0x18:Completed 2375000 out of 2500000 steps (95%)
+07:56:10:WU04:FS00:0x18:Completed 900000 out of 2500000 steps (36%)
+07:56:41:WU03:FS01:0x18:Completed 2400000 out of 2500000 steps (96%)
+07:57:43:WU03:FS01:0x18:Completed 2425000 out of 2500000 steps (97%)
+07:58:40:WU03:FS01:0x18:Completed 2450000 out of 2500000 steps (98%)
+07:59:30:WU04:FS00:0x18:Completed 925000 out of 2500000 steps (37%)
+07:59:36:WU03:FS01:0x18:Completed 2475000 out of 2500000 steps (99%)
+08:00:34:WU03:FS01:0x18:Completed 2500000 out of 2500000 steps (100%)
+08:00:34:WU05:FS01:Connecting to 171.67.108.45:80
+08:00:34:WU05:FS01:Assigned to work server 171.64.65.92
+08:00:34:WU05:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 171.64.65.92
+08:00:34:WU05:FS01:Connecting to 171.64.65.92:8080
+08:00:35:WU05:FS01:Downloading 2.97MiB
+08:00:36:WU05:FS01:Download complete
+08:00:36:WU05:FS01:Received Unit: id:05 state:DOWNLOAD error:NO_ERROR project:9162 run:120 clone:0 gen:68 core:0x18 unit:0x0000004bab40415c567481356c539eb4
+08:00:39:WU03:FS01:0x18:Saving result file logfile_01.txt
+08:00:39:WU03:FS01:0x18:Saving result file checkpointState.xml
+08:00:40:WU03:FS01:0x18:Saving result file checkpt.crc
+08:00:40:WU03:FS01:0x18:Saving result file log.txt
+08:00:40:WU03:FS01:0x18:Saving result file positions.xtc
+08:00:40:WU03:FS01:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+08:00:41:WU03:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+08:00:41:WU03:FS01:Sending unit results: id:03 state:SEND error:NO_ERROR project:9162 run:139 clone:0 gen:194 core:0x18 unit:0x000000d2ab40415c5674813c3923e38d
+08:00:41:WU03:FS01:Uploading 5.58MiB to 171.64.65.92
+08:00:41:WU03:FS01:Connecting to 171.64.65.92:8080
+08:00:41:WU05:FS01:Starting
+08:00:41:WU05:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 05 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+08:00:41:WU05:FS01:Started FahCore on PID 5040
+08:00:41:WU05:FS01:Core PID:6152
+08:00:41:WU05:FS01:FahCore 0x18 started
+08:00:41:WU05:FS01:0x18:*********************** Log Started 2016-03-13T08:00:41Z ***********************
+08:00:41:WU05:FS01:0x18:Project: 9162 (Run 120, Clone 0, Gen 68)
+08:00:41:WU05:FS01:0x18:Unit: 0x0000004bab40415c567481356c539eb4
+08:00:41:WU05:FS01:0x18:CPU: 0x00000000000000000000000000000000
+08:00:41:WU05:FS01:0x18:Machine: 1
+08:00:41:WU05:FS01:0x18:Reading tar file core.xml
+08:00:41:WU05:FS01:0x18:Reading tar file system.xml
+08:00:42:WU05:FS01:0x18:Reading tar file integrator.xml
+08:00:42:WU05:FS01:0x18:Reading tar file state.xml
+08:00:42:WU05:FS01:0x18:Digital signatures verified
+08:00:42:WU05:FS01:0x18:Folding@home GPU core18
+08:00:42:WU05:FS01:0x18:Version 0.0.4
+08:00:48:WU03:FS01:Upload complete
+08:00:48:WU03:FS01:Server responded WORK_ACK (400)
+08:00:48:WU03:FS01:Final credit estimate, 37159.00 points
+08:00:48:WU03:FS01:Cleaning up
+08:00:56:WU05:FS01:0x18:Completed 0 out of 2500000 steps (0%)
+08:00:56:WU05:FS01:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+08:01:56:WU05:FS01:0x18:Completed 25000 out of 2500000 steps (1%)
+08:02:45:WU04:FS00:0x18:Completed 950000 out of 2500000 steps (38%)
+08:02:53:WU05:FS01:0x18:Completed 50000 out of 2500000 steps (2%)
+08:03:49:WU05:FS01:0x18:Completed 75000 out of 2500000 steps (3%)
+08:04:46:WU05:FS01:0x18:Completed 100000 out of 2500000 steps (4%)
+08:05:48:WU05:FS01:0x18:Completed 125000 out of 2500000 steps (5%)
+08:06:00:WU04:FS00:0x18:Completed 975000 out of 2500000 steps (39%)
+08:06:44:WU05:FS01:0x18:Completed 150000 out of 2500000 steps (6%)
+08:07:41:WU05:FS01:0x18:Completed 175000 out of 2500000 steps (7%)
+08:08:38:WU05:FS01:0x18:Completed 200000 out of 2500000 steps (8%)
+08:09:15:WU04:FS00:0x18:Completed 1000000 out of 2500000 steps (40%)
+08:09:39:WU05:FS01:0x18:Completed 225000 out of 2500000 steps (9%)
+08:10:36:WU05:FS01:0x18:Completed 250000 out of 2500000 steps (10%)
+08:11:33:WU05:FS01:0x18:Completed 275000 out of 2500000 steps (11%)
+08:12:30:WU05:FS01:0x18:Completed 300000 out of 2500000 steps (12%)
+08:12:34:WU04:FS00:0x18:Completed 1025000 out of 2500000 steps (41%)
+08:13:31:WU05:FS01:0x18:Completed 325000 out of 2500000 steps (13%)
+08:14:28:WU05:FS01:0x18:Completed 350000 out of 2500000 steps (14%)
+08:15:25:WU05:FS01:0x18:Completed 375000 out of 2500000 steps (15%)
+08:15:49:WU04:FS00:0x18:Completed 1050000 out of 2500000 steps (42%)
+08:16:22:WU05:FS01:0x18:Completed 400000 out of 2500000 steps (16%)
+08:17:23:WU05:FS01:0x18:Completed 425000 out of 2500000 steps (17%)
+08:18:20:WU05:FS01:0x18:Completed 450000 out of 2500000 steps (18%)
+08:19:04:WU04:FS00:0x18:Completed 1075000 out of 2500000 steps (43%)
+08:19:17:WU05:FS01:0x18:Completed 475000 out of 2500000 steps (19%)
+08:20:13:WU05:FS01:0x18:Completed 500000 out of 2500000 steps (20%)
+08:21:15:WU05:FS01:0x18:Completed 525000 out of 2500000 steps (21%)
+08:22:12:WU05:FS01:0x18:Completed 550000 out of 2500000 steps (22%)
+08:22:19:WU04:FS00:0x18:Completed 1100000 out of 2500000 steps (44%)
+08:23:08:WU05:FS01:0x18:Completed 575000 out of 2500000 steps (23%)
+08:24:05:WU05:FS01:0x18:Completed 600000 out of 2500000 steps (24%)
+08:25:07:WU05:FS01:0x18:Completed 625000 out of 2500000 steps (25%)
+08:25:39:WU04:FS00:0x18:Completed 1125000 out of 2500000 steps (45%)
+08:26:04:WU05:FS01:0x18:Completed 650000 out of 2500000 steps (26%)
+08:27:00:WU05:FS01:0x18:Completed 675000 out of 2500000 steps (27%)
+08:27:57:WU05:FS01:0x18:Completed 700000 out of 2500000 steps (28%)
+08:28:54:WU04:FS00:0x18:Completed 1150000 out of 2500000 steps (46%)
+08:28:59:WU05:FS01:0x18:Completed 725000 out of 2500000 steps (29%)
+08:29:56:WU05:FS01:0x18:Completed 750000 out of 2500000 steps (30%)
+08:30:52:WU05:FS01:0x18:Completed 775000 out of 2500000 steps (31%)
+08:31:49:WU05:FS01:0x18:Completed 800000 out of 2500000 steps (32%)
+08:32:09:WU04:FS00:0x18:Completed 1175000 out of 2500000 steps (47%)
+08:32:51:WU05:FS01:0x18:Completed 825000 out of 2500000 steps (33%)
+08:33:48:WU05:FS01:0x18:Completed 850000 out of 2500000 steps (34%)
+08:34:44:WU05:FS01:0x18:Completed 875000 out of 2500000 steps (35%)
+08:35:24:WU04:FS00:0x18:Completed 1200000 out of 2500000 steps (48%)
+08:35:41:WU05:FS01:0x18:Completed 900000 out of 2500000 steps (36%)
+08:36:43:WU05:FS01:0x18:Completed 925000 out of 2500000 steps (37%)
+08:37:40:WU05:FS01:0x18:Completed 950000 out of 2500000 steps (38%)
+08:38:36:WU05:FS01:0x18:Completed 975000 out of 2500000 steps (39%)
+08:38:44:WU04:FS00:0x18:Completed 1225000 out of 2500000 steps (49%)
+08:39:33:WU05:FS01:0x18:Completed 1000000 out of 2500000 steps (40%)
+08:40:35:WU05:FS01:0x18:Completed 1025000 out of 2500000 steps (41%)
+08:41:32:WU05:FS01:0x18:Completed 1050000 out of 2500000 steps (42%)
+08:41:59:WU04:FS00:0x18:Completed 1250000 out of 2500000 steps (50%)
+08:42:29:WU05:FS01:0x18:Completed 1075000 out of 2500000 steps (43%)
+08:43:25:WU05:FS01:0x18:Completed 1100000 out of 2500000 steps (44%)
+08:44:27:WU05:FS01:0x18:Completed 1125000 out of 2500000 steps (45%)
+08:45:14:WU04:FS00:0x18:Completed 1275000 out of 2500000 steps (51%)
+08:45:24:WU05:FS01:0x18:Completed 1150000 out of 2500000 steps (46%)
+08:46:21:WU05:FS01:0x18:Completed 1175000 out of 2500000 steps (47%)
+08:47:17:WU05:FS01:0x18:Completed 1200000 out of 2500000 steps (48%)
+08:48:19:WU05:FS01:0x18:Completed 1225000 out of 2500000 steps (49%)
+08:48:29:WU04:FS00:0x18:Completed 1300000 out of 2500000 steps (52%)
+08:49:16:WU05:FS01:0x18:Completed 1250000 out of 2500000 steps (50%)
+08:50:13:WU05:FS01:0x18:Completed 1275000 out of 2500000 steps (51%)
+08:51:09:WU05:FS01:0x18:Completed 1300000 out of 2500000 steps (52%)
+08:51:49:WU04:FS00:0x18:Completed 1325000 out of 2500000 steps (53%)
+08:52:11:WU05:FS01:0x18:Completed 1325000 out of 2500000 steps (53%)
+08:53:08:WU05:FS01:0x18:Completed 1350000 out of 2500000 steps (54%)
+08:54:04:WU05:FS01:0x18:Completed 1375000 out of 2500000 steps (55%)
+08:55:01:WU05:FS01:0x18:Completed 1400000 out of 2500000 steps (56%)
+08:55:04:WU04:FS00:0x18:Completed 1350000 out of 2500000 steps (54%)
+08:56:03:WU05:FS01:0x18:Completed 1425000 out of 2500000 steps (57%)
+08:57:00:WU05:FS01:0x18:Completed 1450000 out of 2500000 steps (58%)
+08:57:57:WU05:FS01:0x18:Completed 1475000 out of 2500000 steps (59%)
+08:58:19:WU04:FS00:0x18:Completed 1375000 out of 2500000 steps (55%)
+08:58:53:WU05:FS01:0x18:Completed 1500000 out of 2500000 steps (60%)
+08:59:55:WU05:FS01:0x18:Completed 1525000 out of 2500000 steps (61%)
+09:00:52:WU05:FS01:0x18:Completed 1550000 out of 2500000 steps (62%)
+09:01:34:WU04:FS00:0x18:Completed 1400000 out of 2500000 steps (56%)
+09:01:49:WU05:FS01:0x18:Completed 1575000 out of 2500000 steps (63%)
+09:02:45:WU05:FS01:0x18:Completed 1600000 out of 2500000 steps (64%)
+09:03:47:WU05:FS01:0x18:Completed 1625000 out of 2500000 steps (65%)
+09:04:44:WU05:FS01:0x18:Completed 1650000 out of 2500000 steps (66%)
+09:04:54:WU04:FS00:0x18:Completed 1425000 out of 2500000 steps (57%)
+09:05:41:WU05:FS01:0x18:Completed 1675000 out of 2500000 steps (67%)
+09:06:37:WU05:FS01:0x18:Completed 1700000 out of 2500000 steps (68%)
+09:07:39:WU05:FS01:0x18:Completed 1725000 out of 2500000 steps (69%)
+09:08:09:WU04:FS00:0x18:Completed 1450000 out of 2500000 steps (58%)
+09:08:36:WU05:FS01:0x18:Completed 1750000 out of 2500000 steps (70%)
+09:09:33:WU05:FS01:0x18:Completed 1775000 out of 2500000 steps (71%)
+09:10:29:WU05:FS01:0x18:Completed 1800000 out of 2500000 steps (72%)
+09:11:24:WU04:FS00:0x18:Completed 1475000 out of 2500000 steps (59%)
+09:11:31:WU05:FS01:0x18:Completed 1825000 out of 2500000 steps (73%)
+09:12:28:WU05:FS01:0x18:Completed 1850000 out of 2500000 steps (74%)
+09:13:25:WU05:FS01:0x18:Completed 1875000 out of 2500000 steps (75%)
+09:14:21:WU05:FS01:0x18:Completed 1900000 out of 2500000 steps (76%)
+09:14:39:WU04:FS00:0x18:Completed 1500000 out of 2500000 steps (60%)
+09:15:23:WU05:FS01:0x18:Completed 1925000 out of 2500000 steps (77%)
+09:16:20:WU05:FS01:0x18:Completed 1950000 out of 2500000 steps (78%)
+09:17:17:WU05:FS01:0x18:Completed 1975000 out of 2500000 steps (79%)
+09:17:58:WU04:FS00:0x18:Completed 1525000 out of 2500000 steps (61%)
+09:18:13:WU05:FS01:0x18:Completed 2000000 out of 2500000 steps (80%)
+09:19:15:WU05:FS01:0x18:Completed 2025000 out of 2500000 steps (81%)
+******************************* Date: 2016-03-13 *******************************
+09:20:12:WU05:FS01:0x18:Completed 2050000 out of 2500000 steps (82%)
+09:21:09:WU05:FS01:0x18:Completed 2075000 out of 2500000 steps (83%)
+09:21:13:WU04:FS00:0x18:Completed 1550000 out of 2500000 steps (62%)
+09:22:05:WU05:FS01:0x18:Completed 2100000 out of 2500000 steps (84%)
+09:23:07:WU05:FS01:0x18:Completed 2125000 out of 2500000 steps (85%)
+09:24:04:WU05:FS01:0x18:Completed 2150000 out of 2500000 steps (86%)
+09:24:29:WU04:FS00:0x18:Completed 1575000 out of 2500000 steps (63%)
+09:25:01:WU05:FS01:0x18:Completed 2175000 out of 2500000 steps (87%)
+09:25:58:WU05:FS01:0x18:Completed 2200000 out of 2500000 steps (88%)
+09:26:59:WU05:FS01:0x18:Completed 2225000 out of 2500000 steps (89%)
+09:27:43:WU04:FS00:0x18:Completed 1600000 out of 2500000 steps (64%)
+09:27:56:WU05:FS01:0x18:Completed 2250000 out of 2500000 steps (90%)
+09:28:53:WU05:FS01:0x18:Completed 2275000 out of 2500000 steps (91%)
+09:29:50:WU05:FS01:0x18:Completed 2300000 out of 2500000 steps (92%)
+09:30:51:WU05:FS01:0x18:Completed 2325000 out of 2500000 steps (93%)
+09:31:03:WU04:FS00:0x18:Completed 1625000 out of 2500000 steps (65%)
+09:31:48:WU05:FS01:0x18:Completed 2350000 out of 2500000 steps (94%)
+09:32:45:WU05:FS01:0x18:Completed 2375000 out of 2500000 steps (95%)
+09:33:42:WU05:FS01:0x18:Completed 2400000 out of 2500000 steps (96%)
+09:34:18:WU04:FS00:0x18:Completed 1650000 out of 2500000 steps (66%)
+09:34:43:WU05:FS01:0x18:Completed 2425000 out of 2500000 steps (97%)
+09:35:40:WU05:FS01:0x18:Completed 2450000 out of 2500000 steps (98%)
+09:36:37:WU05:FS01:0x18:Completed 2475000 out of 2500000 steps (99%)
+09:37:33:WU04:FS00:0x18:Completed 1675000 out of 2500000 steps (67%)
+09:37:34:WU05:FS01:0x18:Completed 2500000 out of 2500000 steps (100%)
+09:37:34:WU03:FS01:Connecting to 171.67.108.45:80
+09:37:34:WU03:FS01:Assigned to work server 171.67.108.157
+09:37:34:WU03:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 171.67.108.157
+09:37:34:WU03:FS01:Connecting to 171.67.108.157:8080
+09:37:34:WU03:FS01:Downloading 29.47MiB
+09:37:39:WU05:FS01:0x18:Saving result file logfile_01.txt
+09:37:39:WU05:FS01:0x18:Saving result file checkpointState.xml
+09:37:40:WU03:FS01:Download 60.44%
+09:37:40:WU05:FS01:0x18:Saving result file checkpt.crc
+09:37:40:WU05:FS01:0x18:Saving result file log.txt
+09:37:40:WU05:FS01:0x18:Saving result file positions.xtc
+09:37:41:WU05:FS01:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+09:37:41:WU05:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+09:37:41:WU05:FS01:Sending unit results: id:05 state:SEND error:NO_ERROR project:9162 run:120 clone:0 gen:68 core:0x18 unit:0x0000004bab40415c567481356c539eb4
+09:37:41:WU05:FS01:Uploading 5.59MiB to 171.64.65.92
+09:37:41:WU05:FS01:Connecting to 171.64.65.92:8080
+09:37:44:WU03:FS01:Download complete
+09:37:44:WU03:FS01:Received Unit: id:03 state:DOWNLOAD error:NO_ERROR project:9441 run:27 clone:0 gen:111 core:0x21 unit:0x00000084ab436c9d56af1b2aa1c76b89
+09:37:44:WU03:FS01:Starting
+09:37:44:WU03:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 03 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+09:37:44:WU03:FS01:Started FahCore on PID 4440
+09:37:44:WU03:FS01:Core PID:3824
+09:37:44:WU03:FS01:FahCore 0x21 started
+09:37:45:WU03:FS01:0x21:*********************** Log Started 2016-03-13T09:37:44Z ***********************
+09:37:45:WU03:FS01:0x21:Project: 9441 (Run 27, Clone 0, Gen 111)
+09:37:45:WU03:FS01:0x21:Unit: 0x00000084ab436c9d56af1b2aa1c76b89
+09:37:45:WU03:FS01:0x21:CPU: 0x00000000000000000000000000000000
+09:37:45:WU03:FS01:0x21:Machine: 1
+09:37:45:WU03:FS01:0x21:Reading tar file core.xml
+09:37:45:WU03:FS01:0x21:Reading tar file integrator.xml
+09:37:45:WU03:FS01:0x21:Reading tar file state.xml
+09:37:45:WU03:FS01:0x21:Reading tar file system.xml
+09:37:45:WU03:FS01:0x21:Digital signatures verified
+09:37:45:WU03:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+09:37:45:WU03:FS01:0x21:Version 0.0.17
+09:37:48:WU05:FS01:Upload complete
+09:37:48:WU05:FS01:Server responded WORK_ACK (400)
+09:37:48:WU05:FS01:Final credit estimate, 37216.00 points
+09:37:48:WU05:FS01:Cleaning up
+09:37:52:WU03:FS01:0x21:Completed 0 out of 2500000 steps (0%)
+09:37:52:WU03:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+09:39:05:WU03:FS01:0x21:Completed 25000 out of 2500000 steps (1%)
+09:40:19:WU03:FS01:0x21:Completed 50000 out of 2500000 steps (2%)
+09:40:48:WU04:FS00:0x18:Completed 1700000 out of 2500000 steps (68%)
+09:41:34:WU03:FS01:0x21:Completed 75000 out of 2500000 steps (3%)
+09:42:48:WU03:FS01:0x21:Completed 100000 out of 2500000 steps (4%)
+09:44:03:WU03:FS01:0x21:Completed 125000 out of 2500000 steps (5%)
+09:44:08:WU04:FS00:0x18:Completed 1725000 out of 2500000 steps (69%)
+09:45:17:WU03:FS01:0x21:Completed 150000 out of 2500000 steps (6%)
+09:46:32:WU03:FS01:0x21:Completed 175000 out of 2500000 steps (7%)
+09:47:23:WU04:FS00:0x18:Completed 1750000 out of 2500000 steps (70%)
+09:47:46:WU03:FS01:0x21:Completed 200000 out of 2500000 steps (8%)
+09:49:01:WU03:FS01:0x21:Completed 225000 out of 2500000 steps (9%)
+09:50:15:WU03:FS01:0x21:Completed 250000 out of 2500000 steps (10%)
+09:50:38:WU04:FS00:0x18:Completed 1775000 out of 2500000 steps (71%)
+09:51:30:WU03:FS01:0x21:Completed 275000 out of 2500000 steps (11%)
+09:52:44:WU03:FS01:0x21:Completed 300000 out of 2500000 steps (12%)
+09:53:53:WU04:FS00:0x18:Completed 1800000 out of 2500000 steps (72%)
+09:53:59:WU03:FS01:0x21:Completed 325000 out of 2500000 steps (13%)
+09:55:13:WU03:FS01:0x21:Completed 350000 out of 2500000 steps (14%)
+09:56:28:WU03:FS01:0x21:Completed 375000 out of 2500000 steps (15%)
+09:57:13:WU04:FS00:0x18:Completed 1825000 out of 2500000 steps (73%)
+09:57:42:WU03:FS01:0x21:Completed 400000 out of 2500000 steps (16%)
+09:58:57:WU03:FS01:0x21:Completed 425000 out of 2500000 steps (17%)
+10:00:11:WU03:FS01:0x21:Completed 450000 out of 2500000 steps (18%)
+10:00:28:WU04:FS00:0x18:Completed 1850000 out of 2500000 steps (74%)
+10:01:26:WU03:FS01:0x21:Completed 475000 out of 2500000 steps (19%)
+10:02:40:WU03:FS01:0x21:Completed 500000 out of 2500000 steps (20%)
+10:03:43:WU04:FS00:0x18:Completed 1875000 out of 2500000 steps (75%)
+10:03:55:WU03:FS01:0x21:Completed 525000 out of 2500000 steps (21%)
+10:05:09:WU03:FS01:0x21:Completed 550000 out of 2500000 steps (22%)
+10:06:24:WU03:FS01:0x21:Completed 575000 out of 2500000 steps (23%)
+10:06:58:WU04:FS00:0x18:Completed 1900000 out of 2500000 steps (76%)
+10:07:37:WU03:FS01:0x21:Completed 600000 out of 2500000 steps (24%)
+10:08:53:WU03:FS01:0x21:Completed 625000 out of 2500000 steps (25%)
+10:10:06:WU03:FS01:0x21:Completed 650000 out of 2500000 steps (26%)
+10:10:17:WU04:FS00:0x18:Completed 1925000 out of 2500000 steps (77%)
+10:11:22:WU03:FS01:0x21:Completed 675000 out of 2500000 steps (27%)
+10:12:35:WU03:FS01:0x21:Completed 700000 out of 2500000 steps (28%)
+10:13:32:WU04:FS00:0x18:Completed 1950000 out of 2500000 steps (78%)
+10:13:51:WU03:FS01:0x21:Completed 725000 out of 2500000 steps (29%)
+10:15:04:WU03:FS01:0x21:Completed 750000 out of 2500000 steps (30%)
+10:16:20:WU03:FS01:0x21:Completed 775000 out of 2500000 steps (31%)
+10:16:47:WU04:FS00:0x18:Completed 1975000 out of 2500000 steps (79%)
+10:17:33:WU03:FS01:0x21:Completed 800000 out of 2500000 steps (32%)
+10:18:49:WU03:FS01:0x21:Completed 825000 out of 2500000 steps (33%)
+10:20:02:WU03:FS01:0x21:Completed 850000 out of 2500000 steps (34%)
+10:20:02:WU04:FS00:0x18:Completed 2000000 out of 2500000 steps (80%)
+10:21:18:WU03:FS01:0x21:Completed 875000 out of 2500000 steps (35%)
+10:22:31:WU03:FS01:0x21:Completed 900000 out of 2500000 steps (36%)
+10:23:22:WU04:FS00:0x18:Completed 2025000 out of 2500000 steps (81%)
+10:23:47:WU03:FS01:0x21:Completed 925000 out of 2500000 steps (37%)
+10:25:00:WU03:FS01:0x21:Completed 950000 out of 2500000 steps (38%)
+10:26:16:WU03:FS01:0x21:Completed 975000 out of 2500000 steps (39%)
+10:26:37:WU04:FS00:0x18:Completed 2050000 out of 2500000 steps (82%)
+10:27:29:WU03:FS01:0x21:Completed 1000000 out of 2500000 steps (40%)
+10:28:45:WU03:FS01:0x21:Completed 1025000 out of 2500000 steps (41%)
+10:29:52:WU04:FS00:0x18:Completed 2075000 out of 2500000 steps (83%)
+10:29:59:WU03:FS01:0x21:Completed 1050000 out of 2500000 steps (42%)
+10:31:14:WU03:FS01:0x21:Completed 1075000 out of 2500000 steps (43%)
+10:32:28:WU03:FS01:0x21:Completed 1100000 out of 2500000 steps (44%)
+10:33:07:WU04:FS00:0x18:Completed 2100000 out of 2500000 steps (84%)
+10:33:43:WU03:FS01:0x21:Completed 1125000 out of 2500000 steps (45%)
+10:34:57:WU03:FS01:0x21:Completed 1150000 out of 2500000 steps (46%)
+10:36:13:WU03:FS01:0x21:Completed 1175000 out of 2500000 steps (47%)
+10:36:26:WU04:FS00:0x18:Completed 2125000 out of 2500000 steps (85%)
+10:37:26:WU03:FS01:0x21:Completed 1200000 out of 2500000 steps (48%)
+10:38:42:WU03:FS01:0x21:Completed 1225000 out of 2500000 steps (49%)
+10:39:41:WU04:FS00:0x18:Completed 2150000 out of 2500000 steps (86%)
+10:39:55:WU03:FS01:0x21:Completed 1250000 out of 2500000 steps (50%)
+10:41:11:WU03:FS01:0x21:Completed 1275000 out of 2500000 steps (51%)
+10:42:24:WU03:FS01:0x21:Completed 1300000 out of 2500000 steps (52%)
+10:42:56:WU04:FS00:0x18:Completed 2175000 out of 2500000 steps (87%)
+10:43:40:WU03:FS01:0x21:Completed 1325000 out of 2500000 steps (53%)
+10:44:54:WU03:FS01:0x21:Completed 1350000 out of 2500000 steps (54%)
+10:46:09:WU03:FS01:0x21:Completed 1375000 out of 2500000 steps (55%)
+10:46:12:WU04:FS00:0x18:Completed 2200000 out of 2500000 steps (88%)
+10:47:23:WU03:FS01:0x21:Completed 1400000 out of 2500000 steps (56%)
+10:48:39:WU03:FS01:0x21:Completed 1425000 out of 2500000 steps (57%)
+10:49:31:WU04:FS00:0x18:Completed 2225000 out of 2500000 steps (89%)
+10:49:52:WU03:FS01:0x21:Completed 1450000 out of 2500000 steps (58%)
+10:51:08:WU03:FS01:0x21:Completed 1475000 out of 2500000 steps (59%)
+10:52:22:WU03:FS01:0x21:Completed 1500000 out of 2500000 steps (60%)
+10:52:46:WU04:FS00:0x18:Completed 2250000 out of 2500000 steps (90%)
+10:53:37:WU03:FS01:0x21:Completed 1525000 out of 2500000 steps (61%)
+10:54:51:WU03:FS01:0x21:Completed 1550000 out of 2500000 steps (62%)
+10:56:02:WU04:FS00:0x18:Completed 2275000 out of 2500000 steps (91%)
+10:56:07:WU03:FS01:0x21:Completed 1575000 out of 2500000 steps (63%)
+10:57:20:WU03:FS01:0x21:Completed 1600000 out of 2500000 steps (64%)
+10:58:36:WU03:FS01:0x21:Completed 1625000 out of 2500000 steps (65%)
+10:59:17:WU04:FS00:0x18:Completed 2300000 out of 2500000 steps (92%)
+10:59:49:WU03:FS01:0x21:Completed 1650000 out of 2500000 steps (66%)
+11:01:05:WU03:FS01:0x21:Completed 1675000 out of 2500000 steps (67%)
+11:02:19:WU03:FS01:0x21:Completed 1700000 out of 2500000 steps (68%)
+11:02:36:WU04:FS00:0x18:Completed 2325000 out of 2500000 steps (93%)
+11:03:34:WU03:FS01:0x21:Completed 1725000 out of 2500000 steps (69%)
+11:04:48:WU03:FS01:0x21:Completed 1750000 out of 2500000 steps (70%)
+11:05:52:WU04:FS00:0x18:Completed 2350000 out of 2500000 steps (94%)
+11:06:03:WU03:FS01:0x21:Completed 1775000 out of 2500000 steps (71%)
+11:07:17:WU03:FS01:0x21:Completed 1800000 out of 2500000 steps (72%)
+11:08:33:WU03:FS01:0x21:Completed 1825000 out of 2500000 steps (73%)
+11:09:07:WU04:FS00:0x18:Completed 2375000 out of 2500000 steps (95%)
+11:09:46:WU03:FS01:0x21:Completed 1850000 out of 2500000 steps (74%)
+11:11:02:WU03:FS01:0x21:Completed 1875000 out of 2500000 steps (75%)
+11:12:15:WU03:FS01:0x21:Completed 1900000 out of 2500000 steps (76%)
+11:12:22:WU04:FS00:0x18:Completed 2400000 out of 2500000 steps (96%)
+11:13:31:WU03:FS01:0x21:Completed 1925000 out of 2500000 steps (77%)
+11:14:45:WU03:FS01:0x21:Completed 1950000 out of 2500000 steps (78%)
+11:15:41:WU04:FS00:0x18:Completed 2425000 out of 2500000 steps (97%)
+11:16:00:WU03:FS01:0x21:Completed 1975000 out of 2500000 steps (79%)
+11:17:14:WU03:FS01:0x21:Completed 2000000 out of 2500000 steps (80%)
+11:18:29:WU03:FS01:0x21:Completed 2025000 out of 2500000 steps (81%)
+11:18:56:WU04:FS00:0x18:Completed 2450000 out of 2500000 steps (98%)
+11:19:43:WU03:FS01:0x21:Completed 2050000 out of 2500000 steps (82%)
+11:20:32:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+11:20:32:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+11:20:32:WU02:FS00:Connecting to 171.64.65.104:8080
+11:20:33:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+11:20:33:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+11:20:33:WU00:FS01:Connecting to 171.64.65.104:8080
+11:20:33:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+11:20:33:WU02:FS00:Connecting to 171.64.65.104:80
+11:20:34:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+11:20:34:WU00:FS01:Connecting to 171.64.65.104:80
+11:20:34:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+11:20:34:WU02:FS00:Trying to send results to collection server
+11:20:34:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+11:20:34:WU02:FS00:Connecting to 171.65.103.160:8080
+11:20:35:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+11:20:35:WU00:FS01:Trying to send results to collection server
+11:20:35:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+11:20:35:WU00:FS01:Connecting to 171.65.103.160:8080
+11:20:40:WU02:FS00:Upload 53.22%
+11:20:41:WU00:FS01:Upload 49.29%
+11:20:46:WU02:FS00:Upload 75.01%
+11:20:47:WU00:FS01:Upload 75.72%
+11:20:50:WU02:FS00:Upload complete
+11:20:50:WU02:FS00:Server responded PLEASE_WAIT (464)
+11:20:50:WARNING:WU02:FS00:Failed to send results, will try again later
+11:20:51:WU00:FS01:Upload complete
+11:20:51:WU00:FS01:Server responded PLEASE_WAIT (464)
+11:20:51:WARNING:WU00:FS01:Failed to send results, will try again later
+11:20:59:WU03:FS01:0x21:Completed 2075000 out of 2500000 steps (83%)
+11:22:12:WU04:FS00:0x18:Completed 2475000 out of 2500000 steps (99%)
+11:22:12:WU03:FS01:0x21:Completed 2100000 out of 2500000 steps (84%)
+11:23:28:WU03:FS01:0x21:Completed 2125000 out of 2500000 steps (85%)
+11:24:41:WU03:FS01:0x21:Completed 2150000 out of 2500000 steps (86%)
+11:25:27:WU04:FS00:0x18:Completed 2500000 out of 2500000 steps (100%)
+11:25:27:WU05:FS00:Connecting to 171.67.108.45:80
+11:25:27:WU05:FS00:Assigned to work server 140.163.4.242
+11:25:27:WU05:FS00:Requesting new work unit for slot 00: RUNNING gpu:1:GM107 [GeForce GTX 750 Ti] from 140.163.4.242
+11:25:27:WU05:FS00:Connecting to 140.163.4.242:8080
+11:25:28:WU05:FS00:Downloading 3.44MiB
+11:25:29:WU05:FS00:Download complete
+11:25:29:WU05:FS00:Received Unit: id:05 state:DOWNLOAD error:NO_ERROR project:11400 run:3 clone:9 gen:71 core:0x21 unit:0x000000908ca304f255de8e02f3ab9b60
+11:25:31:WU04:FS00:0x18:Saving result file logfile_01.txt
+11:25:31:WU04:FS00:0x18:Saving result file checkpointState.xml
+11:25:32:WU04:FS00:0x18:Saving result file checkpt.crc
+11:25:32:WU04:FS00:0x18:Saving result file log.txt
+11:25:32:WU04:FS00:0x18:Saving result file positions.xtc
+11:25:33:WU04:FS00:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+11:25:33:WU04:FS00:FahCore returned: FINISHED_UNIT (100 = 0x64)
+11:25:33:WU04:FS00:Sending unit results: id:04 state:SEND error:NO_ERROR project:9159 run:151 clone:0 gen:135 core:0x18 unit:0x00000098ab404154567457c9170da396
+11:25:33:WU04:FS00:Uploading 4.87MiB to 171.64.65.84
+11:25:33:WU04:FS00:Connecting to 171.64.65.84:8080
+11:25:33:WU05:FS00:Starting
+11:25:33:WU05:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 05 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 1 -gpu-vendor nvidia
+11:25:33:WU05:FS00:Started FahCore on PID 4916
+11:25:33:WU05:FS00:Core PID:5076
+11:25:33:WU05:FS00:FahCore 0x21 started
+11:25:34:WU05:FS00:0x21:*********************** Log Started 2016-03-13T11:25:33Z ***********************
+11:25:34:WU05:FS00:0x21:Project: 11400 (Run 3, Clone 9, Gen 71)
+11:25:34:WU05:FS00:0x21:Unit: 0x000000908ca304f255de8e02f3ab9b60
+11:25:34:WU05:FS00:0x21:CPU: 0x00000000000000000000000000000000
+11:25:34:WU05:FS00:0x21:Machine: 0
+11:25:34:WU05:FS00:0x21:Reading tar file core.xml
+11:25:34:WU05:FS00:0x21:Reading tar file system.xml
+11:25:34:WU05:FS00:0x21:Reading tar file integrator.xml
+11:25:34:WU05:FS00:0x21:Reading tar file state.xml
+11:25:34:WU05:FS00:0x21:Digital signatures verified
+11:25:34:WU05:FS00:0x21:Folding@home GPU Core21 Folding@home Core
+11:25:34:WU05:FS00:0x21:Version 0.0.17
+11:25:40:WU04:FS00:Upload complete
+11:25:40:WU04:FS00:Server responded WORK_ACK (400)
+11:25:40:WU04:FS00:Final credit estimate, 20277.00 points
+11:25:40:WU04:FS00:Cleaning up
+11:25:41:WU05:FS00:0x21:Completed 0 out of 5000000 steps (0%)
+11:25:41:WU05:FS00:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+11:25:57:WU03:FS01:0x21:Completed 2175000 out of 2500000 steps (87%)
+11:27:11:WU03:FS01:0x21:Completed 2200000 out of 2500000 steps (88%)
+11:28:26:WU03:FS01:0x21:Completed 2225000 out of 2500000 steps (89%)
+11:29:40:WU03:FS01:0x21:Completed 2250000 out of 2500000 steps (90%)
+11:30:55:WU03:FS01:0x21:Completed 2275000 out of 2500000 steps (91%)
+11:32:09:WU03:FS01:0x21:Completed 2300000 out of 2500000 steps (92%)
+11:32:48:WU05:FS00:0x21:Completed 50000 out of 5000000 steps (1%)
+11:33:24:WU03:FS01:0x21:Completed 2325000 out of 2500000 steps (93%)
+11:34:38:WU03:FS01:0x21:Completed 2350000 out of 2500000 steps (94%)
+11:35:53:WU03:FS01:0x21:Completed 2375000 out of 2500000 steps (95%)
+11:37:07:WU03:FS01:0x21:Completed 2400000 out of 2500000 steps (96%)
+11:38:22:WU03:FS01:0x21:Completed 2425000 out of 2500000 steps (97%)
+11:39:36:WU03:FS01:0x21:Completed 2450000 out of 2500000 steps (98%)
+11:39:55:WU05:FS00:0x21:Completed 100000 out of 5000000 steps (2%)
+11:40:51:WU03:FS01:0x21:Completed 2475000 out of 2500000 steps (99%)
+11:42:05:WU03:FS01:0x21:Completed 2500000 out of 2500000 steps (100%)
+11:42:06:WU04:FS01:Connecting to 171.67.108.45:80
+11:42:06:WU04:FS01:Assigned to work server 140.163.4.234
+11:42:06:WU04:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 140.163.4.234
+11:42:06:WU04:FS01:Connecting to 140.163.4.234:8080
+11:42:06:WU04:FS01:Downloading 3.63MiB
+11:42:07:WU03:FS01:0x21:Saving result file logfile_01.txt
+11:42:07:WU03:FS01:0x21:Saving result file checkpointState.xml
+11:42:08:WU03:FS01:0x21:Saving result file checkpt.crc
+11:42:08:WU03:FS01:0x21:Saving result file log.txt
+11:42:08:WU03:FS01:0x21:Saving result file positions.xtc
+11:42:08:WU03:FS01:0x21:Folding@home Core Shutdown: FINISHED_UNIT
+11:42:08:WU04:FS01:Download complete
+11:42:08:WU03:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+11:42:08:WU03:FS01:Sending unit results: id:03 state:SEND error:NO_ERROR project:9441 run:27 clone:0 gen:111 core:0x21 unit:0x00000084ab436c9d56af1b2aa1c76b89
+11:42:08:WU03:FS01:Uploading 25.38MiB to 171.67.108.157
+11:42:08:WU03:FS01:Connecting to 171.67.108.157:8080
+11:42:08:WU04:FS01:Received Unit: id:04 state:DOWNLOAD error:NO_ERROR project:10477 run:1 clone:291 gen:302 core:0x18 unit:0x00000174538b3dba548b2b744cb0fabc
+11:42:08:WU04:FS01:Starting
+11:42:08:WU04:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_18.fah/FahCore_18.exe -dir 04 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+11:42:08:WU04:FS01:Started FahCore on PID 4100
+11:42:08:WU04:FS01:Core PID:4144
+11:42:08:WU04:FS01:FahCore 0x18 started
+11:42:09:WU04:FS01:0x18:*********************** Log Started 2016-03-13T11:42:08Z ***********************
+11:42:09:WU04:FS01:0x18:Project: 10477 (Run 1, Clone 291, Gen 302)
+11:42:09:WU04:FS01:0x18:Unit: 0x00000174538b3dba548b2b744cb0fabc
+11:42:09:WU04:FS01:0x18:CPU: 0x00000000000000000000000000000000
+11:42:09:WU04:FS01:0x18:Machine: 1
+11:42:09:WU04:FS01:0x18:Reading tar file state.xml
+11:42:09:WU04:FS01:0x18:Reading tar file system.xml
+11:42:09:WU04:FS01:0x18:Reading tar file integrator.xml
+11:42:09:WU04:FS01:0x18:Reading tar file core.xml
+11:42:09:WU04:FS01:0x18:Digital signatures verified
+11:42:09:WU04:FS01:0x18:Folding@home GPU core18
+11:42:09:WU04:FS01:0x18:Version 0.0.4
+11:42:14:WU03:FS01:Upload 94.81%
+11:42:14:WU03:FS01:Upload complete
+11:42:14:WU03:FS01:Server responded WORK_ACK (400)
+11:42:14:WU03:FS01:Final credit estimate, 56604.00 points
+11:42:14:WU03:FS01:Cleaning up
+11:42:23:WU04:FS01:0x18:Completed 0 out of 5000000 steps (0%)
+11:42:23:WU04:FS01:0x18:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+11:44:42:WU04:FS01:0x18:Completed 50000 out of 5000000 steps (1%)
+11:46:56:WU04:FS01:0x18:Completed 100000 out of 5000000 steps (2%)
+11:47:04:WU05:FS00:0x21:Completed 150000 out of 5000000 steps (3%)
+11:49:16:WU04:FS01:0x18:Completed 150000 out of 5000000 steps (3%)
+11:51:30:WU04:FS01:0x18:Completed 200000 out of 5000000 steps (4%)
+11:53:44:WU04:FS01:0x18:Completed 250000 out of 5000000 steps (5%)
+11:54:12:WU05:FS00:0x21:Completed 200000 out of 5000000 steps (4%)
+11:56:04:WU04:FS01:0x18:Completed 300000 out of 5000000 steps (6%)
+11:58:18:WU04:FS01:0x18:Completed 350000 out of 5000000 steps (7%)
+12:00:38:WU04:FS01:0x18:Completed 400000 out of 5000000 steps (8%)
+12:01:19:WU05:FS00:0x21:Completed 250000 out of 5000000 steps (5%)
+12:02:52:WU04:FS01:0x18:Completed 450000 out of 5000000 steps (9%)
+12:05:06:WU04:FS01:0x18:Completed 500000 out of 5000000 steps (10%)
+12:07:27:WU04:FS01:0x18:Completed 550000 out of 5000000 steps (11%)
+12:08:27:WU05:FS00:0x21:Completed 300000 out of 5000000 steps (6%)
+12:09:41:WU04:FS01:0x18:Completed 600000 out of 5000000 steps (12%)
+12:12:01:WU04:FS01:0x18:Completed 650000 out of 5000000 steps (13%)
+12:14:15:WU04:FS01:0x18:Completed 700000 out of 5000000 steps (14%)
+12:15:34:WU05:FS00:0x21:Completed 350000 out of 5000000 steps (7%)
+12:16:29:WU04:FS01:0x18:Completed 750000 out of 5000000 steps (15%)
+12:18:49:WU04:FS01:0x18:Completed 800000 out of 5000000 steps (16%)
+12:21:04:WU04:FS01:0x18:Completed 850000 out of 5000000 steps (17%)
+12:22:43:WU05:FS00:0x21:Completed 400000 out of 5000000 steps (8%)
+12:23:24:WU04:FS01:0x18:Completed 900000 out of 5000000 steps (18%)
+12:25:38:WU04:FS01:0x18:Completed 950000 out of 5000000 steps (19%)
+12:27:52:WU04:FS01:0x18:Completed 1000000 out of 5000000 steps (20%)
+12:29:51:WU05:FS00:0x21:Completed 450000 out of 5000000 steps (9%)
+12:30:12:WU04:FS01:0x18:Completed 1050000 out of 5000000 steps (21%)
+12:32:26:WU04:FS01:0x18:Completed 1100000 out of 5000000 steps (22%)
+12:34:46:WU04:FS01:0x18:Completed 1150000 out of 5000000 steps (23%)
+12:36:58:WU05:FS00:0x21:Completed 500000 out of 5000000 steps (10%)
+12:37:00:WU04:FS01:0x18:Completed 1200000 out of 5000000 steps (24%)
+12:39:15:WU04:FS01:0x18:Completed 1250000 out of 5000000 steps (25%)
+12:41:35:WU04:FS01:0x18:Completed 1300000 out of 5000000 steps (26%)
+12:43:49:WU04:FS01:0x18:Completed 1350000 out of 5000000 steps (27%)
+12:44:07:WU05:FS00:0x21:Completed 550000 out of 5000000 steps (11%)
+12:46:09:WU04:FS01:0x18:Completed 1400000 out of 5000000 steps (28%)
+12:48:23:WU04:FS01:0x18:Completed 1450000 out of 5000000 steps (29%)
+12:50:37:WU04:FS01:0x18:Completed 1500000 out of 5000000 steps (30%)
+12:51:14:WU05:FS00:0x21:Completed 600000 out of 5000000 steps (12%)
+12:52:58:WU04:FS01:0x18:Completed 1550000 out of 5000000 steps (31%)
+12:55:12:WU04:FS01:0x18:Completed 1600000 out of 5000000 steps (32%)
+12:57:32:WU04:FS01:0x18:Completed 1650000 out of 5000000 steps (33%)
+12:58:23:WU05:FS00:0x21:Completed 650000 out of 5000000 steps (13%)
+12:59:46:WU04:FS01:0x18:Completed 1700000 out of 5000000 steps (34%)
+13:02:01:WU04:FS01:0x18:Completed 1750000 out of 5000000 steps (35%)
+13:04:21:WU04:FS01:0x18:Completed 1800000 out of 5000000 steps (36%)
+13:05:30:WU05:FS00:0x21:Completed 700000 out of 5000000 steps (14%)
+13:06:35:WU04:FS01:0x18:Completed 1850000 out of 5000000 steps (37%)
+13:08:55:WU04:FS01:0x18:Completed 1900000 out of 5000000 steps (38%)
+13:11:09:WU04:FS01:0x18:Completed 1950000 out of 5000000 steps (39%)
+13:12:37:WU05:FS00:0x21:Completed 750000 out of 5000000 steps (15%)
+13:13:24:WU04:FS01:0x18:Completed 2000000 out of 5000000 steps (40%)
+13:15:44:WU04:FS01:0x18:Completed 2050000 out of 5000000 steps (41%)
+13:17:58:WU04:FS01:0x18:Completed 2100000 out of 5000000 steps (42%)
+13:19:46:WU05:FS00:0x21:Completed 800000 out of 5000000 steps (16%)
+13:20:18:WU04:FS01:0x18:Completed 2150000 out of 5000000 steps (43%)
+13:22:32:WU04:FS01:0x18:Completed 2200000 out of 5000000 steps (44%)
+13:24:46:WU04:FS01:0x18:Completed 2250000 out of 5000000 steps (45%)
+13:26:53:WU05:FS00:0x21:Completed 850000 out of 5000000 steps (17%)
+13:27:07:WU04:FS01:0x18:Completed 2300000 out of 5000000 steps (46%)
+13:29:21:WU04:FS01:0x18:Completed 2350000 out of 5000000 steps (47%)
+13:31:41:WU04:FS01:0x18:Completed 2400000 out of 5000000 steps (48%)
+13:33:55:WU04:FS01:0x18:Completed 2450000 out of 5000000 steps (49%)
+13:34:02:WU05:FS00:0x21:Completed 900000 out of 5000000 steps (18%)
+13:36:09:WU04:FS01:0x18:Completed 2500000 out of 5000000 steps (50%)
+13:38:30:WU04:FS01:0x18:Completed 2550000 out of 5000000 steps (51%)
+13:40:44:WU04:FS01:0x18:Completed 2600000 out of 5000000 steps (52%)
+13:41:09:WU05:FS00:0x21:Completed 950000 out of 5000000 steps (19%)
+13:43:04:WU04:FS01:0x18:Completed 2650000 out of 5000000 steps (53%)
+13:45:18:WU04:FS01:0x18:Completed 2700000 out of 5000000 steps (54%)
+13:47:33:WU04:FS01:0x18:Completed 2750000 out of 5000000 steps (55%)
+13:48:16:WU05:FS00:0x21:Completed 1000000 out of 5000000 steps (20%)
+13:49:53:WU04:FS01:0x18:Completed 2800000 out of 5000000 steps (56%)
+13:52:07:WU04:FS01:0x18:Completed 2850000 out of 5000000 steps (57%)
+13:54:27:WU04:FS01:0x18:Completed 2900000 out of 5000000 steps (58%)
+13:55:25:WU05:FS00:0x21:Completed 1050000 out of 5000000 steps (21%)
+13:56:42:WU04:FS01:0x18:Completed 2950000 out of 5000000 steps (59%)
+13:58:56:WU04:FS01:0x18:Completed 3000000 out of 5000000 steps (60%)
+14:01:16:WU04:FS01:0x18:Completed 3050000 out of 5000000 steps (61%)
+14:02:32:WU05:FS00:0x21:Completed 1100000 out of 5000000 steps (22%)
+14:03:30:WU04:FS01:0x18:Completed 3100000 out of 5000000 steps (62%)
+14:05:50:WU04:FS01:0x18:Completed 3150000 out of 5000000 steps (63%)
+14:08:05:WU04:FS01:0x18:Completed 3200000 out of 5000000 steps (64%)
+14:09:41:WU05:FS00:0x21:Completed 1150000 out of 5000000 steps (23%)
+14:10:19:WU04:FS01:0x18:Completed 3250000 out of 5000000 steps (65%)
+14:12:39:WU04:FS01:0x18:Completed 3300000 out of 5000000 steps (66%)
+14:14:53:WU04:FS01:0x18:Completed 3350000 out of 5000000 steps (67%)
+14:16:48:WU05:FS00:0x21:Completed 1200000 out of 5000000 steps (24%)
+14:17:13:WU04:FS01:0x18:Completed 3400000 out of 5000000 steps (68%)
+14:19:28:WU04:FS01:0x18:Completed 3450000 out of 5000000 steps (69%)
+14:21:42:WU04:FS01:0x18:Completed 3500000 out of 5000000 steps (70%)
+14:23:55:WU05:FS00:0x21:Completed 1250000 out of 5000000 steps (25%)
+14:24:02:WU04:FS01:0x18:Completed 3550000 out of 5000000 steps (71%)
+14:26:16:WU04:FS01:0x18:Completed 3600000 out of 5000000 steps (72%)
+14:28:36:WU04:FS01:0x18:Completed 3650000 out of 5000000 steps (73%)
+14:30:51:WU04:FS01:0x18:Completed 3700000 out of 5000000 steps (74%)
+14:31:04:WU05:FS00:0x21:Completed 1300000 out of 5000000 steps (26%)
+14:33:05:WU04:FS01:0x18:Completed 3750000 out of 5000000 steps (75%)
+14:35:25:WU04:FS01:0x18:Completed 3800000 out of 5000000 steps (76%)
+14:37:39:WU04:FS01:0x18:Completed 3850000 out of 5000000 steps (77%)
+14:38:11:WU05:FS00:0x21:Completed 1350000 out of 5000000 steps (27%)
+14:40:00:WU04:FS01:0x18:Completed 3900000 out of 5000000 steps (78%)
+14:42:14:WU04:FS01:0x18:Completed 3950000 out of 5000000 steps (79%)
+14:44:28:WU04:FS01:0x18:Completed 4000000 out of 5000000 steps (80%)
+14:45:19:WU05:FS00:0x21:Completed 1400000 out of 5000000 steps (28%)
+14:46:48:WU04:FS01:0x18:Completed 4050000 out of 5000000 steps (81%)
+14:49:03:WU04:FS01:0x18:Completed 4100000 out of 5000000 steps (82%)
+14:51:23:WU04:FS01:0x18:Completed 4150000 out of 5000000 steps (83%)
+14:52:26:WU05:FS00:0x21:Completed 1450000 out of 5000000 steps (29%)
+14:53:37:WU04:FS01:0x18:Completed 4200000 out of 5000000 steps (84%)
+14:55:52:WU04:FS01:0x18:Completed 4250000 out of 5000000 steps (85%)
+14:58:12:WU04:FS01:0x18:Completed 4300000 out of 5000000 steps (86%)
+14:59:34:WU05:FS00:0x21:Completed 1500000 out of 5000000 steps (30%)
+15:00:26:WU04:FS01:0x18:Completed 4350000 out of 5000000 steps (87%)
+15:02:46:WU04:FS01:0x18:Completed 4400000 out of 5000000 steps (88%)
+15:05:01:WU04:FS01:0x18:Completed 4450000 out of 5000000 steps (89%)
+15:06:42:WU05:FS00:0x21:Completed 1550000 out of 5000000 steps (31%)
+15:07:15:WU04:FS01:0x18:Completed 4500000 out of 5000000 steps (90%)
+15:09:35:WU04:FS01:0x18:Completed 4550000 out of 5000000 steps (91%)
+15:11:50:WU04:FS01:0x18:Completed 4600000 out of 5000000 steps (92%)
+15:13:49:WU05:FS00:0x21:Completed 1600000 out of 5000000 steps (32%)
+15:14:10:WU04:FS01:0x18:Completed 4650000 out of 5000000 steps (93%)
+15:16:24:WU04:FS01:0x18:Completed 4700000 out of 5000000 steps (94%)
+15:18:38:WU04:FS01:0x18:Completed 4750000 out of 5000000 steps (95%)
+******************************* Date: 2016-03-13 *******************************
+15:20:58:WU05:FS00:0x21:Completed 1650000 out of 5000000 steps (33%)
+15:20:59:WU04:FS01:0x18:Completed 4800000 out of 5000000 steps (96%)
+15:23:13:WU04:FS01:0x18:Completed 4850000 out of 5000000 steps (97%)
+15:25:33:WU04:FS01:0x18:Completed 4900000 out of 5000000 steps (98%)
+15:27:47:WU04:FS01:0x18:Completed 4950000 out of 5000000 steps (99%)
+15:28:05:WU05:FS00:0x21:Completed 1700000 out of 5000000 steps (34%)
+15:30:02:WU04:FS01:0x18:Completed 5000000 out of 5000000 steps (100%)
+15:30:02:WU03:FS01:Connecting to 171.67.108.45:80
+15:30:02:WU03:FS01:Assigned to work server 140.163.4.242
+15:30:02:WU03:FS01:Requesting new work unit for slot 01: RUNNING gpu:0:GM200 [GeForce GTX 980 Ti] from 140.163.4.242
+15:30:02:WU03:FS01:Connecting to 140.163.4.242:8080
+15:30:03:WU03:FS01:Downloading 4.05MiB
+15:30:04:WU03:FS01:Download complete
+15:30:05:WU03:FS01:Received Unit: id:03 state:DOWNLOAD error:NO_ERROR project:11401 run:12 clone:5 gen:62 core:0x21 unit:0x0000007b8ca304f255de8efa9e4c6193
+15:30:08:WU04:FS01:0x18:Saving result file logfile_01.txt
+15:30:08:WU04:FS01:0x18:Saving result file checkpointState.xml
+15:30:09:WU04:FS01:0x18:Saving result file checkpt.crc
+15:30:09:WU04:FS01:0x18:Saving result file log.txt
+15:30:09:WU04:FS01:0x18:Saving result file positions.xtc
+15:30:10:WU04:FS01:0x18:Folding@home Core Shutdown: FINISHED_UNIT
+15:30:11:WU04:FS01:FahCore returned: FINISHED_UNIT (100 = 0x64)
+15:30:11:WU04:FS01:Sending unit results: id:04 state:SEND error:NO_ERROR project:10477 run:1 clone:291 gen:302 core:0x18 unit:0x00000174538b3dba548b2b744cb0fabc
+15:30:11:WU04:FS01:Uploading 9.76MiB to 140.163.4.234
+15:30:11:WU04:FS01:Connecting to 140.163.4.234:8080
+15:30:11:WU03:FS01:Starting
+15:30:11:WU03:FS01:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" C:/Users/mikek/AppData/Roaming/FAHClient/cores/web.stanford.edu/~pande/Win32/AMD64/NVIDIA/Fermi/Core_21.fah/FahCore_21.exe -dir 03 -suffix 01 -version 704 -lifeline 4704 -checkpoint 30 -gpu 0 -gpu-vendor nvidia
+15:30:11:WU03:FS01:Started FahCore on PID 4500
+15:30:11:WU03:FS01:Core PID:5132
+15:30:11:WU03:FS01:FahCore 0x21 started
+15:30:11:WU03:FS01:0x21:*********************** Log Started 2016-03-13T15:30:11Z ***********************
+15:30:11:WU03:FS01:0x21:Project: 11401 (Run 12, Clone 5, Gen 62)
+15:30:11:WU03:FS01:0x21:Unit: 0x0000007b8ca304f255de8efa9e4c6193
+15:30:11:WU03:FS01:0x21:CPU: 0x00000000000000000000000000000000
+15:30:11:WU03:FS01:0x21:Machine: 1
+15:30:11:WU03:FS01:0x21:Reading tar file core.xml
+15:30:11:WU03:FS01:0x21:Reading tar file system.xml
+15:30:11:WU03:FS01:0x21:Reading tar file integrator.xml
+15:30:11:WU03:FS01:0x21:Reading tar file state.xml
+15:30:12:WU03:FS01:0x21:Digital signatures verified
+15:30:12:WU03:FS01:0x21:Folding@home GPU Core21 Folding@home Core
+15:30:12:WU03:FS01:0x21:Version 0.0.17
+15:30:18:WU03:FS01:0x21:Completed 0 out of 5000000 steps (0%)
+15:30:18:WU03:FS01:0x21:Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+15:30:23:WU04:FS01:Upload complete
+15:30:23:WU04:FS01:Server responded WORK_ACK (400)
+15:30:23:WU04:FS01:Final credit estimate, 89540.00 points
+15:30:23:WU04:FS01:Cleaning up
+15:32:31:WU03:FS01:0x21:Completed 50000 out of 5000000 steps (1%)
+15:34:43:WU03:FS01:0x21:Completed 100000 out of 5000000 steps (2%)
+15:35:12:WU05:FS00:0x21:Completed 1750000 out of 5000000 steps (35%)
+15:36:57:WU03:FS01:0x21:Completed 150000 out of 5000000 steps (3%)
+15:39:09:WU03:FS01:0x21:Completed 200000 out of 5000000 steps (4%)
+15:41:21:WU03:FS01:0x21:Completed 250000 out of 5000000 steps (5%)
+15:42:20:WU05:FS00:0x21:Completed 1800000 out of 5000000 steps (36%)
+15:43:35:WU03:FS01:0x21:Completed 300000 out of 5000000 steps (6%)
+15:45:47:WU03:FS01:0x21:Completed 350000 out of 5000000 steps (7%)
+15:48:01:WU03:FS01:0x21:Completed 400000 out of 5000000 steps (8%)
+15:49:27:WU05:FS00:0x21:Completed 1850000 out of 5000000 steps (37%)
+15:50:13:WU03:FS01:0x21:Completed 450000 out of 5000000 steps (9%)
+15:52:26:WU03:FS01:0x21:Completed 500000 out of 5000000 steps (10%)
+15:54:40:WU03:FS01:0x21:Completed 550000 out of 5000000 steps (11%)
+15:56:36:WU05:FS00:0x21:Completed 1900000 out of 5000000 steps (38%)
+15:56:52:WU03:FS01:0x21:Completed 600000 out of 5000000 steps (12%)
+15:59:06:WU03:FS01:0x21:Completed 650000 out of 5000000 steps (13%)
+16:01:18:WU03:FS01:0x21:Completed 700000 out of 5000000 steps (14%)
+16:03:31:WU03:FS01:0x21:Completed 750000 out of 5000000 steps (15%)
+16:03:43:WU05:FS00:0x21:Completed 1950000 out of 5000000 steps (39%)
+16:05:44:WU03:FS01:0x21:Completed 800000 out of 5000000 steps (16%)
+16:07:57:WU03:FS01:0x21:Completed 850000 out of 5000000 steps (17%)
+16:10:11:WU03:FS01:0x21:Completed 900000 out of 5000000 steps (18%)
+16:10:50:WU05:FS00:0x21:Completed 2000000 out of 5000000 steps (40%)
+16:12:23:WU03:FS01:0x21:Completed 950000 out of 5000000 steps (19%)
+16:14:36:WU03:FS01:0x21:Completed 1000000 out of 5000000 steps (20%)
+16:16:50:WU03:FS01:0x21:Completed 1050000 out of 5000000 steps (21%)
+16:17:58:WU05:FS00:0x21:Completed 2050000 out of 5000000 steps (41%)
+16:19:03:WU03:FS01:0x21:Completed 1100000 out of 5000000 steps (22%)
+16:21:17:WU03:FS01:0x21:Completed 1150000 out of 5000000 steps (23%)
+16:23:29:WU03:FS01:0x21:Completed 1200000 out of 5000000 steps (24%)
+16:25:05:WU05:FS00:0x21:Completed 2100000 out of 5000000 steps (42%)
+16:25:41:WU03:FS01:0x21:Completed 1250000 out of 5000000 steps (25%)
+16:27:56:WU03:FS01:0x21:Completed 1300000 out of 5000000 steps (26%)
+16:30:08:WU03:FS01:0x21:Completed 1350000 out of 5000000 steps (27%)
+16:32:14:WU05:FS00:0x21:Completed 2150000 out of 5000000 steps (43%)
+16:32:22:WU03:FS01:0x21:Completed 1400000 out of 5000000 steps (28%)
+16:34:35:WU03:FS01:0x21:Completed 1450000 out of 5000000 steps (29%)
+16:36:47:WU03:FS01:0x21:Completed 1500000 out of 5000000 steps (30%)
+16:39:02:WU03:FS01:0x21:Completed 1550000 out of 5000000 steps (31%)
+16:39:21:WU05:FS00:0x21:Completed 2200000 out of 5000000 steps (44%)
+16:41:14:WU03:FS01:0x21:Completed 1600000 out of 5000000 steps (32%)
+16:43:28:WU03:FS01:0x21:Completed 1650000 out of 5000000 steps (33%)
+16:45:41:WU03:FS01:0x21:Completed 1700000 out of 5000000 steps (34%)
+16:46:28:WU05:FS00:0x21:Completed 2250000 out of 5000000 steps (45%)
+16:47:53:WU03:FS01:0x21:Completed 1750000 out of 5000000 steps (35%)
+16:50:08:WU03:FS01:0x21:Completed 1800000 out of 5000000 steps (36%)
+16:52:20:WU03:FS01:0x21:Completed 1850000 out of 5000000 steps (37%)
+16:53:37:WU05:FS00:0x21:Completed 2300000 out of 5000000 steps (46%)
+16:54:35:WU03:FS01:0x21:Completed 1900000 out of 5000000 steps (38%)
+16:56:47:WU03:FS01:0x21:Completed 1950000 out of 5000000 steps (39%)
+16:59:00:WU03:FS01:0x21:Completed 2000000 out of 5000000 steps (40%)
+17:00:44:WU05:FS00:0x21:Completed 2350000 out of 5000000 steps (47%)
+17:01:14:WU03:FS01:0x21:Completed 2050000 out of 5000000 steps (41%)
+17:03:27:WU03:FS01:0x21:Completed 2100000 out of 5000000 steps (42%)
+17:05:41:WU03:FS01:0x21:Completed 2150000 out of 5000000 steps (43%)
+17:07:53:WU05:FS00:0x21:Completed 2400000 out of 5000000 steps (48%)
+17:07:54:WU03:FS01:0x21:Completed 2200000 out of 5000000 steps (44%)
+17:10:06:WU03:FS01:0x21:Completed 2250000 out of 5000000 steps (45%)
+17:12:20:WU03:FS01:0x21:Completed 2300000 out of 5000000 steps (46%)
+17:14:33:WU03:FS01:0x21:Completed 2350000 out of 5000000 steps (47%)
+17:15:00:WU05:FS00:0x21:Completed 2450000 out of 5000000 steps (49%)
+17:16:47:WU03:FS01:0x21:Completed 2400000 out of 5000000 steps (48%)
+17:19:00:WU03:FS01:0x21:Completed 2450000 out of 5000000 steps (49%)
+17:20:32:WU02:FS00:Sending unit results: id:02 state:SEND error:NO_ERROR project:9212 run:0 clone:9 gen:128 core:0x21 unit:0x00000107664f2dd055ee435f3958c979
+17:20:32:WU02:FS00:Uploading 17.50MiB to 171.64.65.104
+17:20:32:WU02:FS00:Connecting to 171.64.65.104:8080
+17:20:33:WU00:FS01:Sending unit results: id:00 state:SEND error:NO_ERROR project:9207 run:0 clone:83 gen:22 core:0x21 unit:0x00000064664f2dd055e91e84a889b02d
+17:20:33:WU00:FS01:Uploading 17.50MiB to 171.64.65.104
+17:20:33:WU00:FS01:Connecting to 171.64.65.104:8080
+17:20:33:WARNING:WU02:FS00:WorkServer connection failed on port 8080 trying 80
+17:20:33:WU02:FS00:Connecting to 171.64.65.104:80
+17:20:34:WARNING:WU00:FS01:WorkServer connection failed on port 8080 trying 80
+17:20:34:WU00:FS01:Connecting to 171.64.65.104:80
+17:20:34:WARNING:WU02:FS00:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+17:20:34:WU02:FS00:Trying to send results to collection server
+17:20:34:WU02:FS00:Uploading 17.50MiB to 171.65.103.160
+17:20:34:WU02:FS00:Connecting to 171.65.103.160:8080
+17:20:35:WARNING:WU00:FS01:Exception: Failed to send results to work server: Failed to connect to 171.64.65.104:80: No connection could be made because the target machine actively refused it.
+17:20:35:WU00:FS01:Trying to send results to collection server
+17:20:35:WU00:FS01:Uploading 17.50MiB to 171.65.103.160
+17:20:35:WU00:FS01:Connecting to 171.65.103.160:8080
+17:20:40:WU02:FS00:Upload 64.65%
+17:20:41:WU00:FS01:Upload 70.72%
+17:20:43:WU02:FS00:Upload complete
+17:20:43:WU02:FS00:Server responded PLEASE_WAIT (464)
+17:20:43:WARNING:WU02:FS00:Failed to send results, will try again later
+17:20:43:WU00:FS01:Upload complete
+17:20:43:WU00:FS01:Server responded PLEASE_WAIT (464)
+17:20:43:WARNING:WU00:FS01:Failed to send results, will try again later
+17:21:13:WU03:FS01:0x21:Completed 2500000 out of 5000000 steps (50%)
+17:22:08:WU05:FS00:0x21:Completed 2500000 out of 5000000 steps (50%)
+17:23:27:WU03:FS01:0x21:Completed 2550000 out of 5000000 steps (51%)
+17:25:40:WU03:FS01:0x21:Completed 2600000 out of 5000000 steps (52%)
+17:27:54:WU03:FS01:0x21:Completed 2650000 out of 5000000 steps (53%)
+17:29:17:WU05:FS00:0x21:Completed 2550000 out of 5000000 steps (51%)
+17:30:07:WU03:FS01:0x21:Completed 2700000 out of 5000000 steps (54%)
+17:32:19:WU03:FS01:0x21:Completed 2750000 out of 5000000 steps (55%)
+17:34:34:WU03:FS01:0x21:Completed 2800000 out of 5000000 steps (56%)
+17:36:24:WU05:FS00:0x21:Completed 2600000 out of 5000000 steps (52%)
+17:36:46:WU03:FS01:0x21:Completed 2850000 out of 5000000 steps (57%)
+17:39:01:WU03:FS01:0x21:Completed 2900000 out of 5000000 steps (58%)
+17:41:13:WU03:FS01:0x21:Completed 2950000 out of 5000000 steps (59%)
+17:43:26:WU03:FS01:0x21:Completed 3000000 out of 5000000 steps (60%)
+17:43:33:WU05:FS00:0x21:Completed 2650000 out of 5000000 steps (53%)
+17:45:41:WU03:FS01:0x21:Completed 3050000 out of 5000000 steps (61%)
+17:47:53:WU03:FS01:0x21:Completed 3100000 out of 5000000 steps (62%)
+17:50:07:WU03:FS01:0x21:Completed 3150000 out of 5000000 steps (63%)
+17:50:41:WU05:FS00:0x21:Completed 2700000 out of 5000000 steps (54%)
+17:52:20:WU03:FS01:0x21:Completed 3200000 out of 5000000 steps (64%)
+17:54:33:WU03:FS01:0x21:Completed 3250000 out of 5000000 steps (65%)
+17:56:47:WU03:FS01:0x21:Completed 3300000 out of 5000000 steps (66%)
+17:57:48:WU05:FS00:0x21:Completed 2750000 out of 5000000 steps (55%)
+17:59:00:WU03:FS01:0x21:Completed 3350000 out of 5000000 steps (67%)
+18:01:14:WU03:FS01:0x21:Completed 3400000 out of 5000000 steps (68%)
+18:03:27:WU03:FS01:0x21:Completed 3450000 out of 5000000 steps (69%)
+18:04:57:WU05:FS00:0x21:Completed 2800000 out of 5000000 steps (56%)
+18:05:40:WU03:FS01:0x21:Completed 3500000 out of 5000000 steps (70%)
+18:07:54:WU03:FS01:0x21:Completed 3550000 out of 5000000 steps (71%)
+18:10:07:WU03:FS01:0x21:Completed 3600000 out of 5000000 steps (72%)
+18:12:04:WU05:FS00:0x21:Completed 2850000 out of 5000000 steps (57%)
+18:12:21:WU03:FS01:0x21:Completed 3650000 out of 5000000 steps (73%)
+18:14:34:WU03:FS01:0x21:Completed 3700000 out of 5000000 steps (74%)
+18:16:46:WU03:FS01:0x21:Completed 3750000 out of 5000000 steps (75%)
+18:19:01:WU03:FS01:0x21:Completed 3800000 out of 5000000 steps (76%)
+18:19:13:WU05:FS00:0x21:Completed 2900000 out of 5000000 steps (58%)
+18:21:13:WU03:FS01:0x21:Completed 3850000 out of 5000000 steps (77%)
+18:23:28:WU03:FS01:0x21:Completed 3900000 out of 5000000 steps (78%)
+18:25:40:WU03:FS01:0x21:Completed 3950000 out of 5000000 steps (79%)
+18:26:21:WU05:FS00:0x21:Completed 2950000 out of 5000000 steps (59%)
+18:27:53:WU03:FS01:0x21:Completed 4000000 out of 5000000 steps (80%)
+18:30:07:WU03:FS01:0x21:Completed 4050000 out of 5000000 steps (81%)
+18:32:20:WU03:FS01:0x21:Completed 4100000 out of 5000000 steps (82%)
+18:33:28:WU05:FS00:0x21:Completed 3000000 out of 5000000 steps (60%)
+18:34:34:WU03:FS01:0x21:Completed 4150000 out of 5000000 steps (83%)
+18:36:47:WU03:FS01:0x21:Completed 4200000 out of 5000000 steps (84%)
+18:38:59:WU03:FS01:0x21:Completed 4250000 out of 5000000 steps (85%)
+18:40:37:WU05:FS00:0x21:Completed 3050000 out of 5000000 steps (61%)
+18:41:14:WU03:FS01:0x21:Completed 4300000 out of 5000000 steps (86%)
+18:43:26:WU03:FS01:0x21:Completed 4350000 out of 5000000 steps (87%)
+18:45:41:WU03:FS01:0x21:Completed 4400000 out of 5000000 steps (88%)
+18:47:44:WU05:FS00:0x21:Completed 3100000 out of 5000000 steps (62%)
+18:47:53:WU03:FS01:0x21:Completed 4450000 out of 5000000 steps (89%)
+18:50:06:WU03:FS01:0x21:Completed 4500000 out of 5000000 steps (90%)
+18:52:20:WU03:FS01:0x21:Completed 4550000 out of 5000000 steps (91%)
+18:54:33:WU03:FS01:0x21:Completed 4600000 out of 5000000 steps (92%)
+18:54:53:WU05:FS00:0x21:Completed 3150000 out of 5000000 steps (63%)
+18:55:44:FS01:Paused
+18:55:44:FS00:Paused
+18:55:44:FS01:Shutting core down
+18:55:44:FS00:Shutting core down
+18:55:44:WU03:FS01:0x21:WARNING:Console control signal 1 on PID 5132
+18:55:44:WU05:FS00:0x21:WARNING:Console control signal 1 on PID 5076
+18:55:44:WU03:FS01:0x21:Exiting, please wait. . .
+18:55:44:WU05:FS00:0x21:Exiting, please wait. . .
+18:55:45:WU03:FS01:0x21:Folding@home Core Shutdown: INTERRUPTED
+18:55:45:WU05:FS00:0x21:Folding@home Core Shutdown: INTERRUPTED
+18:55:45:WU05:FS00:FahCore returned: INTERRUPTED (102 = 0x66)
+18:55:45:WU03:FS01:FahCore returned: INTERRUPTED (102 = 0x66)
