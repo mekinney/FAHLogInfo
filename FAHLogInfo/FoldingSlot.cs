@@ -43,7 +43,7 @@ namespace FAHLogInfo
             {
                 workUnitSlotNumber = wuSlot,
                 wu = { project = project, run = run, clone = clone, gen = gen, start = flp.currentTime, core = fahcore,
-                        startLine = flp.lineNumber, logFilename = flp.currentFilename }
+                        startLine = flp.lineNumber, startLogFilename = flp.currentFilename }
             });
         }
 
